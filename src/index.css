@@ -1,17 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
+	font-family: "DM Sans", sans-serif;
+	font-optical-sizing: auto;
 
-  color-scheme: light;
+	color-scheme: light;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar */
+#hamburger-btn.open {
+	animation: pulse 1s infinite alternate;
+}
+
+#hamburger-btn.open #top-line {
+	transform: rotate(135deg) translateX(11px);
+}
+
+#hamburger-btn.open #bottom-line {
+	transform: rotate(45deg) translateX(-11px) translateY(-1px);
+}
+
+#pages .caret-down,
+#pages-mobile .caret-down {
+	display: inline;
+}
+
+#pages .caret-up,
+#pages-mobile .caret-up {
+	display: none;
+}
+
+#pages.modal-opened .caret-down,
+#pages-mobile.modal-opened .caret-down {
+	display: none;
+}
+
+#pages.modal-opened .caret-up,
+#pages-mobile.modal-opened .caret-up {
+	display: inline;
+}
+
+/* Animations */
+@keyframes pulse {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Media Queries */
+@media (max-width: 640px) {
+	#hamburger-btn.open #top-line {
+		transform: rotate(140deg) translateX(8px) translateY(-2px);
+	}
+
+	#hamburger-btn.open #bottom-line {
+		transform: rotate(45deg) translateX(-7px) translateY(-1px);
+	}
 }
