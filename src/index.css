@@ -69,3 +69,8 @@
 		transform: rotate(45deg) translateX(-7px) translateY(-1px);
 	}
 }
+
+/* Home */
+#scroll-container::-webkit-scrollbar, .reviews::-webkit-scrollbar {
+	display: none;
+}
