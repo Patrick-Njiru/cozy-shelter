@@ -1,13 +1,14 @@
 import PropTypes from "prop-types"
+import { NavLink, useNavigate } from "react-router-dom"
 import { BiBed } from "react-icons/bi"
 import { BsPerson } from "react-icons/bs"
-import { NavLink, useNavigate } from "react-router-dom"
 
 const CabinCard = ({ title, img }) => {
 	const navigate = useNavigate()
+
 	return (
 		<div
-			className='transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-xl h-5/6 min-w-96 hover:-top-4 cursor-pointer'
+			className='transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-xl h-5/6 min-w-96 me-9 hover:-top-4 cursor-pointer'
 			onClick={() => {
 				navigate("/rooms-single")
 			}}

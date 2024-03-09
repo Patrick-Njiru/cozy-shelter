@@ -24,69 +24,93 @@ import singleRusticCabin from "../assets/home/single-rustic-cabin.webp"
 import woodFire from "../assets/home/wood-fire.png"
 
 const homeData = {
-	general: [homeBg, redBg],
 	cabins: [
 		{
+			id: 1,
 			title: "Single Rustic Cabin",
 			img: singleRusticCabin,
 		},
 		{
+			id: 2,
 			title: "Duo Rustic Cabin",
 			img: duoRrusticCcabin,
 		},
 		{
+			id: 3,
 			title: "Duplex Rustic Cabin",
 			img: duplexCrusticCcabin,
 		},
 		{
+			id: 4,
 			title: "Family Rustic Cabin",
 			img: familyRusticCabin,
 		},
 		{
+			id: 5,
 			title: "Micro Rustic Cabin",
 			img: microRusticCabin,
 		},
 		{
+			id: 6,
 			title: "Family Duo Rustic Cabin",
 			img: familyDuoRusticCabin,
 		},
+		// {
+		// 	id: 7,
+		// 	title: "Single Rustic Cabin",
+		// 	img: singleRusticCabin,
+		// },
+		// {
+		// 	id: 8,
+		// 	title: "Duo Rustic Cabin",
+		// 	img: duoRrusticCcabin,
+		// },
 	],
 	experiences: [
 		{
+			id: 1,
 			title: "Wood Fire",
 			img: woodFire,
 		},
 		{
+			id: 2,
 			title: "Lake Paddling",
 			img: lakePaddling,
 		},
 		{
+			id: 3,
 			title: "Outdoor Picnic",
 			img: picnic,
 		},
 		{
+			id: 4,
 			title: "Fishing",
 			img: fishing,
 		},
 		{
+			id: 5,
 			title: "Game Room",
 			img: gameRoom,
 		},
 		{
+			id: 6,
 			title: "Outdoor Hot Tub",
 			img: hotTub,
 		},
 	],
 	activities: [
 		{
+			id: 1,
 			title: "Kayaks",
 			img: kayaks,
 		},
 		{
+			id: 2,
 			title: "Hiking",
 			img: hiking,
 		},
 		{
+			id: 3,
 			title: "Mountain Biking",
 			img: mountainBiking,
 		},
@@ -94,24 +118,35 @@ const homeData = {
 	uniqueness: [different1, different2, different3, different4],
 	reviews: [
 		{
+			id: 1,
 			user: "John Carter",
 			profilePic: reviewer1,
 			location: "New York, NY",
 			headline: "One of a kind experience",
 		},
 		{
+			id: 2,
 			user: "Sophie Moore",
 			profilePic: reviewer2,
 			location: "Los Angeles, CA",
 			headline: "The best experience we ever had",
 		},
 		{
+			id: 3,
 			user: "Karen Cutts",
 			profilePic: reviewer3,
 			location: "Washington DC",
 			headline: "The best weekend of my life",
 		},
+		// {
+		// 	id: 4,
+		// 	user: "John Carter",
+		// 	profilePic: reviewer1,
+		// 	location: "New York, NY",
+		// 	headline: "One of a kind experience",
+		// },
 	],
 }
 
+export { homeBg, redBg }
 export default homeData
