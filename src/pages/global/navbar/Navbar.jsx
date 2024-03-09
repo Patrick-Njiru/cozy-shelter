@@ -1,7 +1,6 @@
-import React, { useState } from "react"
 import { NavLink } from "react-router-dom"
 import { BiCaretDown, BiCaretUp, BiCart } from "react-icons/bi"
-import PagesModal from "../scenes/PagesModal"
+import PagesModal from "./PagesModal"
 
 const Navbar = () => {
 	const handleMenuToggle = () => {
@@ -43,7 +42,7 @@ const Navbar = () => {
 
 	return (
 		<header className='relative top-7 z-10 start-0 end-0'>
-			<nav className='bg-white rounded-full w-11/12 mx-auto py-5 px-5 xl:ps-8'>
+			<nav className='bg-white border shadow rounded-full w-11/12 mx-auto py-5 px-5 xl:ps-8'>
 				<div className='flex justify-between items-center'>
 					<NavLink to='/' className='flex space-x-3'>
 						<img src='icon.jpg' alt='logo' className='h-8 hidden sm:block' />

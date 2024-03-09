@@ -3,7 +3,7 @@ import { BiBed } from "react-icons/bi"
 import { BsPerson } from "react-icons/bs"
 import { NavLink, useNavigate } from "react-router-dom"
 
-const ProductCard = ({ title, img }) => {
+const CabinCard = ({ title, img }) => {
 	const navigate = useNavigate()
 	return (
 		<div
@@ -52,9 +52,9 @@ const ProductCard = ({ title, img }) => {
 	)
 }
 
-ProductCard.propTypes = {
+CabinCard.propTypes = {
 	title: PropTypes.string.isRequired,
 	img: PropTypes.any.isRequired,
 }
 
-export default ProductCard
+export default CabinCard

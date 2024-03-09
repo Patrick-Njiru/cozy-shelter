@@ -1,11 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
 import { NavLink } from "react-router-dom"
-import ProductCard from "../components/ProductCard"
+import CabinCard from "../components/CabinCard"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import { homeData } from "../data"
 
-const Home = (props) => {
+const Home = () => {
 	const handleScroll = (direction) => {}
 
 	return (
@@ -37,7 +35,7 @@ const Home = (props) => {
 							Explore rooms
 						</NavLink>
 						<NavLink
-							to='/rooms'
+							to='/about'
 							className='inline transition-all duration-500 ease-in-out bg-white text-gray-600 px-10 py-6 text-lg font-semibold w-fit rounded-full relative my-4 top-0 hover:bg-red-600 hover:text-white hover:-top-1'
 						>
 							About us
@@ -62,7 +60,7 @@ const Home = (props) => {
 					className='transition-all duration-1000 ease-in-out relative overflow-scroll h-fit flex items-center justify-start space-x-9 pt-8 ps-16'
 				>
 					{homeData.cabins.map((cabin) => (
-						<ProductCard key={cabin.title} {...cabin} />
+						<CabinCard key={cabin.title} {...cabin} />
 					))}
 					<div className='sticky end-60 top-2/5 flex items-center justify-between space-x-96'>
 						<button
@@ -118,7 +116,7 @@ const Home = (props) => {
 							Explore rooms
 						</NavLink>
 						<NavLink
-							to='/rooms'
+							to='/about'
 							className='inline transition-all duration-500 ease-in-out bg-white text-gray-600 px-10 py-6 text-lg font-semibold w-fit rounded-full relative top-0 border hover:bg-red-600 hover:text-white hover:-top-1'
 						>
 							About us
@@ -153,7 +151,7 @@ const Home = (props) => {
 								Explore rooms
 							</NavLink>
 							<NavLink
-								to='/rooms'
+								to='/about'
 								className='inline transition-all duration-500 ease-in-out bg-inherit text-white px-10 py-6 text-lg font-semibold w-fit rounded-full relative top-0 border hover:bg-white hover:text-black hover:-top-1'
 							>
 								About us
@@ -193,7 +191,7 @@ const Home = (props) => {
 					))}
 				</div>
 				<NavLink
-					to='/rooms'
+					to='/activities'
 					className='block mt-16 mx-auto transition-all duration-500 ease-in-out bg-white px-10 py-6 text-lg font-medium w-fit rounded-full relative top-0 border hover:bg-red-600 hover:text-white hover:-top-1'
 				>
 					More activities
@@ -212,17 +210,21 @@ const Home = (props) => {
 									alt='cabin'
 									className='w-80 rounded-2xl mb-4'
 								/>
-							) : i == 1 ? 								<img
-							src={img}
-							key={i}
-							alt='cabin'
-							className='w-80 h-60 rounded-2xl'
-						/> : i == 2 ? 								<img
-						src={img}
-						key={i}
-						alt='cabin'
-						className='w-80 h-80 rounded-2xl'
-					/> : (
+							) : i == 1 ? (
+								<img
+									src={img}
+									key={i}
+									alt='cabin'
+									className='w-80 h-60 rounded-2xl'
+								/>
+							) : i == 2 ? (
+								<img
+									src={img}
+									key={i}
+									alt='cabin'
+									className='w-80 h-80 rounded-2xl'
+								/>
+							) : (
 								<img
 									key={i}
 									src={img}
@@ -244,7 +246,7 @@ const Home = (props) => {
 							placeat eveniet consectetur possimus earum totam hic.
 						</p>
 						<NavLink
-							to='/rooms'
+							to='/about'
 							className='block mt-16 transition-all duration-500 ease-in-out bg-white px-10 py-6 text-lg font-medium w-fit rounded-full relative top-0 border hover:bg-red-600 hover:text-white hover:-top-1'
 						>
 							About us
@@ -308,7 +310,7 @@ const Home = (props) => {
 				</div>
 				<div className='flex flex-wrap justify-center space-x-4 mt-10'>
 					<NavLink
-						to='/rooms'
+						to='/book'
 						className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-10 py-6 text-lg font-bold w-fit rounded-full relative top-0 hover:bg-red-600 hover:-top-1'
 					>
 						Book now
