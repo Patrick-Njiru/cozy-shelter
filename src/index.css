@@ -59,17 +59,6 @@
 	}
 }
 
-/* Media Queries */
-@media (max-width: 640px) {
-	#hamburger-btn.open #top-line {
-		transform: rotate(140deg) translateX(8px) translateY(-2px);
-	}
-
-	#hamburger-btn.open #bottom-line {
-		transform: rotate(45deg) translateX(-7px) translateY(-1px);
-	}
-}
-
 /* Home */
 #scroll-container::-webkit-scrollbar,
 #scroll-container-2::-webkit-scrollbar {
