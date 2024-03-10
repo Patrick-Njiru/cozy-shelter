@@ -22,6 +22,7 @@ const Navbar = () => {
 					{/* Hamburger Button + Cart */}
 					<div className='me-3 space-x-3 sm:space-x-8 sm:me-6 flex xl:hidden'>
 						<button
+							type="button"
 							id='hamburger-btn'
 							className='group relative mt-2 w-8 space-y-3'
 							onClick={() => handleToggleMenu()}

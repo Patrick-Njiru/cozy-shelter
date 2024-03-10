@@ -1,9 +1,11 @@
+import { useState } from "react"
 import PropTypes from "prop-types"
 import { NavLink, useNavigate } from "react-router-dom"
 import { BiBed } from "react-icons/bi"
 import { BsPerson } from "react-icons/bs"
 
 const CabinCard = ({ title, img }) => {
+	const [isHovered, setisHovered] = useState(false)
 	const navigate = useNavigate()
 
 	return (
@@ -12,14 +14,16 @@ const CabinCard = ({ title, img }) => {
 			onClick={() => {
 				navigate("/rooms-single")
 			}}
+			onMouseOver={() => setisHovered(true)}
+			onMouseLeave={() => setisHovered(false)}
 		>
 			<div
 				id='product-card-bg'
-				className='product-card-bg transition-all duration-300 ease-in-out h-60 rounded-t-xl'
+				className='product-card-bg transition-all duration-1000 delay-0 ease-in-out ease-in-out h-60 rounded-t-xl'
 				style={{
 					background: `url(${img}) no-repeat`,
 					backgroundPosition: "bottom center",
-					backgroundSize: "cover",
+					backgroundSize: `${isHovered ? "105% 105%" : "100% 100%"}`,
 				}}
 			></div>
 			<div className='space-y-5 p-6'>

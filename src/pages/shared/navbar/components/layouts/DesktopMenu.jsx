@@ -24,7 +24,7 @@ const DesktopMenu = () => {
         onMouseLeave={() => handleHideModal()}
       >
         Pages
-        <button>
+        <butto type="button"n>
           <BiCaretDown className='caret-down' />
           <BiCaretUp className='caret-up' />
         </button>

@@ -27,7 +27,7 @@ const MobileMenu = () => {
           onMouseLeave={() => handleHideModal()}
         >
           Pages
-          <button>
+          <button type="button">
             <BiCaretDown className='caret-down' />
             <BiCaretUp className='caret-up' />
           </button>

@@ -26,15 +26,17 @@ const Cabins = ({ cabins }) => {
 			</div>
 			<div className='relative px-5 w-full flex justify-between top-[-370px] sm:px-9 md:px-12'>
 				<button
+					type="button"
 					id='cabin-scroll-left'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 hover:p-4 sm:text-3xl'
+					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 sm:text-3xl'
 					onClick={() => handleSlide("left", "cabins")}
 				>
 					<BsArrowLeft />
 				</button>
 				<button
+					type="button"
 					id='cabin-scroll-right'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 hover:p-4 sm:text-3xl'
+					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 hover:text-xl sm:hover:text-2xl sm:text-3xl'
 					onClick={() => handleSlide("right", "cabins")}
 				>
 					<BsArrowRight />

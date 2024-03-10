@@ -26,6 +26,7 @@ const Reviews = ({ reviews }) => {
 			</div>
 			<div className='relative w-full px-6 top-[-400px] lg:-top-72 flex justify-between sm:px-10 md:px-16'>
 				<button
+					type="button"
 					to='/book'
 					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl w-fit rounded-full hover:bg-red-600 hover:p-4'
 					onClick={() => handleSlide("left", "reviews")}
@@ -33,6 +34,7 @@ const Reviews = ({ reviews }) => {
 					<BsArrowLeft />
 				</button>
 				<button
+					type="button"
 					to='/book'
 					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl font-medium w-fit rounded-full hover:bg-red-600 hover:p-4'
 					onClick={() => handleSlide("right", "reviews")}
