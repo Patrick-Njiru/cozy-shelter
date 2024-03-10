@@ -3,45 +3,35 @@ import { NavLink } from "react-router-dom"
 
 const OurUniqueness = ({ uniqueness }) => {
 	return (
-		<section className='mt-28 bg-neutral-50'>
-			<div className='px-16 pt-40 flex items-center space-x-6 relative'>
-				<div className='w-3/5 flex flex-wrap justify-evenly items-start'>
-					{uniqueness.map((img, i) =>
-						i == 0 ? (
-							<img
-								src={img}
-								key={i}
-								alt='cabin'
-								className='w-80 h-[360px] rounded-2xl mb-4'
-							/>
-						) : i == 1 ? (
-							<img src={img} key={i} alt='cabin' className='w-80 h-60 rounded-2xl' />
-						) : i == 2 ? (
-							<img src={img} key={i} alt='cabin' className='w-80 h-80 rounded-2xl' />
-						) : (
-							<img
-								key={i}
-								src={img}
-								alt='cabin'
-								className='w-80 h-[435px] rounded-2xl relative -top-28'
-							/>
-						)
-					)}
+		<section className='mt-12 bg-neutral-50 sm:mt-28'>
+			<div className='px-6 py-12 flex  space-y-6 flex-col-reverse items-center sm:py-28 sm:px-10 md:px-16 lg:space-x-10 lg:space-y-0 lg:flex-row'>
+				<div className='mt-8 w-full flex space-x-4 lg:mt-0 lg:w-[50vw]'>
+					<div className='flex flex-col space-y-4 w-1/2'>
+						<img src={uniqueness[0]} alt='cabin' className='rounded-2xl lg:h-[53vh]' />
+						<img src={uniqueness[2]} alt='cabin' className='rounded-2xl lg:h-[47vh]' />
+					</div>
+					<div className='flex flex-col space-y-4 w-1/2'>
+						<img src={uniqueness[1]} alt='cabin' className='rounded-2xl lg:h-[40vh]' />
+						<img src={uniqueness[3]} alt='cabin' className='rounded-2xl lg:h-[60vh]' />
+					</div>
 				</div>
-				<div className='w-2/5 space-y-6'>
-					<h1 className='text-4xl font-extrabold'>What makes use different?</h1>
-					<p className='text-gray-500 text-lg'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vel quo quae
-						ipsam esse voluptates quia eos molestias, odio nam.
+				<div className='space-y-6 lg:w-[40vw]'>
+					<h1 className='font-black text-3xl sm:text-4xl md:text-5xl'>
+						What makes us different?
+					</h1>
+					<p className='text-gray-500'>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt
+						inventore quam reiciendis fugiat autem exercitationem, ab alias, nulla rerum
+						aperiam, ea mollitia veritatis sed.
 						<span className='block h-0.5 w-full bg-gray-200 my-10'></span>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, excepturi
-						unde amet dolor a rerum veniam fugit quisquam architecto officia, nihil qui
-						maiores doloremque tempore obcaecati veritatis aut placeat eveniet
-						consectetur possimus earum totam hic.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ipsa id
+						corporis esse rerum minima libero perspiciatis voluptatibus odit quibusdam
+						quisquam quia, culpa provident quo, maiores aspernatur dolore delectus sit.
+						Sequi quo tempore ut inventore nobis commodi delectus!
 					</p>
 					<NavLink
 						to='/about'
-						className='block mt-16 transition-all duration-500 ease-in-out bg-white px-10 py-6 text-lg font-medium w-fit rounded-full relative top-0 border hover:bg-red-600 hover:text-white hover:-top-1'
+						className='block transition-all duration-500 ease-in-out bg-white text-lg font-medium w-fit rounded-full relative top-0 border px-7 py-4 hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 					>
 						About us
 					</NavLink>

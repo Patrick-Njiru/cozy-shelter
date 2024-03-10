@@ -55,16 +55,6 @@ const homeData = {
 			title: "Family Duo Rustic Cabin",
 			img: familyDuoRusticCabin,
 		},
-		// {
-		// 	id: 7,
-		// 	title: "Single Rustic Cabin",
-		// 	img: singleRusticCabin,
-		// },
-		// {
-		// 	id: 8,
-		// 	title: "Duo Rustic Cabin",
-		// 	img: duoRrusticCcabin,
-		// },
 	],
 	experiences: [
 		{
@@ -119,32 +109,25 @@ const homeData = {
 	reviews: [
 		{
 			id: 1,
-			user: "John Carter",
-			profilePic: reviewer1,
-			location: "New York, NY",
-			headline: "One of a kind experience",
-		},
-		{
-			id: 2,
 			user: "Sophie Moore",
-			profilePic: reviewer2,
+			profilePic: reviewer1,
 			location: "Los Angeles, CA",
 			headline: "The best experience we ever had",
 		},
 		{
-			id: 3,
+			id: 2,
 			user: "Karen Cutts",
-			profilePic: reviewer3,
+			profilePic: reviewer2,
 			location: "Washington DC",
 			headline: "The best weekend of my life",
 		},
-		// {
-		// 	id: 4,
-		// 	user: "John Carter",
-		// 	profilePic: reviewer1,
-		// 	location: "New York, NY",
-		// 	headline: "One of a kind experience",
-		// },
+		{
+			id: 3,
+			user: "John Carter",
+			profilePic: reviewer3,
+			location: "New York, NY",
+			headline: "One of a kind experience",
+		},
 	],
 }
 

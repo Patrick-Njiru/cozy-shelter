@@ -71,6 +71,7 @@
 }
 
 /* Home */
-#scroll-container::-webkit-scrollbar, .reviews::-webkit-scrollbar {
+#scroll-container::-webkit-scrollbar,
+#scroll-container-2::-webkit-scrollbar {
 	display: none;
 }

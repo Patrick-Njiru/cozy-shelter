@@ -7,35 +7,35 @@ import { handleScroll } from "../../../functions/handleScroll"
 
 const Cabins = ({ cabins }) => {
 	return (
-		<section className='mt-28'>
-			<div className='flex justify-between flex-wrap items-center px-16'>
-				<h1 className='font-extrabold text-4xl'>Explore our cabins</h1>
+		<section className='mt-16 sm:mt-28'>
+			<div className='flex flex-col space-y-6 justify-between flex-wrap px-6 sm:px-10 sm:flex-row sm:space-y-0 sm:space-x-6 sm:items-center md:px-16'>
+				<h1 className='font-black text-3xl sm:text-4xl md:text-5xl'>Explore our cabins</h1>
 				<NavLink
 					to='/rooms'
-					className='inline transition-all duration-500 ease-in-out bg-white text-gray-600 px-10 py-7 text-lg font-semibold w-fit rounded-full relative top-0 border shadow-md hover:bg-red-600 hover:text-white hover:-top-1'
+					className='inline transition-all duration-500 ease-in-out bg-white text-gray-600 px-7 py-4 text-lg font-semibold w-fit rounded-full relative top-0 border shadow-md hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 				>
 					Browse All
 				</NavLink>
 			</div>
 			<div
 				id='scroll-container'
-				className='transition-all duration-1000 ease-in-out max-w-screen overflow-hidden h-fit flex items-center justify-start pt-8 ps-16'
+				className='transition-all duration-1000 ease-in-out max-w-screen overflow-x-scroll flex items-center justify-start mt-8 px-6 sm:px-10 md:px-16'
 			>
 				{cabins.map((cabin) => (
 					<CabinCard key={cabin.id} {...cabin} />
 				))}
 			</div>
-			<div className='absolute start-[3rem] end-[3rem] top-[1660px]  flex items-center justify-between'>
+			<div className='relative px-5 w-full flex justify-between top-[-370px] sm:px-9 md:px-12'>
 				<button
 					id='cabin-scroll-left'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl w-fit rounded-full hover:bg-red-600 hover:p-4 disabled:bg-gray-400 disabled:hover:p-5 disabled:cursor-not-allowed'
+					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 hover:p-4 sm:text-3xl'
 					onClick={() => handleScroll("left", "cabins")}
 				>
 					<BsArrowLeft />
 				</button>
 				<button
 					id='cabin-scroll-right'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl font-medium w-fit rounded-full hover:bg-red-600 hover:p-4 disabled:bg-gray-400 disabled:hover:p-5 disabled:cursor-not-allowed'
+					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 hover:p-4 sm:text-3xl'
 					onClick={() => handleScroll("right", "cabins")}
 				>
 					<BsArrowRight />

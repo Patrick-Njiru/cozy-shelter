@@ -8,7 +8,7 @@ const CabinCard = ({ title, img }) => {
 
 	return (
 		<div
-			className='transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-xl h-5/6 min-w-96 me-9 hover:-top-4 cursor-pointer'
+			className='transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-xl h-5/6 me-9 cursor-pointer min-w-[300px] z-10 hover:-top-4 sm:min-w-96'
 			onClick={() => {
 				navigate("/rooms-single")
 			}}

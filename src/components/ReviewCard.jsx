@@ -3,12 +3,11 @@ import PropTypes from "prop-types"
 const ReviewCard = ({ user, location, headline, profilePic }) => {
 	return (
 		<div
-			key={user + location}
-			className='flex justify-between p-20 pb-10 px-16 me-9 space-x-6 border shadow-lg rounded-3xl'
+			className='flex flex-col space-y-6 justify-between items-center py-5 px-4 me-9 border shadow-lg rounded-3xl md:pt-10 md:py-10 md:px-8 lg:py-20 lg:px-1 lg:space-y-0 lg:flex-row lg:space-x-6'
 		>
-			<img src={profilePic} alt='profile' className='min-w-72 h-72 rounded-full' />
-			<div className='space-y-6 min-w-96 text-lg'>
-				<q className='font-bold text-2xl'>{headline}</q>
+			<img src={profilePic} alt='profile' className='rounded-full size-[200px] sm:self-start sm:size-[280px] md:size-[20vw]' />
+			<div className='space-y-6 w-[75vw] sm:w-[80vw] md:w-[50vw] lg:text-lg'>
+				<q className='font-extrabold text-lg sm:text-xl md:text-2xl'>{headline}</q>
 				<p className='text-gray-500'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laudantium,
 					quo soluta omnis itaque porro? Vel fugiat dolorum atque fugit numquam deleniti
