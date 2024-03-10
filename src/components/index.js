@@ -1,4 +1,4 @@
-import CabinCard from "./CabinCard"
-import ReviewCard from "./ReviewCard"
+import CabinCard from "./ui/CabinCard"
+import ReviewCard from "./ui/ReviewCard"
 
 export { ReviewCard, CabinCard }

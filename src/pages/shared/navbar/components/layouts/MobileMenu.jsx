@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { BiCaretDown, BiCaretUp } from 'react-icons/bi'
-import PagesModal from './PagesModal'
-import { handleModalDisplay, handleMouseLeave, handleMouseOver } from '../../../../functions/navbar-functions'
+import PagesModal from '../PagesModal'
+import { handleHideModal, handleModalDisplay, handleShowModal } from '../../../../../utils'
 
 const MobileMenu = () => {
   return (
@@ -23,8 +23,8 @@ const MobileMenu = () => {
           id="pages-mobile"
           className='mt-2  transition-all duration-200 hover:text-red-500'
           onClick={() => handleModalDisplay()}
-          onMouseOver={() => handleMouseOver()}
-          onMouseLeave={() => handleMouseLeave()}
+          onMouseOver={() => handleShowModal()}
+          onMouseLeave={() => handleHideModal()}
         >
           Pages
           <button>

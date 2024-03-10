@@ -7,7 +7,7 @@ import {
 	OurUniqueness,
 	Recharge,
 	Reviews,
-} from "./scenes"
+} from "./components"
 
 const Home = () => {
 	return (

@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom"
 import { BiCart } from "react-icons/bi"
-import { handleMenuToggle } from "../../../functions/navbar-functions"
-import DesktopMenu from "./scenes/DesktopMenu"
-import MobileMenu from "./scenes/MobileMenu"
+import DesktopMenu from "./components/layouts/DesktopMenu"
+import MobileMenu from "./components/layouts/MobileMenu"
+import { handleToggleMenu } from "../../../utils"
 
 const Navbar = () => {
 	return (
@@ -24,7 +24,7 @@ const Navbar = () => {
 						<button
 							id='hamburger-btn'
 							className='group relative mt-2 w-8 space-y-3'
-							onClick={() => handleMenuToggle()}
+							onClick={() => handleToggleMenu()}
 						>
 							<span
 								id='top-line'

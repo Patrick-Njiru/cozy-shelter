@@ -1,4 +1,4 @@
-export const handleScroll = (direction, section) => {
+const handleSlide = (direction, section) => {
 	const container1 = document.getElementById("scroll-container"),
 		container2 = document.getElementById("scroll-container-2")
 
@@ -17,9 +17,9 @@ export const handleScroll = (direction, section) => {
 	if (section == "reviews") {
 		if (window.innerWidth >= 768) {
 			return direction == "left"
-				? (container2.scrollLeft -= (window.innerWidth * 65) / 100)
-				: (container2.scrollLeft += (window.innerWidth * 65) / 100)
-		} else if (window.innerWidth >= 640) {
+				? (container2.scrollLeft -= (window.innerWidth * 60) / 100)
+				: (container2.scrollLeft += (window.innerWidth * 60) / 100)
+		} else if (window.innerWidth >= 640 && window.innerWidth < 768) {
 			return direction == "left"
 				? (container2.scrollLeft -= (window.innerWidth * 90) / 100)
 				: (container2.scrollLeft += (window.innerWidth * 90) / 100)
@@ -29,3 +29,5 @@ export const handleScroll = (direction, section) => {
 			: (container2.scrollLeft += (window.innerWidth * 85) / 100)
 	}
 }
+
+export default handleSlide

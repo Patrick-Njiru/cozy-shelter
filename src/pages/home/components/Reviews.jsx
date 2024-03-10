@@ -1,14 +1,16 @@
 import PropTypes from "prop-types"
-import { handleScroll } from "../../../functions/handleScroll"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import { NavLink } from "react-router-dom"
 import { ReviewCard } from "../../../components"
+import { handleSlide } from "../../../utils"
 
 const Reviews = ({ reviews }) => {
 	return (
 		<section className='mt-40 sm:mt-52'>
 			<div className='px-6 mx-auto space-y-6 mb-8 sm:px-10 md:px-16 lg:w-3/5'>
-				<h1 className='text-center font-black text-3xl sm:text-4xl md:text-5xl'>What out past clients say</h1>
+				<h1 className='text-center font-black text-3xl sm:text-4xl md:text-5xl'>
+					What out past clients say
+				</h1>
 				<p className='text-gray-500 text-center font-medium'>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ab voluptas
 					deleniti distinctio placeat temporibus!
@@ -26,14 +28,14 @@ const Reviews = ({ reviews }) => {
 				<button
 					to='/book'
 					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl w-fit rounded-full hover:bg-red-600 hover:p-4'
-					onClick={() => handleScroll("left", "reviews")}
+					onClick={() => handleSlide("left", "reviews")}
 				>
 					<BsArrowLeft />
 				</button>
 				<button
 					to='/book'
 					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl font-medium w-fit rounded-full hover:bg-red-600 hover:p-4'
-					onClick={() => handleScroll("right", "reviews")}
+					onClick={() => handleSlide("right", "reviews")}
 				>
 					<BsArrowRight />
 				</button>
