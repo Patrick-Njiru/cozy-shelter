@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { redBg } from "../../../data/home-data"
+import { redBg } from "../../../data/home"
 
 const Recharge = () => {
   return (

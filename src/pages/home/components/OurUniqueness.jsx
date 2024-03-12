@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom"
 
 const OurUniqueness = ({ uniqueness }) => {
 	return (
-		<section className='mt-12 bg-neutral-50 sm:mt-28'>
-			<div className='px-6 py-12 flex  space-y-6 flex-col-reverse items-center sm:py-28 sm:px-10 md:px-16 lg:space-x-10 lg:space-y-0 lg:flex-row'>
+		<section className='mt-20 py-20 px-6 bg-neutral-50 sm:py-40 sm:px-10 sm:mt-40 md:px-16'>
+			<div className='flex space-y-6 flex-col-reverse items-center lg:space-x-10 lg:space-y-0 lg:flex-row'>
 				<div className='mt-8 w-full flex space-x-4 lg:mt-0 lg:w-[50vw]'>
 					<div className='flex flex-col space-y-4 w-1/2'>
 						<img src={uniqueness[0]} alt='cabin' className='rounded-2xl lg:h-[53vh]' />

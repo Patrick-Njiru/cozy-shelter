@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { homeBg } from "../../../data/home-data"
+import { homeBg } from "../../../data/home"
 
 const Hero = () => {
 	return (

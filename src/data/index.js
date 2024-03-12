@@ -1,5 +1,6 @@
 // import footerImages from "./footer-images"
-import homeData from "./home-data"
-import footerImages from "./footer-data"
+import homeData from "./home"
+import footerImages from "./footer"
+import aboutData from "./about"
 
-export { homeData, footerImages }
+export { homeData, footerImages, aboutData }
