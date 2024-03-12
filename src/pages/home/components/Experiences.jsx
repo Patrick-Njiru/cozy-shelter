@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import { NavLink } from "react-router-dom"
+import { FeaturesShortDescription } from "../../../components"
 
 const Experiences = ({ experiences }) => {
 	return (
@@ -14,17 +15,7 @@ const Experiences = ({ experiences }) => {
 				</p>
 			</div>
 			<div className='flex flex-wrap justify-evenly items-center mt-6'>
-				{experiences.map((experience) => (
-					<div key={experience.id} className='flex my-10 me-3 space-x-6 sm:w-[18rem] md:w-[19rem] lg:w-80 xl:w-fit'>
-						<img src={experience.img} alt='' className='size-16 sm:size-20 md:size-24' />
-						<div className='space-y-3'>
-							<h1 className='text-xl font-semibold sm:text-2xl md:text-3xl'>{experience.title}</h1>
-							<p className='text-gray-500'>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							</p>
-						</div>
-					</div>
-				))}
+				<FeaturesShortDescription features={experiences} page='home' />
 				<div className='flex justify-center flex-wrap space-x-4 mt-10'>
 					<NavLink
 						to='/rooms'

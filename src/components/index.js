@@ -1,4 +1,4 @@
-import CabinCard from "./ui/CabinCard"
-import ReviewCard from "./ui/ReviewCard"
+import FeaturesShortDescription from "./FeaturesShortDescription"
+import Heading from "./Heading"
 
-export { ReviewCard, CabinCard }
+export { Heading, FeaturesShortDescription }
