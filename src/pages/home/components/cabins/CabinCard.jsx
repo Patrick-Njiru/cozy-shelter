@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom"
 import { BiBed } from "react-icons/bi"
 import { BsPerson } from "react-icons/bs"
 
-const CabinCard = ({ title, img }) => {
+const CabinCard = ({ img, title, description, price, rooms }) => {
 	const [isHovered, setisHovered] = useState(false)
 	const navigate = useNavigate()
 
@@ -19,30 +19,28 @@ const CabinCard = ({ title, img }) => {
 		>
 			<div
 				id='product-card-bg'
-				className='product-card-bg transition-all duration-1000 delay-0 ease-in-out ease-in-out h-60 rounded-t-xl'
+				className='product-card-bg transition-all duration-300 delay-0 ease-in-out h-60 rounded-t-xl'
 				style={{
 					background: `url(${img}) no-repeat`,
 					backgroundPosition: "bottom center",
-					backgroundSize: `${isHovered ? "105% 105%" : "100% 100%"}`,
+					backgroundSize: `${isHovered ? "110% 110%" : "100% 100%"}`,
 				}}
 			></div>
 			<div className='space-y-5 p-6'>
-				<h1 className='font-bold text-2xl'> {title}</h1>
-				<p className='text-gray-400'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				</p>
+				<h1 className='font-bold text-2xl group-hover:text-red-500'> {title}</h1>
+				<p className='text-gray-400'>{description}</p>
 				<div className='flex items-center space-x-4'>
 					<p className='rounded-full border p-2'>
-						<BsPerson className='inline me-1 text-xl' /> 4 guests
+						<BsPerson className='inline me-1 text-xl' /> {rooms.guests}
 					</p>
 					<p className='rounded-full border p-2'>
-						<BiBed className='inline me-1 text-xl' /> 2 Bedrooms
+						<BiBed className='inline me-1 text-xl' /> {rooms.bedrooms}
 					</p>
 				</div>
 				<span className='block w-full bg-slate-200 h-0.5'></span>
 				<div className='pt-3 flex justify-between items-center'>
 					<p>
-						<span className='text-2xl font-bold'>$150</span>
+						<span className='text-2xl font-bold'>${price}</span>
 						<span className='text-gray-500 font-light text-lg'>/night</span>
 					</p>
 					<NavLink
@@ -60,6 +58,11 @@ const CabinCard = ({ title, img }) => {
 CabinCard.propTypes = {
 	title: PropTypes.string.isRequired,
 	img: PropTypes.any.isRequired,
+	description: PropTypes.string,
+	price: PropTypes.number.isRequired,
+	rooms: PropTypes.object.isRequired,
 }
+
+CabinCard.defaultProps = { description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." }
 
 export default CabinCard

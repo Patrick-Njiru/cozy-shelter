@@ -1,59 +1,89 @@
-import different1 from "../assets/home/different1.jpeg"
-import different2 from "../assets/home/different2.jpeg"
-import different3 from "../assets/home/different3.jpeg"
-import different4 from "../assets/home/different4.jpeg"
+import uniqueness1 from "../assets/home/uniqueness-1.webp"
+import uniqueness2 from "../assets/home/uniqueness-2.webp"
+import uniqueness3 from "../assets/home/uniqueness-3.webp"
+import uniqueness4 from "../assets/home/uniqueness-4.webp"
 import duoRrusticCcabin from "../assets/home/duo-rustic-cabin.webp"
-import duplexCrusticCcabin from "../assets/home/duplex-rustic-cabin.jpg"
+import duplexCrusticCcabin from "../assets/home/duplex-rustic-cabin.webp"
 import familyDuoRusticCabin from "../assets/home/family-duo-rustic-cabin.webp"
 import familyRusticCabin from "../assets/home/family-rustic-cabin.webp"
-import fishing from "../assets/home/fishing.png"
-import gameRoom from "../assets/home/game-room.png"
-import hiking from "../assets/home/hiking.jpeg"
+import fishing from "../assets/home/fishing.webp"
+import gameRoom from "../assets/home/game-room.webp"
+import hiking from "../assets/home/hiking.webp"
 import homeBg from "../assets/home/home-bg.webp"
-import kayaks from "../assets/home/kayaks.jpeg"
-import lakePaddling from "../assets/home/lake-paddling.png"
+import kayaks from "../assets/home/kayaks.webp"
+import lakePaddling from "../assets/home/lake-paddling.webp"
 import microRusticCabin from "../assets/home/micro-rustic-cabin.webp"
-import mountainBiking from "../assets/home/mountain-biking.jpeg"
-import hotTub from "../assets/home/outdoor-hot-tub.png"
-import picnic from "../assets/home/outdoor-picnic.png"
+import mountainBiking from "../assets/home/mountain-biking.webp"
+import hotTub from "../assets/home/outdoor-hot-tub.webp"
+import picnic from "../assets/home/outdoor-picnic.webp"
 import redBg from "../assets/home/red-bg.webp"
-import reviewer1 from "../assets/home/review1.jpeg"
-import reviewer2 from "../assets/home/review2.jpeg"
-import reviewer3 from "../assets/home/review3.jpeg"
+import reviewer1 from "../assets/home/review-1.webp"
+import reviewer2 from "../assets/home/review-2.webp"
+import reviewer3 from "../assets/home/review-3.webp"
 import singleRusticCabin from "../assets/home/single-rustic-cabin.webp"
-import woodFire from "../assets/home/wood-fire.png"
+import woodFire from "../assets/home/wood-fire.webp"
 
 const homeData = {
 	cabins: [
 		{
 			id: 1,
-			title: "Single Rustic Cabin",
 			img: singleRusticCabin,
+			title: "Single Rustic Cabin",
+			price: 99,
+			rooms: {
+				guests: '2 Guests',
+				bedrooms: '1 Bedroom',
+			},
 		},
 		{
 			id: 2,
-			title: "Duo Rustic Cabin",
 			img: duoRrusticCcabin,
+			title: "Duo Rustic Cabin",
+			price: 129,
+			rooms: {
+				guests: '4 Guests',
+				bedrooms: '2 Bedrooms',
+			},
 		},
 		{
 			id: 3,
-			title: "Duplex Rustic Cabin",
 			img: duplexCrusticCcabin,
+			title: "Duplex Rustic Cabin",
+			price: 150,
+			rooms: {
+				guests: '4 Guests',
+				bedrooms: '2 Bedrooms',
+			},
 		},
 		{
 			id: 4,
-			title: "Family Rustic Cabin",
 			img: familyRusticCabin,
+			title: "Family Rustic Cabin",
+			price: 399,
+			rooms: {
+				guests: '8 Guests',
+				bedrooms: '4 Bedrooms',
+			},
 		},
 		{
 			id: 5,
-			title: "Micro Rustic Cabin",
 			img: microRusticCabin,
+			title: "Micro Rustic Cabin",
+			price: 79,
+			rooms: {
+				guests: '1 Guest',
+				bedrooms: '1 Bedroom',
+			},
 		},
 		{
 			id: 6,
-			title: "Family Duo Rustic Cabin",
 			img: familyDuoRusticCabin,
+			title: "Family Duo Rustic Cabin",
+			price: 499,
+			rooms: {
+				guests: '8 Guests',
+				bedrooms: '4 Bedrooms',
+			},
 		},
 	],
 	experiences: [
@@ -105,21 +135,21 @@ const homeData = {
 			img: mountainBiking,
 		},
 	],
-	uniqueness: [different1, different2, different3, different4],
+	uniqueness: [uniqueness1, uniqueness2, uniqueness3, uniqueness4],
 	reviews: [
 		{
 			id: 1,
 			user: "Sophie Moore",
 			profilePic: reviewer1,
-			location: "Los Angeles, CA",
-			headline: "The best experience we ever had",
+			location: "Los Angeles, GA",
+			headline: "The Best experience we ever had",
 		},
 		{
 			id: 2,
 			user: "Karen Cutts",
 			profilePic: reviewer2,
-			location: "Washington DC",
-			headline: "The best weekend of my life",
+			location: "Washington GC",
+			headline: "The Best weekend of my life",
 		},
 		{
 			id: 3,

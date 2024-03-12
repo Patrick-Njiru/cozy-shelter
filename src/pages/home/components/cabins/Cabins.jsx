@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import { NavLink } from "react-router-dom"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
-import { CabinCard } from "../../../components"
-import { handleSlide } from "../../../utils"
+import CabinCard from "./CabinCard"
+import { handleSlide } from "../../../../utils"
 
 const Cabins = ({ cabins }) => {
 	return (
@@ -36,7 +36,7 @@ const Cabins = ({ cabins }) => {
 				<button
 					type="button"
 					id='cabin-scroll-right'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 hover:text-xl sm:hover:text-2xl sm:text-3xl'
+					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 sm:text-3xl'
 					onClick={() => handleSlide("right", "cabins")}
 				>
 					<BsArrowRight />

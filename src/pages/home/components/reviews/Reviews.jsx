@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import { NavLink } from "react-router-dom"
-import { ReviewCard } from "../../../components"
-import { handleSlide } from "../../../utils"
+import ReviewCard from "./ReviewCard"
+import { handleSlide } from "../../../../utils"
 
 const Reviews = ({ reviews }) => {
 	return (
@@ -28,7 +28,7 @@ const Reviews = ({ reviews }) => {
 				<button
 					type="button"
 					to='/book'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl w-fit rounded-full hover:bg-red-600 hover:p-4'
+					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl w-fit rounded-full hover:bg-red-600'
 					onClick={() => handleSlide("left", "reviews")}
 				>
 					<BsArrowLeft />
@@ -36,7 +36,7 @@ const Reviews = ({ reviews }) => {
 				<button
 					type="button"
 					to='/book'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl font-medium w-fit rounded-full hover:bg-red-600 hover:p-4'
+					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl font-medium w-fit rounded-full hover:bg-red-600'
 					onClick={() => handleSlide("right", "reviews")}
 				>
 					<BsArrowRight />
