@@ -16,6 +16,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+* {
+	scroll-behavior: smooth;
+}
+
 /* Navbar */
 #hamburger-btn.open {
 	animation: pulse 1s infinite alternate;

@@ -1,5 +1,11 @@
 import { NavLink } from "react-router-dom"
-import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube } from "react-icons/bi"
+import {
+	BiChevronUpCircle,
+	BiLogoFacebook,
+	BiLogoInstagram,
+	BiLogoTwitter,
+	BiLogoYoutube,
+} from "react-icons/bi"
 import footerImages from "../../../data/footer"
 import InstagramImage from "./InstagramImage"
 
@@ -122,6 +128,9 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
+			<a href='#' className='fixed bottom-5 end-4 z-40 rounded-full p-0 m-0'>
+				<BiChevronUpCircle className='transition duration-200 text-red-500 hover:text-red-600 text-4xl' />
+			</a>
 		</footer>
 	)
 }
