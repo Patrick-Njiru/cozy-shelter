@@ -9,13 +9,14 @@ const Navbar = () => {
 		<header className='relative top-7 z-10 start-0 end-0'>
 			<nav className='bg-white border shadow rounded-full w-11/12 mx-auto py-5 px-5 xl:ps-8'>
 				<div className='flex justify-between items-center'>
-					<NavLink to='/' className='flex space-x-3'>
-						<img src='icon.jpg' alt='logo' className='h-8 hidden sm:block' />
-						<h1 className='font-black text-xl md:text-3xl'>
-							<span className=''>Cozy</span>
+					<NavLink
+            to='/' className='group flex space-x-3 hover:opacity-90'>
+						<img src='icon.jpg' alt='logo' className='transition-all duration-300 ease-in-out h-8 group-hover:h-[1.95rem] hidden sm:block' />
+						<h1 className='transition-all duration-300 ease-in-out font-black text-xl group-hover:font-bold sm:text-2xl md:text-3xl'>
+							<span>Cozy</span>
 							<span className='text-red-800'>Shelter</span>
 						</h1>
-					</NavLink>
+          </NavLink>
 					{/* Desktop Menu */}
 					<DesktopMenu />
 
@@ -38,10 +39,10 @@ const Navbar = () => {
 						</button>
 						<NavLink
 							to='/cart'
-							className='group relative transition-all duration-200 hover:text-gray-500'
+							className='group relative transition-all duration-300 hover:text-gray-500'
 						>
 							<img src={booked} alt="cart" className='hover:opacity-70' />
-							<sub className='absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
+							<sub className='transition-all duration-300 absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
 								0
 							</sub>
 						</NavLink>

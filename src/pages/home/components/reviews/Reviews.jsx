@@ -6,7 +6,7 @@ import { handleSlide } from "../../../../utils"
 
 const Reviews = ({ reviews }) => {
 	return (
-		<section className='mt-40 sm:mt-52'>
+		<section className='mt-40 mb-20 sm:mt-52 sm:mb-24'>
 			<div className='px-6 mx-auto space-y-6 mb-8 sm:px-10 md:px-16 lg:w-3/5'>
 				<h1 className='text-center font-black text-3xl sm:text-4xl md:text-5xl'>
 					What out past clients say
