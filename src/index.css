@@ -64,3 +64,28 @@
 #scroll-container-2::-webkit-scrollbar {
 	display: none;
 }
+
+/* About */
+.about-hero-btn {
+	animation: chevron-slide-vertical 1.5s ease-out infinite;
+}
+
+@keyframes chevron-slide-vertical {
+	0% {
+		transform: none;
+	}
+	20% {
+		transform: translateY(36px);
+		opacity: 0;
+	}
+	30% {
+		transform: translateY(-36px);
+		opacity: 0;
+	}
+	90% {
+		transform: none;
+	}
+	100% {
+		transform: none;
+	}
+}
