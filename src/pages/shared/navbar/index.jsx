@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom"
-import { BiCart } from "react-icons/bi"
 import DesktopMenu from "./components/layouts/DesktopMenu"
 import MobileMenu from "./components/layouts/MobileMenu"
 import { handleToggleMenu } from "../../../utils"
+import booked from '../../../assets/booked-icon.svg'
 
 const Navbar = () => {
 	return (
@@ -38,10 +38,10 @@ const Navbar = () => {
 						</button>
 						<NavLink
 							to='/cart'
-							className='transition-all duration-200 hover:text-gray-500'
+							className='group relative transition-all duration-200 hover:text-gray-500'
 						>
-							<BiCart className='group relative text-4xl' />
-							<sub className='absolute bottom-6 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
+							<img src={booked} alt="cart" className='hover:opacity-70' />
+							<sub className='absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
 								0
 							</sub>
 						</NavLink>
