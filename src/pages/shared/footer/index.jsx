@@ -1,11 +1,9 @@
 import { NavLink } from "react-router-dom"
 import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube } from "react-icons/bi"
-import footerImages from "../../data/footer"
-import { useState } from "react"
+import footerImages from "../../../data/footer"
+import InstagramImage from "./InstagramImage"
 
 const Footer = () => {
-	const [isHovered, setIsHovered] = useState(false)
-
 	return (
 		<footer className='border-t py-24 px-6 sm:px-10 md:px-16'>
 			<div className='flex flex-col space-y-12 md:space-y-0 md:justify-between md:flex-row md:flex-wrap'>
@@ -119,24 +117,7 @@ const Footer = () => {
 					</h4>
 					<div className='flex flex-wrap justify-between'>
 						{footerImages.map((image, index) => (
-							<a
-								key={index}
-								href='https://www.instagram.com'
-								target="_blank"
-								className='group w-[30%] m-[1%]'
-								onMouseOver={() => setIsHovered(true)}
-								onMouseLeave={() => setIsHovered(false)}
-							>
-								<div
-									className='transition-all duration-600 ease-in-out rounded-xl p-0 m-0'
-									style={{
-										background: `url(${image}) no-repeat`,
-										backgroundSize: `${isHovered ? "110% 110%" : "100% 100%"}`,
-									}}
-								>
-									<img src={image} alt="instagram image" className="transition-all duration-600 ease-in-out w-full rounded-xl group-hover:opacity-0" />
-								</div>
-							</a>
+							<InstagramImage key={index} image={image} />
 						))}
 					</div>
 				</div>
