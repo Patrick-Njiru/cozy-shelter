@@ -16,13 +16,13 @@ const Footer = () => {
 		<footer className='border-t py-24 px-6 sm:px-10 md:px-16'>
 			<div className='flex flex-col space-y-12 md:space-y-0 md:justify-between md:flex-row md:flex-wrap'>
 				<div className='mb-8 lg:my-0 lg:w-[30%]'>
-					<NavLink to='/' className='group flex space-x-3 hover:opacity-90'>
+					<NavLink to='/' className='transition-all duration-300 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'>
 						<img
 							src='icon.jpg'
 							alt='logo'
-							className='transition-all duration-300 ease-in-out h-8 group-hover:h-[1.95rem]'
+							className='transition-all duration-300 ease-in-out h-8'
 						/>
-						<h1 className='transition-all duration-300 ease-in-out font-black text-xl group-hover:font-bold sm:text-2xl md:text-3xl'>
+						<h1 className='font-black text-xl group-hover:scale-95 sm:text-2xl md:text-3xl'>
 							<span>Cozy</span>
 							<span className='text-red-800'>Shelter</span>
 						</h1>
@@ -105,16 +105,16 @@ const Footer = () => {
 								Business Travel
 							</NavLink>
 							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
+								FAQs
+							</NavLink>
+							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
 								Trust and Safety
 							</NavLink>
 							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
-								Terms
+								Terms and Conditions
 							</NavLink>
 							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
-								Privacy
-							</NavLink>
-							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
-								Trust & Safety
+								Privacy Policy
 							</NavLink>
 						</div>
 					</div>

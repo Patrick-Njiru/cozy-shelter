@@ -3,8 +3,11 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import { NavLink } from "react-router-dom"
 import ReviewCard from "./ReviewCard"
 import { handleSlide } from "../../../../utils"
+import { useState } from "react"
 
 const Reviews = ({ reviews }) => {
+	const [leftClicks, setLeftClicks] = useState(2)
+	const [rightClicks, setRightClicks] = useState(0)
 	return (
 		<section className='mt-40 mb-20 sm:mt-52 sm:mb-24'>
 			<div className='px-6 mx-auto space-y-6 mb-8 sm:px-10 md:px-16 lg:w-3/5'>
@@ -26,18 +29,28 @@ const Reviews = ({ reviews }) => {
 			</div>
 			<div className='relative w-full px-6 top-[-400px] lg:-top-72 flex justify-between sm:px-10 md:px-16'>
 				<button
-					type="button"
+					type='button'
 					to='/book'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl w-fit rounded-full hover:bg-red-600'
-					onClick={() => handleSlide("left", "reviews")}
+					className={
+						leftClicks == 2
+							? "invisible "
+							: "" +
+							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl w-fit rounded-full hover:bg-red-600"
+					}
+					onClick={() => handleSlide("left", "reviews", setLeftClicks, setRightClicks)}
 				>
 					<BsArrowLeft />
 				</button>
 				<button
-					type="button"
+					type='button'
 					to='/book'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl font-medium w-fit rounded-full hover:bg-red-600'
-					onClick={() => handleSlide("right", "reviews")}
+					className={
+						rightClicks == 2
+							? "invisible "
+							: "" +
+							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl font-medium w-fit rounded-full hover:bg-red-600"
+					}
+					onClick={() => handleSlide("right", "reviews", setRightClicks, setLeftClicks)}
 				>
 					<BsArrowRight />
 				</button>

@@ -3,8 +3,12 @@ import { NavLink } from "react-router-dom"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import CabinCard from "./CabinCard"
 import { handleSlide } from "../../../../utils"
+import { useState } from "react"
 
 const Cabins = ({ cabins }) => {
+	const [leftClicks, setLeftClicks] = useState(6)
+	const [rightClicks, setRightClicks] = useState(0)
+
 	return (
 		<section className='mt-16 sm:mt-28'>
 			<div className='flex flex-col space-y-6 justify-between flex-wrap px-6 sm:px-10 sm:flex-row sm:space-y-0 sm:space-x-6 sm:items-center md:px-16'>
@@ -26,18 +30,28 @@ const Cabins = ({ cabins }) => {
 			</div>
 			<div className='relative px-5 w-full flex justify-between top-[-370px] sm:px-9 md:px-12'>
 				<button
-					type="button"
+					type='button'
 					id='cabin-scroll-left'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 sm:text-3xl'
-					onClick={() => handleSlide("left", "cabins")}
+					className={
+						leftClicks == 6
+							? "invisible "
+							: "" +
+							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 sm:text-3xl"
+					}
+					onClick={() => handleSlide("left", "cabins", setLeftClicks, setRightClicks)}
 				>
 					<BsArrowLeft />
 				</button>
 				<button
-					type="button"
+					type='button'
 					id='cabin-scroll-right'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 sm:text-3xl'
-					onClick={() => handleSlide("right", "cabins")}
+					className={
+						rightClicks == 6
+							? "invisible "
+							: "" +
+							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 sm:text-3xl"
+					}
+					onClick={() => handleSlide("right", "cabins", setRightClicks, setLeftClicks)}
 				>
 					<BsArrowRight />
 				</button>
