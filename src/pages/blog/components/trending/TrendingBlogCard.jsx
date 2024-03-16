@@ -16,9 +16,9 @@ const TrendingBlogCard = ({ img, details }) => {
 			<div className='relative md:w-1/2 lg:w-[49%]'>
 				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />
 				<div
-					className='rounded-2xl absolute start-0 end-0 top-0 bottom-0 bg-red-400 transition-all duration-600 ease-linear'
+					className='transition-all duration-600 ease-linear rounded-2xl absolute start-0 end-0 top-0 bottom-0 bg-red-400'
 					style={{
-						background: `url(${img}) no-repeat`,
+						background: `rgba(0,0,0,0.4) url(${img}) no-repeat`,
 						backgroundSize: isHovered ? "110% 110%" : "100% 100%",
 						backgroundPosition: "center",
 					}}

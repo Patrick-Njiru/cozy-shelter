@@ -8,7 +8,7 @@ const Video = () => {
 				Explore our experience
 			</h1>
 			<Heading title="Watch how's a day at one of our resorts" description='' />
-			<img src={videoImg} alt='' className='rounded-3xl size-full mt-12' />
+			<img src={videoImg} alt='resort video' className='rounded-3xl size-full mt-12' />
 		</section>
 	)
 }

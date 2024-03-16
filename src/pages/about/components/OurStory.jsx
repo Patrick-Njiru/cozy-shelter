@@ -37,16 +37,16 @@ const OurStory = ({pics}) => {
 					<div className='flex justify-between'>
 						<img
 							src={pics[1]}
-							alt='our-story-1'
+							alt='our-story-2'
 							className='w-[48%] rounded-xl'
 						/>
 						<img
 							src={pics[2]}
-							alt='our-story-1'
+							alt='our-story-3'
 							className='w-[48%] rounded-xl'
 						/>
 					</div>
-					<img src={pics[3]} alt='our-story-1' className='rounded-xl' />
+					<img src={pics[3]} alt='our-story-4' className='rounded-xl' />
 				</div>
 			</div>
 		</section>

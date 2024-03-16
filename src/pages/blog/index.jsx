@@ -1,19 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Hero, Trending } from './components'
+import { Hero, Latest, Subscribe, Trending } from './components'
 import blogsData from '../../data/blog'
 
-const Blogs = props => {
+const Blogs = () => {
   return (
     <div>
       {/* Hero */}
       <Hero />
       {/* Top Blogs and Resources */}
       <Trending trending={blogsData.trending} />
+      {/* Subscribe */}
+      <Subscribe />
+      {/* Latest Posts */}
+      <Latest latestPosts={blogsData.latestPosts} />
     </div>
   )
 }
-
-Blogs.propTypes = {}
 
 export default Blogs
