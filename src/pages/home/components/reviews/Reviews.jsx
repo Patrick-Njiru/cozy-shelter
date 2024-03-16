@@ -14,7 +14,7 @@ const Reviews = ({ reviews }) => {
 				<h1 className='text-center font-black text-3xl sm:text-4xl md:text-5xl'>
 					What out past clients say
 				</h1>
-				<p className='text-gray-500 text-center font-medium'>
+				<p className='text-gray-600 text-center font-medium'>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ab voluptas
 					deleniti distinctio placeat temporibus!
 				</p>

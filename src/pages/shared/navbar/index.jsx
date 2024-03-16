@@ -41,7 +41,7 @@ const Navbar = () => {
 						</button>
 						<NavLink
 							to='/cart'
-							className='group relative transition-all duration-300 hover:text-gray-500'
+							className='group relative transition-all duration-300 hover:text-gray-600'
 						>
 							<img src={booked} alt='cart' className='hover:opacity-70' />
 							<sub className='transition-all duration-300 absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>

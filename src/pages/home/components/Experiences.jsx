@@ -9,7 +9,7 @@ const Experiences = ({ experiences }) => {
 				<h1 className='text-center text-3xl font-black sm:text-4xl md:text-5xl'>
 					Come and Enjoy a one of a kind experience
 				</h1>
-				<p className='text-gray-500 text-center'>
+				<p className='text-gray-600 text-center'>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ab voluptas
 					deleniti distinctio placeat temporibus!
 				</p>

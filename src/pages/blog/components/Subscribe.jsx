@@ -19,14 +19,13 @@ const Subscribe = () => {
 						<input
 							type='text'
 							placeholder='Email address'
-							className='transition-all duration-500 ease-in-out w-full h-[86px] ps-7 outline-none rounded-full text-gray-500 hover:scale-[99.5%]'
+							className='transition-all duration-500 ease-in-out w-full h-[86px] ps-7 outline-none rounded-full text-gray-600 hover:scale-[99.5%]'
 						/>
-						<NavLink
-							to='/rooms'
+						<button
 							className='transition-all duration-500 ease-in-out absolute inline bg-rose-500 text-white px-7 py-4 text-lg font-semibold w-fit rounded-full end-[0.5rem] top-1 border shadow-md hover:bg-rose-600 hover:top-0 sm:px-10 sm:py-6'
 						>
 							Subscribe
-						</NavLink>
+						</button>
 					</div>
 				</div>
 			</div>

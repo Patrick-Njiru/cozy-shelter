@@ -42,7 +42,7 @@ const Latest = ({ latestPosts }) => {
 
 			<div className='my-12 mb-32 sm:mb-32px md:mb-48 text-center'>
 				<NavLink
-					to='/rooms'
+					// to='/blog'
 					className='transition-all duration-500 ease-in-out relative inline bg-red-500 text-white px-7 py-4 text-lg font-semibold w-fit rounded-full end-[0.5rem] top-1 border shadow-md hover:bg-red-600 hover:top-0 sm:px-10 sm:py-6'
 				>
 					More

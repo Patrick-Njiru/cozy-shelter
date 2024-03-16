@@ -41,7 +41,7 @@ const CabinCard = ({ img, title, description, price, rooms }) => {
 				<div className='pt-3 flex justify-between items-center'>
 					<p>
 						<span className='text-2xl font-bold'>${price}</span>
-						<span className='text-gray-500 font-light text-lg'>/night</span>
+						<span className='text-gray-600 font-light text-lg'>/night</span>
 					</p>
 					<NavLink
 						to='/book'

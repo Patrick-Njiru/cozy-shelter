@@ -16,7 +16,10 @@ const Footer = () => {
 		<footer className='border-t py-24 px-6 sm:px-10 md:px-16'>
 			<div className='flex flex-col space-y-12 md:space-y-0 md:justify-between md:flex-row md:flex-wrap'>
 				<div className='mb-8 lg:my-0 lg:w-[30%]'>
-					<NavLink to='/' className='transition-all duration-300 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'>
+					<NavLink
+						to='/'
+						className='transition-all duration-300 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'
+					>
 						<img
 							src='icon.jpg'
 							alt='logo'
@@ -27,7 +30,7 @@ const Footer = () => {
 							<span className='text-red-800'>Shelter</span>
 						</h1>
 					</NavLink>
-					<p className='text-gray-500 mt-6 mb-10'>
+					<p className='text-gray-600 mt-6 mb-10'>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
 						repudiandae dolorem.
 					</p>
@@ -41,7 +44,7 @@ const Footer = () => {
 				<div className='flex flex-col space-y-12 sm:space-x-4 sm:justify-between sm:space-y-0 sm:flex-row md:w-2/3 lg:w-[35%]'>
 					<div className='space-y-6'>
 						<h4 className='font-bold text-lg sm:text-xl md:text-2xl'>Pages</h4>
-						<div className='flex flex-col space-y-3 text-gray-500 text-lg'>
+						<div className='flex flex-col space-y-3 text-gray-600 text-lg'>
 							<NavLink
 								to='/'
 								className='transition-all duration-200 w-fit hover:text-red-500'
@@ -94,7 +97,7 @@ const Footer = () => {
 					</div>
 					<div className='space-y-6 w-1/2'>
 						<h4 className='font-bold text-lg sm:text-xl md:text-2xl'>Useful Links</h4>
-						<div className='flex flex-col space-y-3 text-gray-500 text-lg'>
+						<div className='flex flex-col space-y-3 text-gray-600 text-lg'>
 							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
 								Hospitality
 							</NavLink>

@@ -6,7 +6,7 @@ import { BiLocationPlus } from "react-icons/bi"
 
 const Locations = ({ locations }) => {
 	return (
-		<section id="locations" className='px-6 sm:px-10 md:px-16 md:mt-24'>
+		<section id='locations' className='px-6 sm:px-10 md:px-16 md:mt-24'>
 			<Heading title='Meet our locations' />
 			<div className='flex flex-col justify-between space-y-6 items-center lg:flex-row lg:space-x-4 lg:space-y-0'>
 				<div className='space-y-6'>
@@ -20,7 +20,7 @@ const Locations = ({ locations }) => {
 							</h1>
 							<div className='flex items-start space-x-4'>
 								<BiLocationPlus className='text-red-500 text-xl' />
-								<p className='text-gray-500'>{location.address}</p>
+								<p className='text-gray-600'>{location.address}</p>
 							</div>
 						</div>
 					))}

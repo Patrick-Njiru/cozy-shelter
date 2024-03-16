@@ -2,8 +2,7 @@ import { NavLink } from "react-router-dom"
 import { BiCaretDown, BiCaretUp } from "react-icons/bi"
 import PagesModal from "../PagesModal"
 import { handleHideModal, handleModalDisplay, handleShowModal } from "../../../../../utils"
-import booked from '../../../../../assets/booked-icon.svg'
-
+import booked from "../../../../../assets/booked-icon.svg"
 
 const DesktopMenu = () => {
 	return (
@@ -26,7 +25,7 @@ const DesktopMenu = () => {
 					onMouseLeave={() => handleHideModal()}
 				>
 					Pages
-					<button type='button' >
+					<button type='button'>
 						<BiCaretDown className='caret-down' />
 						<BiCaretUp className='caret-up' />
 					</button>
@@ -34,12 +33,12 @@ const DesktopMenu = () => {
 				</div>
 				<NavLink
 					to='/cart'
-					className='transition-all duration-200 group relative hover:text-gray-500'
-        >
-          <img src={booked} alt="cart" className='hover:opacity-70' />
-							<sub className='absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
-								0
-							</sub>
+					className='transition-all duration-200 group relative hover:text-gray-600'
+				>
+					<img src={booked} alt='cart' className='hover:opacity-70' />
+					<sub className='absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
+						0
+					</sub>
 				</NavLink>
 				<NavLink
 					to='/book'

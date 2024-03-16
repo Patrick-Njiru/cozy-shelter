@@ -23,7 +23,7 @@ const FeaturesShortDescription = ({ features, page }) => {
 						<h1 className='font-semibold text-xl sm:text-2xl md:text-3xl'>
 							{feature.title}
 						</h1>
-						<p className={"text-gray-500 " + dynamicStyles.p}>
+						<p className={"text-gray-600 " + dynamicStyles.p}>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
 							explicabo.
 						</p>

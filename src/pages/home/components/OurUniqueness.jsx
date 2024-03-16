@@ -7,19 +7,35 @@ const OurUniqueness = ({ uniqueness }) => {
 			<div className='flex space-y-6 flex-col-reverse items-center lg:space-x-10 lg:space-y-0 lg:flex-row'>
 				<div className='mt-8 w-full flex space-x-4 lg:mt-0 lg:w-[50vw]'>
 					<div className='flex flex-col space-y-4 w-1/2'>
-						<img src={uniqueness[0]} alt='what makes us different' className='rounded-2xl lg:h-[53vh]' />
-						<img src={uniqueness[2]} alt='what makes us different' className='rounded-2xl lg:h-[47vh]' />
+						<img
+							src={uniqueness[0]}
+							alt='what makes us different'
+							className='rounded-2xl lg:h-[53vh]'
+						/>
+						<img
+							src={uniqueness[2]}
+							alt='what makes us different'
+							className='rounded-2xl lg:h-[47vh]'
+						/>
 					</div>
 					<div className='flex flex-col space-y-4 w-1/2'>
-						<img src={uniqueness[1]} alt='what makes us different' className='rounded-2xl lg:h-[40vh]' />
-						<img src={uniqueness[3]} alt='what makes us different' className='rounded-2xl lg:h-[60vh]' />
+						<img
+							src={uniqueness[1]}
+							alt='what makes us different'
+							className='rounded-2xl lg:h-[40vh]'
+						/>
+						<img
+							src={uniqueness[3]}
+							alt='what makes us different'
+							className='rounded-2xl lg:h-[60vh]'
+						/>
 					</div>
 				</div>
 				<div className='space-y-6 lg:w-[40vw]'>
 					<h1 className='font-black text-3xl sm:text-4xl md:text-5xl'>
 						What makes us different?
 					</h1>
-					<p className='text-gray-500'>
+					<p className='text-gray-600'>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt
 						inventore quam reiciendis fugiat autem exercitationem, ab alias, nulla rerum
 						aperiam, ea mollitia veritatis sed.

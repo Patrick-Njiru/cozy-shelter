@@ -169,10 +169,3 @@
 		        transform: rotate(360deg);
 	}
 }
-
-
-/* blog post */
-/* background: rgb(237,38,217);
-background: -webkit-gradient(linear, left top, left bottom, from(rgba(237,38,217,0)), to(rgba(29,33,37,1)));
-background: -o-linear-gradient(top, rgba(237,38,217,0) 0%, rgba(29,33,37,1) 100%);
-background: linear-gradient(180deg, rgba(237,38,217,0) 0%, rgba(29,33,37,1) 100%); */

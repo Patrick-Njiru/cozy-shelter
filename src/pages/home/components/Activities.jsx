@@ -5,8 +5,10 @@ const Activities = ({ activities }) => {
 	return (
 		<section className='mt-40 px-6 sm:px-10 sm:mt-52 md:px-16'>
 			<div className='mx-auto space-y-6 mb-8 lg:w-3/5'>
-				<h1 className='text-center font-black text-3xl sm:text-4xl md:text-5xl'>Explore our activities</h1>
-				<p className='text-gray-500 text-center font-medium'>
+				<h1 className='text-center font-black text-3xl sm:text-4xl md:text-5xl'>
+					Explore our activities
+				</h1>
+				<p className='text-gray-600 text-center font-medium'>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ab voluptas
 					deleniti distinctio placeat temporibus!
 				</p>
@@ -23,7 +25,9 @@ const Activities = ({ activities }) => {
 					>
 						<div className='my-36 md:my-48'></div>
 						<div className='space-y-3 mb-10 px-8'>
-							<h1 className='font-extrabold text-2xl sm:text-3xl md:text-4xl'>{activity.title}</h1>
+							<h1 className='font-extrabold text-2xl sm:text-3xl md:text-4xl'>
+								{activity.title}
+							</h1>
 							<p className='font-boold'>
 								Sagittis, facilisis mauris sed vitae habitant dolor sit.
 							</p>
