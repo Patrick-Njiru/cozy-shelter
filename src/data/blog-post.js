@@ -1,6 +1,6 @@
-import glampingBg from "../assets/blog-post/glamping-bg.jpg"
-import glampingPost from "../assets/blog-post/glamping-post.webp"
-import emailIcon from "../assets/blog-post/email-icon.svg"
+import glampingBg from "../assets/blog/blog-post/glamping-bg.webp"
+import glampingPost from "../assets/blog/blog-post/glamping-post.webp"
+import emailIcon from "../assets/blog/blog-post/email-icon.svg"
 
 const blogPostData = {
 	glamping: {
