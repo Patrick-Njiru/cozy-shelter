@@ -1,4 +1,4 @@
 import Hero from "./Hero"
-import Trending from "./Trending"
+import Trending from "./trending/Trending"
 
 export { Hero, Trending }

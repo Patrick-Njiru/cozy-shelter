@@ -22,7 +22,7 @@
 
 /* Navbar */
 #hamburger-btn.open {
-	animation: pulse 1s infinite alternate;
+	animation: pulse 1s linear infinite alternate;
 }
 
 #hamburger-btn.open #top-line {
