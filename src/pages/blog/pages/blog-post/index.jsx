@@ -1,4 +1,4 @@
-import { Content, Hero, OtherPosts } from "./components"
+import { About, Hero, OtherPosts } from "./components"
 import { Subscribe } from "../../../../components"
 
 const BlogPost = () => {
@@ -7,7 +7,7 @@ const BlogPost = () => {
 			{/* Hero */}
 			<Hero />
 			{/* Main Content */}
-			<Content />
+			<About />
 			{/* Subscribe */}
 			<Subscribe />
 			{/* Latest Posts */}

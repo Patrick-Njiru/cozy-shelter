@@ -41,7 +41,7 @@ const DesktopMenu = () => {
 					</sub>
 				</NavLink>
 				<NavLink
-					to='/rooms-single'
+					to='/rooms/room-single'
 					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full relative top-0 hover:bg-red-600  hover:-top-1'
 				>
 					Book now

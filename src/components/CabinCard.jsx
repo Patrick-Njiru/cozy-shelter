@@ -16,7 +16,7 @@ const CabinCard = ({ img, title, description, price, rooms, page }) => {
 					: " transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer me-9 z-10 h-5/6 min-w-[300px] sm:min-w-96 hover:-top-4"
 			}
 			onClick={() => {
-				navigate("/rooms-single")
+				navigate("/rooms/room-single")
 			}}
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
@@ -63,7 +63,7 @@ const CabinCard = ({ img, title, description, price, rooms, page }) => {
 						<span className='text-gray-600 font-light text-lg'>/night</span>
 					</p>
 					<NavLink
-						to='/rooms-single'
+						to='/rooms/room-single'
 						className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full hover:bg-red-600  hover:-top-1'
 					>
 						Book now

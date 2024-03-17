@@ -14,7 +14,7 @@ const Trending = ({ trending }) => {
 					className='relative rounded-3xl cursor-pointer lg:w-[45%] lg:h-screen'
 					onMouseOver={() => setIsHovered(true)}
 					onMouseLeave={() => setIsHovered(false)}
-					onClick={() => navigate("/blog-post")}
+					onClick={() => navigate("/blog/blog-post")}
 				>
 					<img src={trending[0].img} alt='woodcabin' className='opacity-0 size-full' />
 
@@ -34,7 +34,9 @@ const Trending = ({ trending }) => {
 						<div className='flex h-4/5 items-end'>
 							<div className='text-white space-y-3'>
 								<p className='text-lg font-light'>{trending[0].details.date}</p>
-								<p className='font-bold text-xl sm:text-2xl'>{trending[0].details.title}</p>
+								<p className='font-bold text-xl sm:text-2xl'>
+									{trending[0].details.title}
+								</p>
 								<p className='text-lg font-light'>
 									{trending[0].details.description}
 								</p>

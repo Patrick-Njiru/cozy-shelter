@@ -10,7 +10,7 @@ const PostCard = ({ img, details }) => {
 		<div
 			className='transition-all duration-300 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]'
 			onClick={() => {
-				navigate("/blog-post")
+				navigate("/blog/blog-post")
 			}}
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}

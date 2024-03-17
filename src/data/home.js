@@ -22,7 +22,6 @@ import reviewer2 from "../assets/home/review-2.webp"
 import reviewer3 from "../assets/home/review-3.webp"
 import singleRusticCabin from "../assets/home/single-rustic-cabin.webp"
 import woodFire from "../assets/home/wood-fire.webp"
-import roomsBg from "../assets/home/rooms-bg.jpg"
 
 const homeData = {
 	cabins: [
@@ -162,5 +161,5 @@ const homeData = {
 	],
 }
 
-export { homeBg, redBg, roomsBg }
+export { homeBg, redBg }
 export default homeData

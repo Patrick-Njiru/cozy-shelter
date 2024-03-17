@@ -1,5 +1,5 @@
 import Hero from "./Hero"
 import OtherPosts from "./OtherPosts"
-import Content from "./main-content/Content"
+import About from "./about/About"
 
-export { Hero, Content, OtherPosts }
+export { Hero, About, OtherPosts }

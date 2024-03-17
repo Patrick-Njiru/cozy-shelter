@@ -1,7 +1,5 @@
 import { NavLink } from "react-router-dom"
 import {
-	BiChevronUp,
-	BiChevronUpCircle,
 	BiLogoFacebook,
 	BiLogoInstagram,
 	BiLogoTwitter,
@@ -10,6 +8,7 @@ import {
 } from "react-icons/bi"
 import footerImages from "../../../data/footer"
 import InstagramImage from "./InstagramImage"
+import { logo } from "../../../data"
 
 const Footer = () => {
 	return (
@@ -21,7 +20,7 @@ const Footer = () => {
 						className='transition-all duration-300 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'
 					>
 						<img
-							src='icon.jpg'
+							src={logo}
 							alt='logo'
 							className='transition-all duration-300 ease-in-out h-8'
 						/>
@@ -64,7 +63,7 @@ const Footer = () => {
 								Blog
 							</NavLink>
 							<NavLink
-								to='/blog-post'
+								to='/blog/blog-post'
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Blog Post
@@ -82,7 +81,7 @@ const Footer = () => {
 								Rooms
 							</NavLink>
 							<NavLink
-								to='/room-single'
+								to='/rooms/room-single'
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Room Single
@@ -135,7 +134,7 @@ const Footer = () => {
 			</div>
 			<a href='#' className='scroll-up fixed bottom-4 end-4 z-40 rounded-full p-2 group'>
 				<div className='absolute start-0 end-0 top-0 bottom-0 rotating-link border-red-600 border-4 border-dotted rounded-full'></div>
-				<BiUpArrowAlt className='transition duration-200 text-white bg-black rounded-full group-hover:text-red-600 text-4xl' />
+				<BiUpArrowAlt className='transition duration-200  text-4xl text-white bg-black rounded-full group-hover:text-red-600 group-hover:bg-transparent' />
 			</a>
 		</footer>
 	)

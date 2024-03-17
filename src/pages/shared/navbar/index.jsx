@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 import DesktopMenu from "./components/layouts/DesktopMenu"
 import MobileMenu from "./components/layouts/MobileMenu"
 import { handleToggleMenu } from "../../../utils"
-import booked from "../../../assets/booked-icon.svg"
+import { booked, logo } from "../../../data"
 
 const Navbar = () => {
 	return (
@@ -13,7 +13,7 @@ const Navbar = () => {
 						to='/'
 						className='transition-all duration-300 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'
 					>
-						<img src='icon.jpg' alt='logo' className='hidden h-8 sm:block' />
+						<img src={logo} alt='logo' className='hidden text-black h-8 sm:block' />
 						<h1 className='font-black text-xl sm:text-2xl md:text-3xl'>
 							<span>Cozy</span>
 							<span className='text-red-600'>Shelter</span>

@@ -18,7 +18,10 @@ const PagesModal = ({ view }) => {
 				<NavLink to='/blog' className='transition-all duration-200 hover:text-red-500'>
 					Blog
 				</NavLink>
-				<NavLink to='/blog-post' className='transition-all duration-200 hover:text-red-500'>
+				<NavLink
+					to='/blog/blog-post'
+					className='transition-all duration-200 hover:text-red-500'
+				>
 					Blog Post
 				</NavLink>
 				<NavLink to='/contact' className='transition-all duration-200 hover:text-red-500'>
@@ -28,7 +31,7 @@ const PagesModal = ({ view }) => {
 					Rooms
 				</NavLink>
 				<NavLink
-					to='/room-single'
+					to='/rooms/room-single'
 					className='transition-all duration-200 hover:text-red-500'
 				>
 					Room Single
@@ -58,7 +61,10 @@ const PagesModal = ({ view }) => {
 			<NavLink to='/blog' className='transition-all duration-200 hover:text-red-500'>
 				Blog
 			</NavLink>
-			<NavLink to='/blog-post' className='transition-all duration-200 hover:text-red-500'>
+			<NavLink
+				to='/blog/blog-post'
+				className='transition-all duration-200 hover:text-red-500'
+			>
 				Blog Post
 			</NavLink>
 			<NavLink to='/contact' className='transition-all duration-200 hover:text-red-500'>
@@ -67,7 +73,10 @@ const PagesModal = ({ view }) => {
 			<NavLink to='/rooms' className='transition-all duration-200 hover:text-red-500'>
 				Rooms
 			</NavLink>
-			<NavLink to='/rooms-single' className='transition-all duration-200 hover:text-red-500'>
+			<NavLink
+				to='/rooms/room-single'
+				className='transition-all duration-200 hover:text-red-500'
+			>
 				Room Single
 			</NavLink>
 			<NavLink

@@ -1,4 +1,4 @@
-import glampingBg from "../assets/blog/blog-post/glamping-bg.webp"
+import glampingBg from "../assets/blog/blog-post/glamping-bg2.webp"
 import glampingPost from "../assets/blog/blog-post/glamping-post.webp"
 import emailIcon from "../assets/blog/blog-post/email-icon.svg"
 
