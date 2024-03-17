@@ -20,13 +20,13 @@ const Subscribe = ({ purpose }) => {
 						<h1 className='font-black text-3xl sm:text-4xl md:text-5xl'>
 							Subscribe to our email newsletter for explorers!
 						</h1>
-						<div className='relative'>
+						<div className='relative flex flex-col items-center space-y-4 sm:space-y-0 sm:block'>
 							<input
 								type='text'
 								placeholder='Email address'
-								className='transition-all duration-500 ease-in-out w-full h-[86px] ps-7 outline-none rounded-full text-gray-600 hover:scale-[99.5%]'
+								className='transition-all duration-500 ease-in-out w-full ps-7 outline-none rounded-full text-gray-600 h-16 hover:scale-[99.5%] sm:h-[86px]'
 							/>
-							<button className='transition-all duration-500 ease-in-out absolute inline bg-rose-500 text-white px-7 py-4 text-lg font-semibold w-fit rounded-full end-[0.5rem] top-1 border shadow-md hover:bg-rose-600 hover:top-0 sm:px-10 sm:py-6'>
+							<button className='transition-all duration-500 ease-in-out relative bg-white text-rose-500 w-full inline px-7 py-4 text-lg font-semibold border rounded-full top-1 shadow-md hover:top-0 sm:absolute sm:bg-rose-500 sm:hover:bg-rose-600 sm:text-white sm:px-10 sm:py-6 sm:end-[0.5rem] sm:w-fit'>
 								Subscribe
 							</button>
 						</div>
