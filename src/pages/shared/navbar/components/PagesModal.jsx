@@ -6,7 +6,7 @@ const PagesModal = ({ view }) => {
 		return (
 			<div
 				id='modal-web'
-				className='hidden fixed flex-col p-6 bg-white text-black rounded-lg top-30 end-48 w-60 z-10 space-y-4'
+				className='hidden absolute flex-col p-6 bg-white text-black rounded-lg top-30 end-48 w-60 z-10 space-y-4'
 			>
 				<h1 className='font-bold'> Pages </h1>
 				<NavLink to='/' className='transition-all duration-200 hover:text-red-500'>
@@ -27,16 +27,22 @@ const PagesModal = ({ view }) => {
 				<NavLink to='/rooms' className='transition-all duration-200 hover:text-red-500'>
 					Rooms
 				</NavLink>
-				<NavLink to='/room-single' className='transition-all duration-200 hover:text-red-500'>
+				<NavLink
+					to='/room-single'
+					className='transition-all duration-200 hover:text-red-500'
+				>
 					Room Single
 				</NavLink>
-				<NavLink to='/rooms-category' className='transition-all duration-200 hover:text-red-500'>
+				<NavLink
+					to='/rooms-category'
+					className='transition-all duration-200 hover:text-red-500'
+				>
 					Rooms Category
 				</NavLink>
 			</div>
 		)
-  }
-  
+	}
+
 	return (
 		<div
 			id='modal-mobile'
@@ -64,13 +70,16 @@ const PagesModal = ({ view }) => {
 			<NavLink to='/rooms-single' className='transition-all duration-200 hover:text-red-500'>
 				Room Single
 			</NavLink>
-			<NavLink to='/rooms-category' className='transition-all duration-200 hover:text-red-500'>
+			<NavLink
+				to='/rooms-category'
+				className='transition-all duration-200 hover:text-red-500'
+			>
 				Rooms Category
 			</NavLink>
 		</div>
 	)
 }
 
-PagesModal.propTypes = { view: PropTypes.string.isRequired}
+PagesModal.propTypes = { view: PropTypes.string.isRequired }
 
 export default PagesModal

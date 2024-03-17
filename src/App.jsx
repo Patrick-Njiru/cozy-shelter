@@ -1,6 +1,16 @@
 import { createContext, useState } from "react"
 import { Route, Routes } from "react-router-dom"
-import { About, Blog, Footer, Home, Navbar, Error404, BlogPost, Rooms } from "./pages"
+import {
+	About,
+	Blog,
+	Footer,
+	Home,
+	Navbar,
+	Error404,
+	BlogPost,
+	Rooms,
+	RoomsCategory,
+} from "./pages"
 import blogPostData from "./data/blog-post"
 
 export const BlogContext = createContext()
@@ -21,7 +31,8 @@ const App = () => {
 			<Navbar />
 			<Routes>
 				<Route exact path='/' element={<Home />} />
-				<Route exact path='/rooms' element={<Rooms />} />
+				<Route path='/rooms' element={<Rooms />} />
+				<Route path='/rooms-category' element={<RoomsCategory />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/blog' element={<Blog />} />
 				<Route path='/blog-post' element={<BlogPost />} />

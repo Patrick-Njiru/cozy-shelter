@@ -1,7 +1,7 @@
-import homeData, { roomsBg } from "../../../../data/home"
-import CabinCard from "../../components/cabins/CabinCard"
+import { CabinCard } from "../components"
+import homeData, { roomsBg } from "../data/home"
 
-const index = () => {
+const Rooms = () => {
 	return (
 		<main className=''>
 			{/* Hero */}
@@ -32,4 +32,4 @@ const index = () => {
 	)
 }
 
-export default index
+export default Rooms

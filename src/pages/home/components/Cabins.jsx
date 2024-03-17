@@ -1,9 +1,9 @@
+import { useState } from "react"
 import PropTypes from "prop-types"
 import { NavLink } from "react-router-dom"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
-import CabinCard from "./CabinCard"
-import { handleSlide } from "../../../../utils"
-import { useState } from "react"
+import { handleSlide } from "../../../utils"
+import { CabinCard } from "../../../components"
 
 const Cabins = ({ cabins }) => {
 	const [leftClicks, setLeftClicks] = useState(6)
@@ -25,7 +25,7 @@ const Cabins = ({ cabins }) => {
 				className='transition-all duration-1000 ease-in-out max-w-screen overflow-x-scroll flex items-center justify-start pt-8 px-6 sm:px-10 md:px-16'
 			>
 				{cabins.map((cabin) => (
-					<CabinCard key={cabin.id} {...cabin} />
+					<CabinCard key={cabin.id} {...cabin} page='home' />
 				))}
 			</div>
 			<div className='relative px-5 w-full flex justify-between top-[-370px] sm:px-9 md:px-12'>

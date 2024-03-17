@@ -1,5 +1,5 @@
 import Activities from "./Activities"
-import Cabins from "./cabins/Cabins"
+import Cabins from "./Cabins"
 import Experiences from "./Experiences"
 import Hero from "./Hero"
 import OurUniqueness from "./OurUniqueness"

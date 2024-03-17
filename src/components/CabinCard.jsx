@@ -11,7 +11,7 @@ const CabinCard = ({ img, title, description, price, rooms, page }) => {
 	return (
 		<div
 			className={
-				page == "rooms"
+				page !== "home"
 					? "transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer my-6 w-full hover:-top-4 md:w-[48%] lg:w-[31.5%]"
 					: " transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer me-9 z-10 h-5/6 min-w-[300px] sm:min-w-96 hover:-top-4"
 			}
@@ -21,7 +21,7 @@ const CabinCard = ({ img, title, description, price, rooms, page }) => {
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
 		>
-			{page == "rooms" ? (
+			{page !== "home" ? (
 				<div className='relative w-full h-fit'>
 					<img src={img} alt={title} className='block w-full h-auto opacity-0' />
 					<div
