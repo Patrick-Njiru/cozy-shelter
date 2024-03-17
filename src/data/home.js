@@ -22,6 +22,7 @@ import reviewer2 from "../assets/home/review-2.webp"
 import reviewer3 from "../assets/home/review-3.webp"
 import singleRusticCabin from "../assets/home/single-rustic-cabin.webp"
 import woodFire from "../assets/home/wood-fire.webp"
+import roomsBg from "../assets/home/rooms-bg.jpg"
 
 const homeData = {
 	cabins: [
@@ -31,8 +32,8 @@ const homeData = {
 			title: "Single Rustic Cabin",
 			price: 99,
 			rooms: {
-				guests: '2 Guests',
-				bedrooms: '1 Bedroom',
+				guests: "2 Guests",
+				bedrooms: "1 Bedroom",
 			},
 		},
 		{
@@ -41,8 +42,8 @@ const homeData = {
 			title: "Duo Rustic Cabin",
 			price: 129,
 			rooms: {
-				guests: '4 Guests',
-				bedrooms: '2 Bedrooms',
+				guests: "4 Guests",
+				bedrooms: "2 Bedrooms",
 			},
 		},
 		{
@@ -51,8 +52,8 @@ const homeData = {
 			title: "Duplex Rustic Cabin",
 			price: 150,
 			rooms: {
-				guests: '4 Guests',
-				bedrooms: '2 Bedrooms',
+				guests: "4 Guests",
+				bedrooms: "2 Bedrooms",
 			},
 		},
 		{
@@ -61,8 +62,8 @@ const homeData = {
 			title: "Family Rustic Cabin",
 			price: 399,
 			rooms: {
-				guests: '8 Guests',
-				bedrooms: '4 Bedrooms',
+				guests: "8 Guests",
+				bedrooms: "4 Bedrooms",
 			},
 		},
 		{
@@ -71,8 +72,8 @@ const homeData = {
 			title: "Micro Rustic Cabin",
 			price: 79,
 			rooms: {
-				guests: '1 Guest',
-				bedrooms: '1 Bedroom',
+				guests: "1 Guest",
+				bedrooms: "1 Bedroom",
 			},
 		},
 		{
@@ -81,8 +82,8 @@ const homeData = {
 			title: "Family Duo Rustic Cabin",
 			price: 499,
 			rooms: {
-				guests: '8 Guests',
-				bedrooms: '4 Bedrooms',
+				guests: "8 Guests",
+				bedrooms: "4 Bedrooms",
 			},
 		},
 	],
@@ -161,5 +162,5 @@ const homeData = {
 	],
 }
 
-export { homeBg, redBg }
+export { homeBg, redBg, roomsBg }
 export default homeData

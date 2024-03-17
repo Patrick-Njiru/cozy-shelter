@@ -1,5 +1,5 @@
-import { Subscribe } from "../../components"
 import { Content, Hero, OtherPosts } from "./components"
+import { Subscribe } from "../../../../components"
 
 const BlogPost = () => {
 	return (

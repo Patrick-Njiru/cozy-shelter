@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 
-const FeaturesShortDescription = ({ features, page }) => {
+const Features = ({ features, page }) => {
 	const dynamicStyles = {
 		container:
 			page == "home"
@@ -34,9 +34,9 @@ const FeaturesShortDescription = ({ features, page }) => {
 	)
 }
 
-FeaturesShortDescription.propTypes = {
+Features.propTypes = {
 	features: PropTypes.array.isRequired,
 	page: PropTypes.string,
 }
 
-export default FeaturesShortDescription
+export default Features

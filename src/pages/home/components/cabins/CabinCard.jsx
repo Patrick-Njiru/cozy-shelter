@@ -4,28 +4,47 @@ import { NavLink, useNavigate } from "react-router-dom"
 import { BiBed } from "react-icons/bi"
 import { BsPerson } from "react-icons/bs"
 
-const CabinCard = ({ img, title, description, price, rooms }) => {
+const CabinCard = ({ img, title, description, price, rooms, page }) => {
 	const [isHovered, setisHovered] = useState(false)
 	const navigate = useNavigate()
 
 	return (
 		<div
-			className='transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-xl h-5/6 me-9 cursor-pointer min-w-[300px] z-10 hover:-top-4 sm:min-w-96'
+			className={
+				page == "rooms"
+					? "transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer my-6 w-full hover:-top-4 md:w-[48%] lg:w-[31.5%]"
+					: " transition-all duration-300 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer me-9 z-10 h-5/6 min-w-[300px] sm:min-w-96 hover:-top-4"
+			}
 			onClick={() => {
 				navigate("/rooms-single")
 			}}
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
 		>
-			<div
-				id='product-card-bg'
-				className='product-card-bg transition-all duration-300 delay-0 ease-in-out h-60 rounded-t-xl'
-				style={{
-					background: `url(${img}) no-repeat`,
-					backgroundPosition: "bottom center",
-					backgroundSize: `${isHovered ? "110% 110%" : "100% 100%"}`,
-				}}
-			></div>
+			{page == "rooms" ? (
+				<div className='relative w-full h-fit'>
+					<img src={img} alt={title} className='block w-full h-auto opacity-0' />
+					<div
+						id='product-card-bg'
+						className='product-card-bg transition-all duration-300 delay-0 ease-in-out rounded-t-xl absolute start-0 end-0 top-0 bottom-0'
+						style={{
+							background: `url(${img}) no-repeat`,
+							backgroundPosition: "bottom center",
+							backgroundSize: `${isHovered ? "110% 110%" : "100% 100%"}`,
+						}}
+					></div>
+				</div>
+			) : (
+				<div
+					id='product-card-bg'
+					className='product-card-bg transition-all duration-300 delay-0 ease-in-out h-60 rounded-t-xl'
+					style={{
+						background: `url(${img}) no-repeat`,
+						backgroundPosition: "bottom center",
+						backgroundSize: `${isHovered ? "110% 110%" : "100% 100%"}`,
+					}}
+				></div>
+			)}
 			<div className='space-y-5 p-6'>
 				<h1 className='font-bold text-2xl group-hover:text-red-500'> {title}</h1>
 				<p className='text-gray-400'>{description}</p>
@@ -61,6 +80,7 @@ CabinCard.propTypes = {
 	description: PropTypes.string,
 	price: PropTypes.number.isRequired,
 	rooms: PropTypes.object.isRequired,
+	page: PropTypes.string,
 }
 
 CabinCard.defaultProps = { description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." }

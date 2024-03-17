@@ -1,13 +1,13 @@
 import { createContext, useState } from "react"
 import { Route, Routes } from "react-router-dom"
-import { About, Blog, Footer, Home, Navbar, Error404, BlogPost } from "./pages"
+import { About, Blog, Footer, Home, Navbar, Error404, BlogPost, Rooms } from "./pages"
 import blogPostData from "./data/blog-post"
 
 export const BlogContext = createContext()
 
 const App = () => {
 	const [selectedPost, setSelectedPost] = useState("glamping")
-	
+
 	return (
 		<BlogContext.Provider
 			value={{
@@ -21,6 +21,7 @@ const App = () => {
 			<Navbar />
 			<Routes>
 				<Route exact path='/' element={<Home />} />
+				<Route exact path='/rooms' element={<Rooms />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/blog' element={<Blog />} />
 				<Route path='/blog-post' element={<BlogPost />} />

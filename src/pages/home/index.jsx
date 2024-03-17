@@ -1,3 +1,4 @@
+import { Subscribe } from "../../components"
 import { homeData } from "../../data"
 import {
 	Activities,
@@ -5,7 +6,6 @@ import {
 	Experiences,
 	Hero,
 	OurUniqueness,
-	Recharge,
 	Reviews,
 } from "./components"
 
@@ -19,7 +19,7 @@ const Home = () => {
 			{/* Experiences */}
 			<Experiences experiences={homeData.experiences} />
 			{/* Recharge */}
-			<Recharge />
+			<Subscribe purpose='recharge' />
 			{/* Activities */}
 			<Activities activities={homeData.activities} />
 			{/* What Makes Us Different */}

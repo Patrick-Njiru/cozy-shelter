@@ -1,4 +1,5 @@
-import FeaturesShortDescription from "./FeaturesShortDescription"
+import Features from "./Features"
 import Heading from "./Heading"
+import Subscribe from "./Subscribe"
 
-export { Heading, FeaturesShortDescription }
+export { Heading, Features, Subscribe }

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import { NavLink } from "react-router-dom"
-import { FeaturesShortDescription } from "../../../components"
+import { Features } from "../../../components"
 
 const Experiences = ({ experiences }) => {
 	return (
@@ -15,7 +15,7 @@ const Experiences = ({ experiences }) => {
 				</p>
 			</div>
 			<div className='flex flex-wrap justify-evenly items-center mt-6'>
-				<FeaturesShortDescription features={experiences} page='home' />
+				<Features features={experiences} page='home' />
 				<div className='flex justify-center flex-wrap space-x-4 mt-10'>
 					<NavLink
 						to='/rooms'
