@@ -63,7 +63,7 @@ const CabinCard = ({ img, title, description, price, rooms, page }) => {
 						<span className='text-gray-600 font-light text-lg'>/night</span>
 					</p>
 					<NavLink
-						to='/book'
+						to='/rooms-single'
 						className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full hover:bg-red-600  hover:-top-1'
 					>
 						Book now
