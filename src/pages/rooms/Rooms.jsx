@@ -1,5 +1,6 @@
-import { CabinCard } from "../components"
-import homeData, { roomsBg } from "../data/home"
+import { CabinCard } from "../../components"
+import { homeData } from "../../data"
+import { roomsBg } from "../../data/rooms"
 
 const Rooms = () => {
 	return (

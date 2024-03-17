@@ -1,5 +1,5 @@
-import { CabinCard } from "../components"
-import homeData from "../data/home"
+import { CabinCard } from "../../../components"
+import homeData from "../../../data/home"
 
 const RoomsCategory = () => {
 	return (

@@ -10,6 +10,7 @@ import {
 	BlogPost,
 	Rooms,
 	RoomsCategory,
+	RoomSingle,
 } from "./pages"
 import blogPostData from "./data/blog-post"
 
@@ -32,10 +33,11 @@ const App = () => {
 			<Routes>
 				<Route exact path='/' element={<Home />} />
 				<Route path='/rooms' element={<Rooms />} />
-				<Route path='/rooms-category' element={<RoomsCategory />} />
+				<Route path='/rooms/rooms-category' element={<RoomsCategory />} />
+				<Route path='/rooms/room-single' element={<RoomSingle />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/blog' element={<Blog />} />
-				<Route path='/blog-post' element={<BlogPost />} />
+				<Route path='/blog/blog-post' element={<BlogPost />} />
 				<Route path='*' element={<Error404 />} />
 			</Routes>
 			<Footer />
