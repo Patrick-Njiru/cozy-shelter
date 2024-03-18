@@ -21,6 +21,11 @@
 }
 
 /* Navbar */
+header a.active {
+	color: rgba(255, 0, 0, 0.6);
+	font-weight: 500;
+}
+
 #hamburger-btn.open {
 	-webkit-animation: pulse 1s linear infinite alternate;
 					animation: pulse 1s linear infinite alternate;
