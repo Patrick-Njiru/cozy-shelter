@@ -3,7 +3,7 @@ import { BiChevronRight } from "react-icons/bi"
 
 const QuestionAccordion = ({ question }) => {
 	return (
-		<div className='group relative border shadow-md space-y-6 rounded-2xl p-6 py-10 my-6 md:p-10 md:w-[48%] h-fit'>
+		<div className='show-on-scroll group relative border shadow-md space-y-6 rounded-2xl p-6 py-10 my-6 md:p-10 md:w-[48%] h-fit'>
 			<div className='flex justify-between items-start space-x-6'>
 				<h3 className='font-bold text-lg sm:text-xl md:text-2xl'>{question}</h3>
 				<button className='tranisiton duration-500 ease-linear bg-gray-600 bg-opacity-20 rounded-full	group-hover:rotate-90 group-hover:bg-red-500'>

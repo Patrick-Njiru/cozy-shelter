@@ -1,19 +1,14 @@
 import PropTypes from "prop-types"
 import { NavLink } from "react-router-dom"
+import { Heading } from "../../../components"
 
 const Activities = ({ activities }) => {
 	return (
 		<section className='mt-40 px-6 sm:px-10 sm:mt-52 md:px-16'>
-			<div className='mx-auto space-y-6 mb-8 lg:w-3/5'>
-				<h1 className='text-center font-black text-3xl sm:text-4xl md:text-5xl'>
-					Explore our activities
-				</h1>
-				<p className='text-gray-600 text-center font-medium'>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ab voluptas
-					deleniti distinctio placeat temporibus!
-				</p>
+			<div className='show-on-scroll mx-auto space-y-6 mb-8 lg:w-3/5'>
+				<Heading title='Explore our activities' />
 			</div>
-			<div className='flex flex-wrap space-x-4 justify-evenly items-center text-white'>
+			<div className='show-on-scroll flex flex-wrap space-x-4 justify-evenly items-center text-white'>
 				{activities.map((activity) => (
 					<div
 						key={activity.id}
@@ -37,7 +32,7 @@ const Activities = ({ activities }) => {
 			</div>
 			<NavLink
 				to='/activities'
-				className='block mt-16 mx-auto transition-all duration-500 ease-in-out bg-white  text-lg font-medium w-fit rounded-full relative top-0 border py-4 px-7 hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
+				className='show-on-scroll block mt-16 mx-auto transition-all duration-500 ease-in-out bg-white  text-lg font-medium w-fit rounded-full relative top-0 border py-4 px-7 hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 			>
 				More activities
 			</NavLink>

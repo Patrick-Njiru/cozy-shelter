@@ -1,24 +1,18 @@
 import PropTypes from "prop-types"
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import { NavLink } from "react-router-dom"
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import ReviewCard from "./ReviewCard"
 import { handleSlide } from "../../../../utils"
 import { useState } from "react"
+import { Heading } from "../../../../components"
 
 const Reviews = ({ reviews }) => {
 	const [leftClicks, setLeftClicks] = useState(2)
 	const [rightClicks, setRightClicks] = useState(0)
+
 	return (
-		<section className='mt-40 mb-20 sm:mt-52 sm:mb-24'>
-			<div className='px-6 mx-auto space-y-6 mb-8 sm:px-10 md:px-16 lg:w-3/5'>
-				<h1 className='text-center font-black text-3xl sm:text-4xl md:text-5xl'>
-					What out past clients say
-				</h1>
-				<p className='text-gray-600 text-center font-medium'>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ab voluptas
-					deleniti distinctio placeat temporibus!
-				</p>
-			</div>
+		<section className='show-on-scroll mt-40 mb-20 sm:mt-52 sm:mb-24'>
+			<Heading title='What out past clients say' />
 			<div
 				id='scroll-container-2'
 				className='max-w-screen overflow-x-scroll flex items-center justify-start mt-8 px-6 sm:px-10 md:px-16'
@@ -55,7 +49,7 @@ const Reviews = ({ reviews }) => {
 					<BsArrowRight />
 				</button>
 			</div>
-			<div className='flex flex-wrap justify-center space-x-4 mt-10 px-6 sm:px-10 sm:space-x-6 sm:space-y-0 md:px-16'>
+			<div className='show-on-scroll flex flex-wrap justify-center space-x-4 mt-10 px-6 sm:px-10 sm:space-x-6 sm:space-y-0 md:px-16'>
 				<NavLink
 					to='/book'
 					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-7 py-4  mb-6  text-lg font-bold w-fit rounded-full relative top-0 hover:bg-red-600 hover:-top-1 sm:px-10 sm:py-6 sm:mb-0'

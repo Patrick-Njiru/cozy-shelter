@@ -16,7 +16,7 @@ const Features = ({ features, page }) => {
 			{features.map((feature) => (
 				<div
 					key={feature.id}
-					className={"flex my-10 md:items-center sm:flex-row " + dynamicStyles.container}
+					className={"show-on-scroll flex my-10 md:items-center sm:flex-row " + dynamicStyles.container}
 				>
 					<img src={feature.img} alt={feature.title} className={dynamicStyles.image} />
 					<div className={dynamicStyles.nestedDiv}>

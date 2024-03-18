@@ -5,7 +5,7 @@ const GalleryImage = ({ image }) => {
 	const [isHovered, setIsHovered] = useState(false)
 
 	return (
-		<div className='relative mx-auto my-6 sm:w-[47%] lg:w-[23%]'>
+		<div className='show-on-scroll relative mx-auto my-6 sm:w-[47%] lg:w-[23%]'>
 			<img src={image} alt='ig image' className='opacity-0 w-full' />
 			<a
 				href='https://www.instagram.com'

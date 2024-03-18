@@ -2,9 +2,9 @@ import PropTypes from "prop-types"
 
 const OurStory = ({ pics }) => {
 	return (
-		<section className='bg-neutral-50 bg-opacity-50 space-y-10 mt-20 py-20 px-6 sm:px-10 md:px-16 sm:py-40 sm:mt-40'>
+		<section className='show-on-scroll bg-neutral-50 bg-opacity-50 space-y-10 mt-20 py-20 px-6 sm:px-10 md:px-16 sm:py-40 sm:mt-40'>
 			<div className='flex flex-col space-y-8 justify-between items-center md:flex-row md:space-y-0'>
-				<div className='md:w-[45%] space-y-6'>
+				<div className='show-on-scroll md:w-[45%] space-y-6'>
 					<h1 className='text-2xl sm:text-3xl md:text-4xl font-black'>How we started</h1>
 					<p className='text-gray-600'>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta debitis
@@ -27,7 +27,7 @@ const OurStory = ({ pics }) => {
 					</p>
 				</div>
 			</div>
-			<div className='flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-6'>
+			<div className='show-on-scroll flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-6'>
 				<img src={pics[0]} alt='our-story-1' className='rounded-xl sm:w-[42%]' />
 				<div className='space-y-6 sm:w-[55%]'>
 					<div className='flex justify-between'>

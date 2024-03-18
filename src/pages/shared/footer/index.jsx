@@ -12,7 +12,7 @@ import { logo } from "../../../data"
 
 const Footer = () => {
 	return (
-		<footer className='border-t py-24 px-6 sm:px-10 md:px-16'>
+		<footer className='show-on-scroll border-t py-24 px-6 sm:px-10 md:px-16'>
 			<div className='flex flex-col space-y-12 md:space-y-0 md:justify-between md:flex-row md:flex-wrap'>
 				<div className='mb-8 lg:my-0 lg:w-[30%]'>
 					<NavLink
@@ -132,10 +132,6 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<a href='#' className='scroll-up fixed bottom-4 end-4 z-40 rounded-full p-2 group'>
-				<div className='absolute start-0 end-0 top-0 bottom-0 rotating-link border-red-600 border-4 border-dotted rounded-full'></div>
-				<BiUpArrowAlt className='transition duration-200  text-4xl text-white bg-black rounded-full group-hover:text-red-600 group-hover:bg-transparent' />
-			</a>
 		</footer>
 	)
 }

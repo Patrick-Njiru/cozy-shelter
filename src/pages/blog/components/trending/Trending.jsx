@@ -8,7 +8,7 @@ const Trending = ({ trending }) => {
 	const navigate = useNavigate()
 
 	return (
-		<section className='px-6 sm:px-10 md:px-16 mt-10'>
+		<section className='show-on-scroll px-6 sm:px-10 md:px-16 mt-10'>
 			<div className='flex flex-col space-y-6 items-start lg:space-x-6 lg:space-y-0 lg:flex-row'>
 				<div
 					className='relative rounded-3xl cursor-pointer lg:w-[45%] lg:h-screen'

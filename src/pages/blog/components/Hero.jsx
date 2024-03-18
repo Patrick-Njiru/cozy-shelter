@@ -2,8 +2,8 @@ import { BiSearch } from "react-icons/bi"
 
 const Hero = () => {
 	return (
-		<section className='flex flex-col space-y-6 justify-between pt-32 px-6 sm:px-10 md:flex-row md:space-x-6 md:space-y-0 md:items-center md:px-16'>
-			<h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black md:w-1/2'>
+		<section className='show-on-scroll flex flex-col space-y-6 justify-between pt-32 px-6 sm:px-10 md:flex-row md:space-x-6 md:space-y-0 md:items-center md:px-16'>
+			<h1 className='text-4xl font-black sm:text-5xl md:text-6xl md:w-1/2 lg:text-6xl'>
 				Blog & Resources
 			</h1>
 			<div className='group relative w-[430px] max-w-full md:w-1/2 lg:w-[430px]'>

@@ -7,7 +7,7 @@ const Subscribe = ({ purpose }) => {
 	const type = purpose || "primary"
 
 	return (
-		<section className='mt-40 px-6 text-white sm:mt-52 sm:px-10 md:px-16'>
+		<section className='show-on-scroll mt-40 px-6 text-white sm:mt-52 sm:px-10 md:px-16'>
 			<div
 				className='bg-gradient-to-b from-red-600 to bg-red-700 rounded-3xl p-8 sm:p-16 lg:p-24'
 				style={{

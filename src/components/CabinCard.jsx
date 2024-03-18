@@ -12,7 +12,7 @@ const CabinCard = ({ img, title, description, price, rooms, page }) => {
 		<div
 			className={
 				page !== "home"
-					? "transition-all duration-500 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer my-6 w-full hover:-top-4 md:w-[48%] lg:w-[31.5%]"
+					? "show-on-scroll transition-all duration-500 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer my-6 w-full hover:-top-4 md:w-[48%] lg:w-[31.5%]"
 					: "transition-all duration-500 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer me-9 z-10 h-5/6 min-w-[300px] sm:min-w-96 hover:-top-4"
 			}
 			onClick={() => {

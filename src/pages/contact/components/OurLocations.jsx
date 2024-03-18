@@ -8,9 +8,9 @@ const OurLocations = () => {
 	const [rightClicks, setRightClicks] = useState(0)
 
 	return (
-		<div className='bg-neutral-50 bg-opacity-50 relative pt-48 pb-32'>
-			<div className='flex flex-col space-y-6 justify-between px-6 sm:px-10 sm:flex-row sm:space-y-0 sm:space-x-6 sm:items-center md:px-16'>
-				<h1 className='font-black text-3xl sm:w-1/2 sm:text-4xl md:text-5xl'>
+		<section className='bg-neutral-50 bg-opacity-50 relative pt-48 pb-32'>
+			<div className='show-on-scroll flex flex-col space-y-6 justify-between px-6 sm:px-10 sm:flex-row sm:space-y-0 sm:space-x-6 sm:items-center md:px-16'>
+				<h1 className='font-black text-2xl sm:w-1/2 sm:text-3xl md:text-4xl'>
 					Our Locations
 				</h1>
 				<p className='text-gray-600 font-medium sm:w-1/2 md:text-lg'>
@@ -20,7 +20,7 @@ const OurLocations = () => {
 			</div>
 			<div
 				id='scroll-container-3'
-				className='transition-all duration-1000 ease-in-out max-w-screen overflow-x-scroll flex items-center justify-start pt-8 px-6 sm:px-10 md:px-16'
+				className='show-on-scroll transition-all duration-1000 ease-in-out max-w-screen overflow-x-scroll flex items-center justify-start pt-8 px-6 sm:px-10 md:px-16'
 			>
 				{contactData.ourLocations.map((locationDetails) => (
 					<div
@@ -74,7 +74,7 @@ const OurLocations = () => {
 					<BsArrowRight />
 				</button>
 			</div>
-		</div>
+		</section>
 	)
 }
 

@@ -8,7 +8,7 @@ const PostCard = ({ img, details }) => {
 
 	return (
 		<div
-			className='transition-all duration-500 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]'
+			className='show-on-scroll transition-all duration-500 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]'
 			onClick={() => {
 				navigate("/blog/blog-post")
 			}}
