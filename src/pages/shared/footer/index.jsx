@@ -1,11 +1,5 @@
 import { NavLink } from "react-router-dom"
-import {
-	BiLogoFacebook,
-	BiLogoInstagram,
-	BiLogoTwitter,
-	BiLogoYoutube,
-	BiUpArrowAlt,
-} from "react-icons/bi"
+import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube } from "react-icons/bi"
 import footerImages from "../../../data/footer"
 import InstagramImage from "./InstagramImage"
 import { logo } from "../../../data"
