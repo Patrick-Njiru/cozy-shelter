@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 const OurStory = ({ pics }) => {
 	return (
-		<section className='bg-neutral-50 space-y-10 mt-20 py-20 px-6 sm:px-10 md:px-16 sm:py-40 sm:mt-40'>
+		<section className='bg-neutral-50 bg-opacity-50 space-y-10 mt-20 py-20 px-6 sm:px-10 md:px-16 sm:py-40 sm:mt-40'>
 			<div className='flex flex-col space-y-8 justify-between items-center md:flex-row md:space-y-0'>
 				<div className='md:w-[45%] space-y-6'>
 					<h1 className='text-2xl sm:text-3xl md:text-4xl font-black'>How we started</h1>

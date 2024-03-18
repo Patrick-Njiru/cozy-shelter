@@ -12,9 +12,9 @@ const Hero = () => {
 					name='search'
 					id='search'
 					placeholder='Search the blog'
-					className='w-full border rounded-full p-4 shadow transition-all duration-300 outline-red-500 group-hover:border-red-500'
-        />
-        <BiSearch  className="cursor-pointer text-2xl absolute end-3 bottom-4 transition-all duration-300 hover:opacity-50 group-hover:text-red-500"/>
+					className='w-full border rounded-full p-4 shadow transition-all duration-500 outline-red-500 group-hover:border-red-500'
+				/>
+				<BiSearch className='cursor-pointer text-2xl absolute end-3 bottom-4 transition-all duration-500 hover:opacity-50 group-hover:text-red-500' />
 			</div>
 		</section>
 	)

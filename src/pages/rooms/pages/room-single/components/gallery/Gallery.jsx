@@ -3,7 +3,7 @@ import GalleryImage from "./GalleryImage"
 
 const Gallery = () => {
 	return (
-		<section className='mt-20 py-20 px-6 space-y-12 bg-neutral-50 sm:py-40 sm:mt-40 sm:px-10 md:px-16'>
+		<section className='mt-20 py-20 px-6 space-y-12 bg-neutral-50 bg-opacity-50 sm:py-40 sm:mt-40 sm:px-10 md:px-16'>
 			<div className='flex flex-col space-y-6 justify-between flex-wrap sm:flex-row sm:space-y-0 sm:space-x-6 sm:items-center'>
 				<h1 className='font-black text-2xl sm:text-3xl md:text-4xl'>Room gallery</h1>
 				<a

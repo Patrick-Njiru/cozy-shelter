@@ -19,7 +19,7 @@ const Trending = ({ trending }) => {
 					<img src={trending[0].img} alt='woodcabin' className='opacity-0 size-full' />
 
 					<div
-						className='absolute rounded-3xl bg-blend-darken start-0 end-0 top-0 bottom-0 transition-all duration-600 ease-linear p-6 py-8 pb-0'
+						className='absolute rounded-3xl bg-blend-darken start-0 end-0 top-0 bottom-0 transition-all duration-600 ease-ease-in-out p-6 py-8 pb-0'
 						style={{
 							background: `rgba(0,0,0,0.4) url(${trending[0].img}) no-repeat`,
 							backgroundSize: isHovered ? "110% 110%" : "100% 100%",

@@ -17,12 +17,12 @@ const Footer = () => {
 				<div className='mb-8 lg:my-0 lg:w-[30%]'>
 					<NavLink
 						to='/'
-						className='transition-all duration-300 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'
+						className='transition-all duration-500 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'
 					>
 						<img
 							src={logo}
 							alt='logo'
-							className='transition-all duration-300 ease-in-out h-8'
+							className='transition-all duration-500 ease-in-out h-8'
 						/>
 						<h1 className='font-black text-xl group-hover:scale-95 sm:text-2xl md:text-3xl'>
 							<span>Cozy</span>
@@ -34,10 +34,10 @@ const Footer = () => {
 						repudiandae dolorem.
 					</p>
 					<div className='flex space-x-4'>
-						<BiLogoFacebook className='transition-all duration-500 ease-linear relative top-0 text-red-500 text-4xl p-2 border shadow-md rounded-full cursor-pointer hover:text-white hover:bg-red-500 hover:-top-1' />
-						<BiLogoTwitter className='transition-all duration-500 ease-linear relative top-0 text-red-500 text-4xl p-2 border shadow-md rounded-full cursor-pointer hover:text-white hover:bg-red-500 hover:-top-1' />
-						<BiLogoInstagram className='transition-all duration-500 ease-linear relative top-0 text-red-500 text-4xl p-2 border shadow-md rounded-full cursor-pointer hover:text-white hover:bg-red-500 hover:-top-1' />
-						<BiLogoYoutube className='transition-all duration-500 ease-linear relative top-0 text-red-500 text-4xl p-2 border shadow-md rounded-full cursor-pointer hover:text-white hover:bg-red-500 hover:-top-1' />
+						<BiLogoFacebook className='transition-all duration-500 ease-ease-in-out relative top-0 text-red-500 text-4xl p-2 border shadow-md rounded-full cursor-pointer hover:text-white hover:bg-red-500 hover:-top-1' />
+						<BiLogoTwitter className='transition-all duration-500 ease-ease-in-out relative top-0 text-red-500 text-4xl p-2 border shadow-md rounded-full cursor-pointer hover:text-white hover:bg-red-500 hover:-top-1' />
+						<BiLogoInstagram className='transition-all duration-500 ease-ease-in-out relative top-0 text-red-500 text-4xl p-2 border shadow-md rounded-full cursor-pointer hover:text-white hover:bg-red-500 hover:-top-1' />
+						<BiLogoYoutube className='transition-all duration-500 ease-ease-in-out relative top-0 text-red-500 text-4xl p-2 border shadow-md rounded-full cursor-pointer hover:text-white hover:bg-red-500 hover:-top-1' />
 					</div>
 				</div>
 				<div className='flex flex-col space-y-12 sm:space-x-4 sm:justify-between sm:space-y-0 sm:flex-row md:w-2/3 lg:w-[35%]'>

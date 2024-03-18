@@ -35,7 +35,7 @@ const Reviews = ({ reviews }) => {
 						leftClicks == 2
 							? "invisible "
 							: "" +
-							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl w-fit rounded-full hover:bg-red-600"
+							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl w-fit rounded-full hover:bg-red-600 hover:scale-95"
 					}
 					onClick={() => handleSlide("left", "reviews", setLeftClicks, setRightClicks)}
 				>
@@ -48,7 +48,7 @@ const Reviews = ({ reviews }) => {
 						rightClicks == 2
 							? "invisible "
 							: "" +
-							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl font-medium w-fit rounded-full hover:bg-red-600"
+							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-3xl font-medium w-fit rounded-full hover:bg-red-600 hover:scale-95"
 					}
 					onClick={() => handleSlide("right", "reviews", setRightClicks, setLeftClicks)}
 				>

@@ -36,7 +36,7 @@ const Cabins = ({ cabins }) => {
 						leftClicks == 6
 							? "invisible "
 							: "" +
-							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 sm:text-3xl"
+							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:scale-95 hover:bg-red-600 sm:text-3xl"
 					}
 					onClick={() => handleSlide("left", "cabins", setLeftClicks, setRightClicks)}
 				>
@@ -49,7 +49,7 @@ const Cabins = ({ cabins }) => {
 						rightClicks == 6
 							? "invisible "
 							: "" +
-							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:bg-red-600 sm:text-3xl"
+							  "inline transition-all duration-500 ease-in-out bg-red-500 text-white p-5 text-2xl rounded-full z-20 hover:scale-95 hover:bg-red-600 sm:text-3xl"
 					}
 					onClick={() => handleSlide("right", "cabins", setRightClicks, setLeftClicks)}
 				>

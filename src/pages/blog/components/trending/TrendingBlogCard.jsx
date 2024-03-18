@@ -16,7 +16,7 @@ const TrendingBlogCard = ({ img, details }) => {
 			<div className='relative md:w-1/2 lg:w-[49%]'>
 				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />
 				<div
-					className='transition-all duration-600 ease-linear rounded-2xl absolute start-0 end-0 top-0 bottom-0'
+					className='transition-all duration-600 ease-ease-in-out rounded-2xl absolute start-0 end-0 top-0 bottom-0'
 					style={{
 						background: `rgba(0,0,0,0.4) url(${img}) no-repeat`,
 						backgroundSize: isHovered ? "110% 110%" : "100% 100%",
@@ -24,7 +24,7 @@ const TrendingBlogCard = ({ img, details }) => {
 					}}
 				></div>
 			</div>
-			<div className='space-y-4 transition-all duration-600 ease-linear group-hover:text-red-500 md:w-1/2 lg:w-[48%]'>
+			<div className='space-y-4 transition-all duration-600 ease-ease-in-out group-hover:text-red-500 md:w-1/2 lg:w-[48%]'>
 				<p>{details.date}</p>
 				<p className='font-bold text-xl sm:text-2xl'>{details.title}</p>
 				<button className='text-lg bg-white rounded-full p-5 py-3 w-fit font-bold z-10 h-1/5 border-2 text-black'>

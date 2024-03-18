@@ -11,7 +11,7 @@ const Navbar = () => {
 				<div className='flex justify-between items-center'>
 					<NavLink
 						to='/'
-						className='transition-all duration-300 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'
+						className='transition-all duration-500 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'
 					>
 						<img src={logo} alt='logo' className='hidden text-black h-8 sm:block' />
 						<h1 className='font-black text-xl sm:text-2xl md:text-3xl'>
@@ -41,10 +41,10 @@ const Navbar = () => {
 						</button>
 						<NavLink
 							to='/cart'
-							className='group relative transition-all duration-300 hover:text-gray-600'
+							className='group relative transition-all duration-500 hover:text-gray-600'
 						>
 							<img src={booked} alt='cart' className='hover:opacity-70' />
-							<sub className='transition-all duration-300 absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
+							<sub className='transition-all duration-500 absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
 								0
 							</sub>
 						</NavLink>

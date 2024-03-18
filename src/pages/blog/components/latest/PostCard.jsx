@@ -8,7 +8,7 @@ const PostCard = ({ img, details }) => {
 
 	return (
 		<div
-			className='transition-all duration-300 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]'
+			className='transition-all duration-500 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]'
 			onClick={() => {
 				navigate("/blog/blog-post")
 			}}
@@ -18,7 +18,7 @@ const PostCard = ({ img, details }) => {
 			<div className='relative w-full'>
 				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />
 				<div
-					className='transition-all duration-300 delay-0 ease-in-out absolute start-0 end-0 top-0 bottom-0 rounded-t-xl p-6'
+					className='transition-all duration-500 delay-0 ease-in-out absolute start-0 end-0 top-0 bottom-0 rounded-t-xl p-6'
 					style={{
 						background: `url(${img}) no-repeat`,
 						backgroundPosition: "bottom center",

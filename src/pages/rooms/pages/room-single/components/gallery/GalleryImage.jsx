@@ -10,7 +10,7 @@ const GalleryImage = ({ image }) => {
 			<a
 				href='https://www.instagram.com'
 				target='_blank'
-				className='transition-all duration-900 ease-linear rounded-3xl w-100% h-full absolute top-0 start-0 end-0 bottom-0'
+				className='transition-all duration-900 ease-ease-in-out rounded-3xl w-100% h-full absolute top-0 start-0 end-0 bottom-0'
 				style={{
 					background: `url(${image}) no-repeat`,
 					backgroundSize: `${isHovered ? "110% 110%" : "100% 100%"}`,
