@@ -1,4 +1,4 @@
-import { aboutBg } from "../../../data/about"
+import { aboutHero } from "../../../data/about"
 import { BiChevronDown } from "react-icons/bi"
 import handleScrollPageDown from "../../../utils/handle-scroll-page-down"
 
@@ -8,7 +8,7 @@ const Hero = () => {
 			id='about-hero'
 			className='min-h-screen h-fit relative -top-28 pt-52 px-6 text-white text-center md:py-64 sm:px-10 md:px-16'
 			style={{
-				background: `rgba(0,0,0,0.6) url(${aboutBg}) no-repeat`,
+				background: `rgba(0,0,0,0.6) url(${aboutHero}) no-repeat`,
 				backgroundSize: "cover",
 				backgroundPosition: "bottom center",
 				backgroundBlendMode: "darken",

@@ -1,3 +1,5 @@
+import roomsHero from "../assets/rooms/rooms-hero-bg.webp"
+import roomSingleHero from "../assets/rooms/room-single/family-rustic-cabin-hero-bg.webp"
 import fireplace from "../assets/rooms/room-single/fireplace-icon.svg"
 import gaming from "../assets/rooms/room-single/gaming-icon.svg"
 import heater from "../assets/rooms/room-single/heater-icon.svg"
@@ -12,8 +14,6 @@ import roomGallery4 from "../assets/rooms/room-single/room-gallery-4.webp"
 import tv from "../assets/rooms/room-single/tv-icon.svg"
 import wifi from "../assets/rooms/room-single/wifi-icon.svg"
 
-import roomsBg from "../assets/rooms/rooms-bg.jpg"
-import roomSingleBg from "../assets/rooms/family-rustic-cabin-bg.webp"
 
 const roomsData = {
 	roomSingle: {
@@ -32,5 +32,5 @@ const roomsData = {
 	},
 }
 
-export { roomsBg, roomSingleBg }
+export { roomsHero, roomSingleHero }
 export default roomsData

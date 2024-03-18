@@ -1,6 +1,6 @@
 import { CabinCard } from "../../components"
 import { homeData } from "../../data"
-import { roomsBg } from "../../data/rooms"
+import { roomsHero } from "../../data/rooms"
 
 const Rooms = () => {
 	return (
@@ -9,7 +9,7 @@ const Rooms = () => {
 			<section
 				className='relative -top-28 pt-64 pb-40 text-white text-center px-6 sm:px-10 md:px-16'
 				style={{
-					background: `rgba(0,0,0,0.7) url(${roomsBg}) no-repeat`,
+					background: `rgba(0,0,0,0.7) url(${roomsHero}) no-repeat`,
 					backgroundSize: "cover",
 					backgroundPosition: "bottom center",
 					backgroundBlendMode: "darken",

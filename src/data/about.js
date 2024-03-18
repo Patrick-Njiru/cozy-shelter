@@ -1,4 +1,4 @@
-import aboutBg from "../assets/about/about-bg.jpg"
+import aboutHero from "../assets/about/about-hero-bg.webp"
 import locationsImg from "../assets/about/locations.webp"
 import ourStory1 from "../assets/about/our-story-1.webp"
 import ourStory2 from "../assets/about/our-story-2.webp"
@@ -53,5 +53,5 @@ const aboutData = {
 	],
 }
 
-export { aboutBg, locationsImg, videoImg }
+export { aboutHero, locationsImg, videoImg }
 export default aboutData

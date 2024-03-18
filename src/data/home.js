@@ -1,3 +1,4 @@
+import homeHero from "../assets/home/home-hero-bg.webp"
 import uniqueness1 from "../assets/home/uniqueness-1.webp"
 import uniqueness2 from "../assets/home/uniqueness-2.webp"
 import uniqueness3 from "../assets/home/uniqueness-3.webp"
@@ -9,7 +10,6 @@ import familyRusticCabin from "../assets/home/family-rustic-cabin.webp"
 import fishing from "../assets/home/fishing.webp"
 import gameRoom from "../assets/home/game-room.webp"
 import hiking from "../assets/home/hiking.webp"
-import homeBg from "../assets/home/home-bg.webp"
 import kayaks from "../assets/home/kayaks.webp"
 import lakePaddling from "../assets/home/lake-paddling.webp"
 import microRusticCabin from "../assets/home/micro-rustic-cabin.webp"
@@ -161,5 +161,5 @@ const homeData = {
 	],
 }
 
-export { homeBg, redBg }
+export { homeHero, redBg }
 export default homeData

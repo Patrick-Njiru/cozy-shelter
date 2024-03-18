@@ -1,17 +1,17 @@
-import glampingBg from "../assets/blog/blog-post/glamping-bg2.webp"
-import glampingPost from "../assets/blog/blog-post/glamping-post.webp"
+import blogPostHero from "../assets/blog/blog-post/blog-post-hero-bg.webp"
+import blogPostImg from "../assets/blog/blog-post/glamping-post.webp"
 import emailIcon from "../assets/blog/blog-post/email-icon.svg"
 
 const blogPostData = {
 	glamping: {
 		title: "Glamping 101: Everything you need to know about glamping",
-		bgImg: glampingBg,
+		bgImg: blogPostHero,
 		category: "Resources",
 		date: "February 29, 2024",
 		mainContent: {
 			title1: "Glamping is a different experience",
 			title2: "Glamping doesn't need to be expensive",
-			img2: glampingPost,
+			img2: blogPostImg,
 			title3: "It's not for everyone, but if it's for you, you will love it",
 			title4: "What about glamping by yourself?",
 			quote: "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque velit euismod in pellentesque massa placerat",
