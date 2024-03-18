@@ -11,6 +11,7 @@ import {
 	Rooms,
 	RoomsCategory,
 	RoomSingle,
+	Contact,
 } from "./pages"
 import blogPostData from "./data/blog-post"
 
@@ -38,6 +39,7 @@ const App = () => {
 				<Route path='/about' element={<About />} />
 				<Route path='/blog' element={<Blog />} />
 				<Route path='/blog/blog-post' element={<BlogPost />} />
+				<Route path='/contact' element={<Contact />} />
 				<Route path='*' element={<Error404 />} />
 			</Routes>
 			<Footer />

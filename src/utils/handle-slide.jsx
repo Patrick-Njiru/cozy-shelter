@@ -1,7 +1,8 @@
 const handleSlide = (direction, section, addClicks, reduceClicks) => {
 	// const [setLeftClicks, setRightClicks] = setClicks
 	const container1 = document.getElementById("scroll-container"),
-		container2 = document.getElementById("scroll-container-2")
+		container2 = document.getElementById("scroll-container-2"),
+		container3 = document.getElementById("scroll-container-3")
 
 	if (section == "cabins") {
 		if (window.innerWidth >= 1024) {
@@ -37,6 +38,22 @@ const handleSlide = (direction, section, addClicks, reduceClicks) => {
 		return direction == "left"
 			? (container2.scrollLeft -= (window.innerWidth * 85) / 100)
 			: (container2.scrollLeft += (window.innerWidth * 85) / 100)
+	}
+	if (section == "locations") {
+		if (window.innerWidth >= 640) {
+			addClicks((prev) => prev + 2)
+			reduceClicks((prev) => prev - 2)
+			return direction == "left"
+				? (container3.scrollLeft -= 500)
+				: (container3.scrollLeft += 500)
+		}
+
+		addClicks((prev) => prev + 1.5)
+		reduceClicks((prev) => prev - 1.5)
+
+		return direction == "left"
+			? (container3.scrollLeft -= (window.innerWidth * 95) / 100)
+			: (container3.scrollLeft += (window.innerWidth * 95) / 100)
 	}
 }
 

@@ -78,7 +78,8 @@
 
 /* Home */
 #scroll-container::-webkit-scrollbar,
-#scroll-container-2::-webkit-scrollbar {
+#scroll-container-2::-webkit-scrollbar,
+#scroll-container-3::-webkit-scrollbar {
 	display: none;
 }
 
