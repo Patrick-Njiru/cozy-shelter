@@ -3,6 +3,7 @@ import DesktopMenu from "./components/layouts/DesktopMenu"
 import MobileMenu from "./components/layouts/MobileMenu"
 import { handleToggleMenu } from "../../../utils"
 import { booked, logo } from "../../../data"
+import handleCartToggle from "../../../utils/handle-cart-toggle"
 
 const Navbar = () => {
 	return (
@@ -39,15 +40,15 @@ const Navbar = () => {
 								className='transition-all duration-500 ease-in-out bg-black h-1 w-inherit block group-hover:bg-gray-800'
 							></span>
 						</button>
-						<NavLink
-							to='/cart'
+						<button
 							className='group relative transition-all duration-500 hover:text-gray-600'
+							onClick={() => handleCartToggle()}
 						>
 							<img src={booked} alt='cart' className='hover:opacity-70' />
 							<sub className='transition-all duration-500 absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
 								0
 							</sub>
-						</NavLink>
+						</button>
 					</div>
 				</div>
 			</nav>
