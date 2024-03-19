@@ -32,7 +32,7 @@ const OurUniqueness = ({ uniqueness }) => {
 					</div>
 				</div>
 				<div className='space-y-6 lg:w-[40vw]'>
-					<h1 className='show-on-scroll font-black text-zinc-700 text-2xl sm:text-3xl md:text-4xl'>
+					<h1 className='show-on-scroll font-black text- text-2xl sm:text-3xl md:text-4xl'>
 						What makes us different?
 					</h1>
 					<p className='show-on-scroll text-gray-600'>

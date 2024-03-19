@@ -6,9 +6,7 @@ const Latest = ({ latestPosts }) => {
 	return (
 		<section className='mt-40 px-6 sm:mt-52 sm:px-10 md:px-16'>
 			<div className='show-on-scroll flex flex-col space-y-6 justify-between flex-wrap lg:flex-row lg:space-y-0 lg:items-center'>
-				<h1 className='font-black text-2xl text-zinc-700 sm:text-3xl md:text-4xl'>
-					Latest Posts
-				</h1>
+				<h1 className='font-black text-2xl text- sm:text-3xl md:text-4xl'>Latest Posts</h1>
 				<div className='space-x-4 md:space-x-6'>
 					<NavLink
 						to='/rooms'

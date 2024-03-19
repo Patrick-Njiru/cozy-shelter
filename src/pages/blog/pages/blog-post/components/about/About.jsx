@@ -9,7 +9,7 @@ const About = () => {
 		<section className='mt-12 text-lg leading-loose'>
 			<div className='relative flex flex-col space-y-8 justify-start px-6 sm:px-10 md:px-16 lg:space-y-0 lg:flex-row lg:justify-between'>
 				<div className='space-y-8 lg:w-[66%]'>
-					<h1 className='show-on-scroll text-zinc-700 text-3xl md:text-5xl font-bold'>
+					<h1 className='show-on-scroll text- text-3xl md:text-5xl font-bold'>
 						{title1}
 					</h1>
 					<p className='show-on-scroll text-gray-600'>
@@ -30,7 +30,7 @@ const About = () => {
 							Adipiscing elit ut aliquam purus sit amet viverra suspendisse potenti
 						</li>
 					</div>
-					<h2 className='show-on-scroll text-zinc-700 text-2xl md:text-4xl font-bold'>
+					<h2 className='show-on-scroll text- text-2xl md:text-4xl font-bold'>
 						{title2}
 					</h2>
 					<p className='show-on-scroll text-gray-600'>
@@ -48,9 +48,7 @@ const About = () => {
 						vulputate sapien nec sagittis aliquam nunc lobortis mattis aliquam faucibus
 						purus in.
 					</p>
-					<h3 className='show-on-scroll text-zinc-700 text-xl md:text-3xl font-bold'>
-						{title3}
-					</h3>
+					<h3 className='show-on-scroll text- text-xl md:text-3xl font-bold'>{title3}</h3>
 					<p className='show-on-scroll text-gray-600'>
 						At risus viverra adipiscing at in tellus integer feugiat nisl pretium fusce
 						id velit ut tortor sagittis orci a scelerisque purus semper eget at lectus
@@ -71,9 +69,7 @@ const About = () => {
 							Adipiscing elit ut aliquam purus sit amet viverra suspendisse potenti
 						</li>
 					</div>
-					<h4 className='show-on-scroll text-zinc-700 text-lg md:text-2xl font-bold'>
-						{title4}
-					</h4>
+					<h4 className='show-on-scroll text- text-lg md:text-2xl font-bold'>{title4}</h4>
 					<p className='show-on-scroll text-gray-600'>
 						Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis
 						gravida neque. Velit euismod in pellentesque massa placerat volutpat lacus
@@ -84,7 +80,7 @@ const About = () => {
 					<div className='show-on-scroll block px-20 py-24 border shadow rounded-3xl text-xl md:text-2xl'>
 						<q>{quote}</q>
 					</div>
-					<h5 className='show-on-scroll text-zinc-700 md:text-xl font-bold'>{title5}</h5>
+					<h5 className='show-on-scroll text- md:text-xl font-bold'>{title5}</h5>
 					<p className='show-on-scroll text-gray-600'>
 						Eget lorem dolor sed viverra ipsum nunc aliquet bibendum felis donec et odio
 						pellentesque diam volutpat commodo sed egestas aliquam sem fringilla ut

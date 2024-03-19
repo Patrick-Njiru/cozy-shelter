@@ -12,7 +12,7 @@ const Cabins = ({ cabins }) => {
 	return (
 		<section className='mt-16 sm:mt-28'>
 			<div className='show-on-scroll flex flex-col space-y-6 justify-between flex-wrap px-6 sm:px-10 sm:flex-row sm:space-y-0 sm:space-x-6 sm:items-center md:px-16'>
-				<h1 className='font-black text-zinc-700 text-2xl sm:text-3xl md:text-4xl'>
+				<h1 className='font-black text- text-2xl sm:text-3xl md:text-4xl'>
 					Explore our cabins
 				</h1>
 				<NavLink

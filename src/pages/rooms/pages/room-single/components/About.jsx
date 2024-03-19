@@ -19,7 +19,7 @@ const About = () => {
 					<p>2 Bathrooms</p>
 				</div>
 			</div>
-			<h1 className='show-on-scroll text-zinc-700 text-2xl sm:text-3xl md:text-4xl font-bold'>
+			<h1 className='show-on-scroll text- text-2xl sm:text-3xl md:text-4xl font-bold'>
 				About the cabin
 			</h1>
 			<p className='show-on-scroll'>
@@ -45,7 +45,7 @@ const About = () => {
 			</p>
 			{/* Amenities */}
 			<h1
-				className='show-on-scroll text-zinc-700 text-2xl sm:text-3xl md:text-4xl 
+				className='show-on-scroll text- text-2xl sm:text-3xl md:text-4xl 
       font-bold'
 			>
 				Room Amenities

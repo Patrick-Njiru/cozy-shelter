@@ -7,7 +7,7 @@ const BookRoom = () => {
 			id='book-room'
 			className='show-on-scroll h-fit top-4 bottom-0 rounded-3xl bg-white text-black p-10 px-7 border shadow-2xl text-lg min-w-[300px] lg:sticky lg:w-[35%] xl:px-10'
 		>
-			<h3 className='show-on-scroll font-bold text-zinc-700 text-xl md:text-2xl'>Reservate room</h3>
+			<h3 className='show-on-scroll font-bold text- text-xl md:text-2xl'>Reservate room</h3>
 			<p className='show-on-scroll text-gray-600 my-4'>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus architecto ducimus
 				voluptate.
@@ -15,7 +15,9 @@ const BookRoom = () => {
 			<p className='show-on-scroll my-4'>
 				<span className='text-gray-600 font-medium'>From</span>
 				<br />
-				<span className='font-bold text-xl me-1 text-zinc-700 sm:text-2xl md:text-3xl'>$ 399.00 USD</span>
+				<span className='font-bold text-xl me-1 text- sm:text-2xl md:text-3xl'>
+					$ 399.00 USD
+				</span>
 				<span className='text-gray-600 text-xl'>/night</span>
 			</p>
 			<p className='h-0.5 bg-gray-200 w-full my-10'></p>
