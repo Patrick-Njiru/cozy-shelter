@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 const ReviewCard = ({ user, location, headline, profilePic }) => {
 	return (
-		<div className='flex flex-col space-y-6 justify-between items-center py-5 px-4 me-9 border shadow-lg rounded-3xl md:pt-10 md:py-10 md:px-8 lg:py-20 lg:px-1 lg:space-y-0 lg:flex-row lg:space-x-6'>
+		<div className='flex flex-col space-y-6 justify-between items-center py-5 px-4 me-9 border shadow-lg rounded-3xl md:py-10 md:px-8 lg:py-20 lg:px-10 lg:space-y-0 lg:flex-row lg:space-x-6'>
 			<img
 				src={profilePic}
 				alt={user}
