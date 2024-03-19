@@ -188,9 +188,9 @@ header a.active {
 	opacity: 0;
 	-webkit-filter: blur(5px);
 	        filter: blur(5px);
-	-webkit-transition: all 0.3s 0.2s ease-in;
-			-o-transition: all 0.3s 0.2s ease-in;
-					transition: all 0.3s 0.2s ease-in;
+	-webkit-transition: all 0.4s 0.2s ease-in;
+			-o-transition: all 0.4s 0.2s ease-in;
+					transition: all 0.4s 0.2s ease-in;
 }
 
 .show {

@@ -1,10 +1,10 @@
 import { useEffect } from "react"
-import PropTypes from "prop-types"
 import { Contacts, FAQs, Form, Hero, OurLocations } from "./components"
+import { animateOnScroll } from "../../utils"
 
-const Contact = ({ setScrollAnimation }) => {
+const Contact = () => {
 	useEffect(() => {
-		setScrollAnimation()
+		animateOnScroll()
 	})
 
 	return (
@@ -22,7 +22,5 @@ const Contact = ({ setScrollAnimation }) => {
 		</main>
 	)
 }
-
-Contact.propTypes = { setScrollAnimation: PropTypes.func.isRequired }
 
 export default Contact

@@ -1,12 +1,12 @@
 import { useEffect } from "react"
-import PropTypes from "prop-types"
 import { Subscribe } from "../../components"
 import { homeData } from "../../data"
 import { Activities, Cabins, Experiences, Hero, OurUniqueness, Reviews } from "./components"
+import { animateOnScroll } from "../../utils"
 
-const Home = ({ setScrollAnimation }) => {
+const Home = () => {
 	useEffect(() => {
-		setScrollAnimation()
+		animateOnScroll()
 	})
 
 	return (
@@ -28,7 +28,5 @@ const Home = ({ setScrollAnimation }) => {
 		</main>
 	)
 }
-
-Home.propTypes = { setScrollAnimation: PropTypes.func.isRequired }
 
 export default Home

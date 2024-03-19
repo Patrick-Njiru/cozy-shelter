@@ -1,17 +1,19 @@
 import { useEffect } from "react"
-import PropTypes from "prop-types"
 import { CabinCard } from "../../../components"
 import homeData from "../../../data/home"
+import { animateOnScroll } from "../../../utils"
 
-const RoomsCategory = ({ setScrollAnimation }) => {
+const RoomsCategory = () => {
 	useEffect(() => {
-		setScrollAnimation()
+		animateOnScroll()
 	})
 
 	return (
 		<main className='px-6 sm:px-10 md:px-16'>
 			<section className='show-on-scroll pt-20 pb-4 text-center mx-auto space-y-6 lg:w-1/2'>
-				<h1 className='show-on-scroll font-black text-4xl sm:text-5xl md:text-6xl'>Rooms with WiFi</h1>
+				<h1 className='show-on-scroll font-black text-4xl sm:text-5xl md:text-6xl'>
+					Rooms with WiFi
+				</h1>
 				<p className='show-on-scroll text-lg text-gray-600'>
 					Non consectetur a erat nam at lectus urna duis convallis molestie nunc non
 					blandit massa ut etiam sit amet nisl.
@@ -30,7 +32,5 @@ const RoomsCategory = ({ setScrollAnimation }) => {
 		</main>
 	)
 }
-
-RoomsCategory.propTypes = { setScrollAnimation: PropTypes.func.isRequired }
 
 export default RoomsCategory

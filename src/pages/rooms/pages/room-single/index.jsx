@@ -1,10 +1,10 @@
 import { useEffect } from "react"
-import PropTypes from "prop-types"
 import { About, BookRoom, Gallery, Hero } from "./components"
+import { animateOnScroll } from "../../../../utils"
 
-const RoomSingle = ({ setScrollAnimation }) => {
+const RoomSingle = () => {
 	useEffect(() => {
-		setScrollAnimation()
+		animateOnScroll()
 	})
 
 	return (
@@ -25,7 +25,5 @@ const RoomSingle = ({ setScrollAnimation }) => {
 		</main>
 	)
 }
-
-RoomSingle.propTypes = { setScrollAnimation: PropTypes.func.isRequired }
 
 export default RoomSingle

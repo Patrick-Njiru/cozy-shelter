@@ -1,12 +1,12 @@
 import { useEffect } from "react"
-import PropTypes from "prop-types"
 import { Hero, Latest, Trending } from "./components"
 import blogsData from "../../data/blog"
 import { Subscribe } from "../../components"
+import { animateOnScroll } from "../../utils"
 
-const Blogs = ({ setScrollAnimation }) => {
+const Blogs = () => {
 	useEffect(() => {
-		setScrollAnimation()
+		animateOnScroll()
 	})
 
 	return (
@@ -22,7 +22,5 @@ const Blogs = ({ setScrollAnimation }) => {
 		</div>
 	)
 }
-
-Blogs.propTypes = { setScrollAnimation: PropTypes.func.isRequired }
 
 export default Blogs

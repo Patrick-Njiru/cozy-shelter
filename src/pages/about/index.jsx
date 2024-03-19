@@ -1,11 +1,11 @@
 import { useEffect } from "react"
-import PropTypes from "prop-types"
 import { aboutData } from "../../data"
 import { Hero, Locations, OurStory, ResortUniqueness, Video } from "./components"
+import { animateOnScroll } from "../../utils"
 
-const About = ({ setScrollAnimation }) => {
+const About = () => {
 	useEffect(() => {
-		setScrollAnimation()
+		animateOnScroll()
 	})
 
 	return (
@@ -23,7 +23,5 @@ const About = ({ setScrollAnimation }) => {
 		</main>
 	)
 }
-
-About.propTypes = { setScrollAnimation: PropTypes.func.isRequired }
 
 export default About
