@@ -1,17 +1,17 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import PropTypes from "prop-types"
-import { useNavigate } from "react-router-dom"
+import { BlogContext } from "../../../../App"
 
-const TrendingBlogCard = ({ img, details }) => {
+const TrendingBlogCard = ({ img, details, postKey }) => {
 	const [isHovered, setIsHovered] = useState(false)
-	const navigate = useNavigate()
+	const { navigateToBlogPost } = useContext(BlogContext)
 
 	return (
 		<div
 			className='flex flex-col space-y-6 group justify-between md:space-x-5 cursor-pointer w-full md:items-center md:space-y-0 md:flex-row'
 			onMouseOver={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			onClick={() => navigate("/blog/blog-post")}
+			onClick={() => navigateToBlogPost(postKey)}
 		>
 			<div className='relative md:w-1/2 lg:w-[49%]'>
 				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />
@@ -35,6 +35,10 @@ const TrendingBlogCard = ({ img, details }) => {
 	)
 }
 
-TrendingBlogCard.propTypes = { img: PropTypes.any.isRequired, details: PropTypes.object.isRequired }
+TrendingBlogCard.propTypes = {
+	img: PropTypes.any.isRequired,
+	details: PropTypes.object.isRequired,
+	postKey: PropTypes.string.isRequired,
+}
 
 export default TrendingBlogCard

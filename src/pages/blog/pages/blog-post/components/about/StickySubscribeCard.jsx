@@ -1,4 +1,4 @@
-import { emailIcon } from "../../../../../../data/blog-post"
+import { emailIcon } from "../../../../../../data/blog"
 
 const StickySubscribeCard = () => {
 	return (

@@ -1,5 +1,6 @@
 import { createContext, useState } from "react"
-import { Route, Routes } from "react-router-dom"
+import { BiUpArrowAlt } from "react-icons/bi"
+import { Route, Routes, useNavigate } from "react-router-dom"
 import {
 	About,
 	Blog,
@@ -13,25 +14,28 @@ import {
 	RoomSingle,
 	Contact,
 } from "./pages"
-import blogPostData from "./data/blog-post"
-import { BiUpArrowAlt } from "react-icons/bi"
+import { blogPostData } from "./data/blog"
 import CartModal from "./pages/shared/navbar/components/CartModal"
 
 export const BlogContext = createContext()
 
 const App = () => {
 	const [selectedPost, setSelectedPost] = useState("glamping")
+	const navigate = useNavigate()
+
+	localStorage.setItem("selectedPost", selectedPost)
+
+	const post = blogPostData[localStorage.getItem("selectedPost")]
+
+	const navigateToBlogPost = (title) => {
+		setSelectedPost(title)
+		localStorage.clear()
+		localStorage.setItem("selectedPost", selectedPost)
+		navigate("/blog/blog-post/")
+	}
 
 	return (
-		<BlogContext.Provider
-			value={{
-				title: blogPostData[selectedPost].title,
-				date: blogPostData[selectedPost].date,
-				category: blogPostData[selectedPost].category,
-				background: blogPostData[selectedPost].bgImg,
-				content: blogPostData[selectedPost].mainContent,
-			}}
-		>
+		<BlogContext.Provider value={{ post, navigateToBlogPost }}>
 			<Navbar />
 			<CartModal />
 			<Routes>
@@ -41,7 +45,7 @@ const App = () => {
 				<Route path='/rooms/room-single' element={<RoomSingle />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/blog' element={<Blog />} />
-				<Route path='/blog/blog-post' element={<BlogPost />} />
+				<Route path='/blog/blog-post/' element={<BlogPost />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='*' element={<Error404 />} />
 			</Routes>

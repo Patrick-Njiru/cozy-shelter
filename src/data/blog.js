@@ -13,6 +13,7 @@ const blogsData = {
 		{
 			id: 1,
 			img: woodCabinLg,
+			postKey: "woodCabin",
 			details: {
 				title: "30 magical wood cabin ideas to inspire your next-off vacation",
 				category: "Resources",
@@ -24,6 +25,7 @@ const blogsData = {
 		{
 			id: 2,
 			img: campingLg,
+			postKey: "camping",
 			details: {
 				title: "New camping experiences added to our list of airbn expereiences",
 				category: "News",
@@ -33,6 +35,7 @@ const blogsData = {
 		{
 			id: 3,
 			img: alaskaSm,
+			postKey: "alaska",
 			details: {
 				title: "Cabins in Alaska temporarily paused due to COVID-19 regulations",
 				category: "News",
@@ -44,8 +47,10 @@ const blogsData = {
 		{
 			id: 1,
 			img: meals,
+			postKey: "meals",
 			details: {
-				title: "7 easy and simple comaping meals to surprise your friends",
+				bg: meals,
+				title: "7 easy and simple camping meals to surprise your friends",
 				category: "Articles",
 				date: "March 16, 2024",
 				description:
@@ -55,7 +60,9 @@ const blogsData = {
 		{
 			id: 2,
 			img: woodCabinSm,
+			postKey: "woodCabin",
 			details: {
+				bg: woodCabinLg,
 				title: "30 magical wood cabin ideas to inspire your next-off vacation",
 				category: "Resources",
 				date: "March 14, 2024",
@@ -66,7 +73,9 @@ const blogsData = {
 		{
 			id: 3,
 			img: pack,
+			postKey: "pack",
 			details: {
+				bg: pack,
 				title: "How to pack a back pack for the perfect camping weekend",
 				category: "Articles",
 				date: "March 10, 2024",
@@ -77,10 +86,12 @@ const blogsData = {
 		{
 			id: 4,
 			img: campingSm,
+			postKey: "camping",
 			details: {
+				bg: campingLg,
 				title: "New camping experiences added to our Airbnb Experiences",
 				category: "News",
-				date: "March 5, 2024",
+				date: "November 25, 2023",
 				description:
 					"Dius autre irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulia pariatur",
 			},
@@ -88,9 +99,11 @@ const blogsData = {
 		{
 			id: 5,
 			img: alaskaLg,
+			postKey: "alaska",
 			details: {
-				title: "Get comfortable in our cabins even in times of winter",
-				category: "Resources",
+				bg: alaskaLg,
+				title: "Cabins in Alaska temporarily paused due to COVID-19 regulations",
+				category: "News",
 				date: "March 3, 2024",
 				description:
 					"Dius autre irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulia pariatur",
@@ -99,7 +112,9 @@ const blogsData = {
 		{
 			id: 6,
 			img: glamping,
+			postKey: "glamping",
 			details: {
+				bg: glamping,
 				title: "Glamping 101: Everything you need to know about glamping",
 				category: "Resources",
 				date: "February 29, 2024",
@@ -108,7 +123,19 @@ const blogsData = {
 			},
 		},
 	],
-	
 }
+
+// blog posts
+import blogPostImg from "../assets/blog/blog-post/glamping-post.webp"
+import emailIcon from "../assets/blog/blog-post/email-icon.svg"
+// import blogsData from "./blog"
+
+const blogPostData = {}
+
+blogsData.latestPosts.map((post) => {
+	blogPostData[post.postKey] = post.details
+})
+
+export { emailIcon, blogPostImg, blogPostData }
 
 export default blogsData

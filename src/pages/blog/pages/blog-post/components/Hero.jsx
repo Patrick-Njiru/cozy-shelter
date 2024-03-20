@@ -3,14 +3,14 @@ import { NavLink } from "react-router-dom"
 import { BlogContext } from "../../../../../App"
 
 const Hero = () => {
-	const { title, date, category, background } = useContext(BlogContext)
+	const { title, date, category, bg } = useContext(BlogContext).post
 
 	return (
 		<section
 			id='blog/blog-post_hero'
 			className='show-on-scroll relative -top-28 pt-64 pb-32 px-6 text-white bg-blend-darken sm:pt-96 sm:px-10 md:px-16'
 			style={{
-				background: `rgba(0,0,0,0.4) url(${background}) no-repeat`,
+				background: `rgba(0,0,0,0.4) url(${bg}) no-repeat`,
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 			}}
