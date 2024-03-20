@@ -31,7 +31,7 @@ const PagesModal = ({ view }) => {
 					Rooms
 				</NavLink>
 				<NavLink
-					to='/rooms/room-single'
+					to='/rooms/room'
 					className='transition-all duration-200 hover:text-red-500'
 				>
 					Room Single
@@ -73,10 +73,7 @@ const PagesModal = ({ view }) => {
 			<NavLink to='/rooms' className='transition-all duration-200 hover:text-red-500'>
 				Rooms
 			</NavLink>
-			<NavLink
-				to='/rooms/room-single'
-				className='transition-all duration-200 hover:text-red-500'
-			>
+			<NavLink to='/rooms/room' className='transition-all duration-200 hover:text-red-500'>
 				Room Single
 			</NavLink>
 			<NavLink

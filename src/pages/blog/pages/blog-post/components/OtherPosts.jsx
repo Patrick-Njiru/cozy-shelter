@@ -1,11 +1,11 @@
 import { useContext } from "react"
 import { NavLink } from "react-router-dom"
 import blogsData from "../../../../../data/blog"
-import { BlogContext } from "../../../../../App"
+import { NavigationContext } from "../../../../../App"
 import PostCard from "../../../components/latest/PostCard"
 
 const OtherPosts = () => {
-	const { title } = useContext(BlogContext)
+	const { title } = useContext(NavigationContext).post
 
 	return (
 		<section className='show-on-scroll my-20 px-6 sm:px-10 md:px-16 sm:my-32 md:my-40'>
@@ -23,7 +23,7 @@ const OtherPosts = () => {
 					.filter((blog) => blog.title !== title)
 					.slice(0, 2)
 					.map((blog) => (
-						<PostCard key={blog.id} {...blog} />
+						<PostCard key={blog.id} {...blog} from='latest-posts' />
 					))}
 			</div>
 		</section>

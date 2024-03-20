@@ -1,11 +1,11 @@
 import { useContext, useState } from "react"
 import PropTypes from "prop-types"
 import TrendingBlogCard from "./TrendingBlogCard"
-import { BlogContext } from "../../../../App"
+import { NavigationContext } from "../../../../App"
 
 const Trending = ({ trending }) => {
 	const [isHovered, setIsHovered] = useState(false)
-	const { navigateToBlogPost } = useContext(BlogContext)
+	const { handleNavigation } = useContext(NavigationContext)
 
 	return (
 		<section className='show-on-scroll px-6 sm:px-10 md:px-16 mt-10'>
@@ -14,7 +14,7 @@ const Trending = ({ trending }) => {
 					className='relative rounded-3xl cursor-pointer lg:w-[45%] lg:h-screen'
 					onMouseOver={() => setIsHovered(true)}
 					onMouseLeave={() => setIsHovered(false)}
-					onClick={() => navigateToBlogPost(trending[0].postKey)}
+					onClick={() => handleNavigation(trending[0].postKey, 'blogPost')}
 				>
 					<img src={trending[0].img} alt='woodcabin' className='opacity-0 size-full' />
 

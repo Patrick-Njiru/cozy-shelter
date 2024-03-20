@@ -75,7 +75,7 @@ const Footer = () => {
 								Rooms
 							</NavLink>
 							<NavLink
-								to='/rooms/room-single'
+								to='/rooms/room'
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Room Single

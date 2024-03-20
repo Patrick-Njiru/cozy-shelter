@@ -14,7 +14,7 @@ const Gallery = () => {
 				</a>
 			</div>
 			<div className='flex flex-wrap justify-between'>
-				{roomsData.roomSingle.gallery.map((image, index) => (
+				{roomsData.gallery.map((image, index) => (
 					<GalleryImage key={index} image={image} />
 				))}
 			</div>

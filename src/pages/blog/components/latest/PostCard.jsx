@@ -1,20 +1,17 @@
 import PropTypes from "prop-types"
 import { useContext, useState } from "react"
-import { useNavigate } from "react-router-dom"
-import { BlogContext } from "../../../../App"
+import { NavigationContext } from "../../../../App"
 
-const PostCard = ({ img, details, postKey }) => {
+const PostCard = ({ img, details, postKey, from }) => {
 	const [isHovered, setisHovered] = useState(false)
-	const { navigateToBlogPost } = useContext(BlogContext)
+	const { handleNavigation } = useContext(NavigationContext)
 
 	return (
 		<div
 			className='show-on-scroll transition-all duration-500 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]'
-			onClick={() => {
-				navigateToBlogPost(postKey)
-			}}
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
+			onClick={() => from == 'latest-posts'? '' : handleNavigation(postKey, "blogPost")}
 		>
 			<div className='relative w-full'>
 				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />
@@ -46,6 +43,7 @@ PostCard.propTypes = {
 	img: PropTypes.any.isRequired,
 	details: PropTypes.object.isRequired,
 	postKey: PropTypes.string.isRequired,
+	from: PropTypes.string,
 }
 
 export default PostCard

@@ -1,18 +1,27 @@
+import { useContext } from "react"
 import { BiBath, BiBed } from "react-icons/bi"
 import { BsPerson } from "react-icons/bs"
-import { roomsData } from "../../../../../data"
+import { NavigationContext } from "../../../../../App"
 
 const About = () => {
+	const {
+		cabin: {
+			rooms: { guests, bedrooms },
+			amenities,
+		},
+		handleNavigation
+	} = useContext(NavigationContext)
+
 	return (
 		<div id='room-about' className='leading-loose space-y-6 w-full lg:w-3/5'>
 			<div className='show-on-scroll flex items-center flex-wrap space-x-4 mb-6'>
 				<div className='flex items-center text-lg space-x-3 border p-4 rounded-full my-4'>
 					<BsPerson className='text-2xl' />
-					<p>8 Guests</p>
+					<p>{guests}</p>
 				</div>
 				<div className='flex items-center text-lg space-x-3 border p-4 rounded-full my-4'>
 					<BiBed className='text-2xl' />
-					<p>4 Bedrooms</p>
+					<p>{bedrooms}</p>
 				</div>
 				<div className='flex items-center text-lg space-x-3 border p-4 rounded-full my-4'>
 					<BiBath className='text-2xl' />
@@ -51,10 +60,11 @@ const About = () => {
 				Room Amenities
 			</h1>
 			<div className='show-on-scroll flex flex-wrap min-w-[300px]'>
-				{Object.entries(roomsData.roomSingle.amenities).map((entry) => (
+				{Object.entries(amenities).map((entry) => (
 					<div
 						key={entry[0]}
-						className='flex space-x-6 w-1/2 md:w-1/3 my-6 text-lg text-gray-600'
+						className='flex space-x-6 w-1/2 md:w-1/3 my-6 text-lg text-gray-600 cursor-pointer'
+						onClick={() => handleNavigation(entry[0], "roomsCategory")}
 					>
 						<img src={entry[1]} alt={entry[0]} />
 						<p>{entry[0]}</p>

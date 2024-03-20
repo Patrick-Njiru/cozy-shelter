@@ -1,7 +1,11 @@
+import { useContext } from "react"
 import { NavLink } from "react-router-dom"
 import { whiteLogo } from "../../../../../data"
+import { NavigationContext } from "../../../../../App"
 
 const BookRoom = () => {
+	const { price } = useContext(NavigationContext).cabin
+
 	return (
 		<div
 			id='book-room'
@@ -16,7 +20,7 @@ const BookRoom = () => {
 				<span className='text-gray-600 font-medium'>From</span>
 				<br />
 				<span className='font-bold text-xl me-1 text- sm:text-2xl md:text-3xl'>
-					$ 399.00 USD
+					$ {price}.00 USD
 				</span>
 				<span className='text-gray-600 text-xl'>/night</span>
 			</p>
@@ -56,7 +60,7 @@ const BookRoom = () => {
 				<p className='w-2/5 h-0.5 bg-gray-300'></p>
 			</div>
 			<NavLink
-				to='/rooms/room-single'
+				to='/rooms/room'
 				className='show-on-scroll block w-full transition-all duration-500 ease-in-out text-center bg-black text-white px-7 py-4 text-lg font-semibold rounded-full relative top-0 border shadow-md hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 			>
 				<img src={whiteLogo} alt='logo' className='inline me-3' />

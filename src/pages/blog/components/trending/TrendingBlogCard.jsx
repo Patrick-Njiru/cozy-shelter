@@ -1,17 +1,17 @@
 import { useContext, useState } from "react"
 import PropTypes from "prop-types"
-import { BlogContext } from "../../../../App"
+import { NavigationContext } from "../../../../App"
 
 const TrendingBlogCard = ({ img, details, postKey }) => {
 	const [isHovered, setIsHovered] = useState(false)
-	const { navigateToBlogPost } = useContext(BlogContext)
+	const { handleNavigation } = useContext(NavigationContext)
 
 	return (
 		<div
 			className='flex flex-col space-y-6 group justify-between md:space-x-5 cursor-pointer w-full md:items-center md:space-y-0 md:flex-row'
 			onMouseOver={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			onClick={() => navigateToBlogPost(postKey)}
+			onClick={() => handleNavigation(postKey, 'blogPost')}
 		>
 			<div className='relative md:w-1/2 lg:w-[49%]'>
 				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />

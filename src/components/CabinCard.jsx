@@ -1,12 +1,13 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import PropTypes from "prop-types"
-import { NavLink, useNavigate } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { BiBed } from "react-icons/bi"
 import { BsPerson } from "react-icons/bs"
+import { NavigationContext } from "../App"
 
-const CabinCard = ({ img, title, description, price, rooms, page }) => {
+const CabinCard = ({ id, img, title, description, price, rooms, page }) => {
 	const [isHovered, setisHovered] = useState(false)
-	const navigate = useNavigate()
+	const { handleNavigation } = useContext(NavigationContext)
 
 	return (
 		<div
@@ -15,11 +16,9 @@ const CabinCard = ({ img, title, description, price, rooms, page }) => {
 					? "show-on-scroll transition-all duration-500 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer my-6 w-full hover:-top-4 md:w-[48%] lg:w-[31.5%]"
 					: "transition-all duration-500 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer me-9 z-10 h-5/6 min-w-[300px] sm:min-w-96 hover:-top-4"
 			}
-			onClick={() => {
-				navigate("/rooms/room-single")
-			}}
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
+			onClick={() => handleNavigation(id, "room")}
 		>
 			{page !== "home" ? (
 				<div className='relative w-full h-fit'>
@@ -63,7 +62,7 @@ const CabinCard = ({ img, title, description, price, rooms, page }) => {
 						<span className='text-gray-600 font-light text-lg'>/night</span>
 					</p>
 					<NavLink
-						to='/rooms/room-single'
+						to='/rooms/room'
 						className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full hover:bg-red-600  hover:-top-1'
 					>
 						Book now

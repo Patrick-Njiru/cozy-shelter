@@ -1,10 +1,10 @@
 import { useContext } from "react"
 import { NavLink } from "react-router-dom"
-import { BlogContext } from "../../../../../App"
+import { NavigationContext } from "../../../../../App"
 
 const Hero = () => {
-	const { title, date, category, bg } = useContext(BlogContext).post
-
+	const { title, date, category, bg } = useContext(NavigationContext).post
+	
 	return (
 		<section
 			id='blog/blog-post_hero'

@@ -1,7 +1,6 @@
 import { useEffect } from "react"
 import { CabinCard } from "../../components"
-import { homeData } from "../../data"
-import { roomsHero } from "../../data/rooms"
+import roomsData, { roomsHero } from "../../data/rooms"
 import { animateOnScroll } from "../../utils"
 
 const Rooms = () => {
@@ -33,7 +32,7 @@ const Rooms = () => {
 			</section>
 			{/* Rooms */}
 			<section className='show-on-scroll mb-48 mt-10 flex flex-wrap justify-between px-6 sm:px-10 md:px-16'>
-				{homeData.cabins.map((cabin) => (
+				{roomsData.cabins.map((cabin) => (
 					<CabinCard key={cabin.id} {...cabin} page='rooms' />
 				))}
 			</section>
