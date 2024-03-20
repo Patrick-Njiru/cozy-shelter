@@ -5,9 +5,7 @@ import { Activities, Cabins, Experiences, Hero, OurUniqueness, Reviews } from ".
 import { animateOnScroll } from "../../utils"
 
 const Home = () => {
-	useEffect(() => {
-		animateOnScroll()
-	})
+	useEffect(() => animateOnScroll())
 
 	return (
 		<main>

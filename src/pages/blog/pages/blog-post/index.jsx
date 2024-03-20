@@ -4,9 +4,7 @@ import { Subscribe } from "../../../../components"
 import { animateOnScroll } from "../../../../utils"
 
 const BlogPost = () => {
-	useEffect(() => {
-		animateOnScroll()
-	})
+	useEffect(() => animateOnScroll())
 
 	return (
 		<main>

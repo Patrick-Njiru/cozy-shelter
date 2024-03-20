@@ -3,9 +3,7 @@ import { About, BookRoom, Gallery, Hero } from "./components"
 import { animateOnScroll } from "../../../../utils"
 
 const RoomSingle = () => {
-	useEffect(() => {
-		animateOnScroll()
-	})
+	useEffect(() => animateOnScroll())
 
 	return (
 		<main>

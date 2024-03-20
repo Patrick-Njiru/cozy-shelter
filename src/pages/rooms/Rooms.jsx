@@ -4,9 +4,7 @@ import roomsData, { roomsHero } from "../../data/rooms"
 import { animateOnScroll } from "../../utils"
 
 const Rooms = () => {
-	useEffect(() => {
-		animateOnScroll()
-	})
+	useEffect(() => animateOnScroll())
 
 	return (
 		<main>

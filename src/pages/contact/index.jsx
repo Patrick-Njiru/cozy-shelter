@@ -3,9 +3,7 @@ import { Contacts, FAQs, Form, Hero, OurLocations } from "./components"
 import { animateOnScroll } from "../../utils"
 
 const Contact = () => {
-	useEffect(() => {
-		animateOnScroll()
-	})
+	useEffect(() => animateOnScroll())
 
 	return (
 		<main>

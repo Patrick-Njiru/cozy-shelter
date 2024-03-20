@@ -13,19 +13,23 @@ const Locations = ({ locations }) => {
 					{locations.map((location) => (
 						<div
 							key={location.id}
-							className='show-on-scroll space-y-6 p-10 pe-20 border rounded-xl shadow-md w-[27rem] lg:pe-10 lg:w-96'
+							className='show-on-scroll space-y-6 p-10 pe-20 border rounded-xl shadow-md sm:w-96 md:w-[27rem] lg:pe-10 lg:w-96'
 						>
 							<h1 className='font-bold text-xl sm:text-2xl md:text-3xl'>
 								{location.title}
 							</h1>
 							<div className='flex items-start space-x-4'>
-								<BiLocationPlus className='text-red-500 text-xl' />
+								<BiLocationPlus className='text-red-500 w-8 text-xl' />
 								<p className='text-gray-600'>{location.address}</p>
 							</div>
 						</div>
 					))}
 				</div>
-				<img src={locationsImg} alt='locations' className='show-on-scroll lg:w-3/5 xl:w-[65%]' />
+				<img
+					src={locationsImg}
+					alt='locations'
+					className='show-on-scroll lg:w-3/5 xl:w-[65%]'
+				/>
 			</div>
 			<NavLink
 				to='/locations'

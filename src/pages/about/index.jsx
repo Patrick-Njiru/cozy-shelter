@@ -4,9 +4,7 @@ import { Hero, Locations, OurStory, ResortUniqueness, Video } from "./components
 import { animateOnScroll } from "../../utils"
 
 const About = () => {
-	useEffect(() => {
-		animateOnScroll()
-	})
+	useEffect(() => animateOnScroll())
 
 	return (
 		<main id='about'>
