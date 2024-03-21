@@ -1,5 +1,5 @@
-import { aboutHero } from "../../../data/about"
 import { BiChevronDown } from "react-icons/bi"
+import { aboutHero } from "../../../data/about"
 import handleScrollPageDown from "../../../utils/handle-scroll-page-down"
 
 const Hero = () => {
@@ -18,7 +18,7 @@ const Hero = () => {
 				<h1 className='show-on-scroll font-black text-4xl my-8 sm:text-5xl md:text-6xl'>
 					About our resorts
 				</h1>
-				<p className="show-on-scroll ">
+				<p className='show-on-scroll'>
 					Inventore iure non beatae unde, laborum corrupti corporis dolorum fuga harum
 					provident quisquam, sint possimus officiis eveniet.
 				</p>
@@ -27,7 +27,7 @@ const Hero = () => {
 					className='show-on-scroll transition-all duration-500 delay-0 group rounded-full size-24 border mt-10 hover:size-[5.7rem]'
 					onClick={() => handleScrollPageDown()}
 				>
-					<BiChevronDown className='about-hero-btn text-6xl mx-auto' />{" "}
+					<BiChevronDown className='about-hero-btn text-6xl mx-auto' />
 				</button>
 			</div>
 		</section>

@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import { NavLink } from "react-router-dom"
+import { BiLocationPlus } from "react-icons/bi"
 import { Heading } from "../../../components"
 import { locationsImg } from "../../../data/about"
-import { BiLocationPlus } from "react-icons/bi"
 
 const Locations = ({ locations }) => {
 	return (

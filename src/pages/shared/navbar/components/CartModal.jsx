@@ -1,4 +1,4 @@
-import { handleCartToggle } from "../../../../utils"
+import { handleToggle } from "../../../../utils"
 
 const CartModal = () => {
 	return (
@@ -11,7 +11,7 @@ const CartModal = () => {
 					<h5 className='font-bold text-lg text-black'>Your Cart</h5>
 					<button
 						className='text-5xl rotate-45 hover:text-red-600'
-						onClick={() => handleCartToggle()}
+						onClick={() => handleToggle('cart')}
 					>
 						+
 					</button>

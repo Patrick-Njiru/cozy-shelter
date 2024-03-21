@@ -4,7 +4,7 @@ import { NavigationContext } from "../../../../../App"
 
 const Hero = () => {
 	const { title, date, category, bg } = useContext(NavigationContext).post
-	
+
 	return (
 		<section
 			className='show-on-scroll relative -top-28 pt-64 pb-32 px-6 text-white bg-blend-darken sm:pt-96 sm:px-10 md:px-16'

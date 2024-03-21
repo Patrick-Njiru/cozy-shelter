@@ -16,7 +16,7 @@ const Hero = () => {
 				<h1 className='show-on-scroll font-black text-4xl sm:text-5xl md:text-6xl'>
 					Recharge energies in our unique hotel
 				</h1>
-				<p className="show-on-scroll ">
+				<p className='show-on-scroll'>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore iure non
 					beatae unde, laborum corrupti corporis dolorum fuga harum provident quisquam,
 					sint possimus officiis eveniet.

@@ -25,6 +25,9 @@ header a.active {
 	color: rgba(255, 0, 0, 0.6);
 	font-weight: 500;
 }
+.book-btn.active {
+	color: white;
+}
 
 #hamburger-btn.open {
 	-webkit-animation: pulse 1s linear infinite alternate;
@@ -82,9 +85,9 @@ header a.active {
 }
 
 /* Home */
-#scroll-container::-webkit-scrollbar,
-#scroll-container-2::-webkit-scrollbar,
-#scroll-container-3::-webkit-scrollbar {
+#cabins-scroll-container::-webkit-scrollbar,
+#reviews-scroll-container::-webkit-scrollbar,
+#locations-scroll-container::-webkit-scrollbar {
 	display: none;
 }
 

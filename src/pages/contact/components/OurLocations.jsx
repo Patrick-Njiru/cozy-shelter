@@ -19,7 +19,7 @@ const OurLocations = () => {
 				</p>
 			</div>
 			<div
-				id='scroll-container-3'
+				id='locations-scroll-container'
 				className='show-on-scroll transition-all duration-1000 ease-in-out max-w-screen overflow-x-scroll flex items-center justify-start pt-8 px-6 sm:px-10 md:px-16'
 			>
 				{contactData.ourLocations.map((locationDetails) => (
@@ -49,7 +49,6 @@ const OurLocations = () => {
 			<div className='relative px-5 w-full flex justify-between top-[-300px] sm:px-9 md:px-12'>
 				<button
 					type='button'
-					id='cabin-scroll-left'
 					className={
 						leftClicks == 6
 							? "invisible "
@@ -62,7 +61,6 @@ const OurLocations = () => {
 				</button>
 				<button
 					type='button'
-					id='cabin-scroll-right'
 					className={
 						rightClicks == 6
 							? "invisible "

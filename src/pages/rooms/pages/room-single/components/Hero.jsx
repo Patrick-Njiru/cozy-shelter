@@ -6,7 +6,7 @@ const Hero = () => {
 
 	return (
 		<section
-			className='show-on-scroll relative -top-28 text-white  pb-8 pt-[250px] px-6 sm:pt-96 sm:pb-16 md:pt-[450px] md:pb-20 sm:px-10 md:px-16'
+			className='show-on-scroll relative -top-28 text-white pb-8 pt-[250px] px-6 sm:pt-96 sm:pb-16 md:pt-[450px] md:pb-20 sm:px-10 md:px-16'
 			style={{
 				background: `rgba(0,0,0,0.5) url(${img}) no-repeat`,
 				backgroundSize: "cover",

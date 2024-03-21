@@ -1,6 +1,6 @@
 import { createContext, useState } from "react"
-import { BiUpArrowAlt } from "react-icons/bi"
 import { Route, Routes, useNavigate } from "react-router-dom"
+import { BiUpArrowAlt } from "react-icons/bi"
 import {
 	About,
 	Blog,
@@ -23,7 +23,7 @@ export const NavigationContext = createContext()
 const App = () => {
 	const [selectedPost, setSelectedPost] = useState("glamping")
 	const [selectedRoomID, setSelectedRoomID] = useState(1)
-	const [selectedAmenity, setSelectedAmenity] = useState("wifi")
+	const [selectedAmenity, setSelectedAmenity] = useState("Wifi")
 	const navigate = useNavigate()
 
 	localStorage.setItem("selectedPost", selectedPost)

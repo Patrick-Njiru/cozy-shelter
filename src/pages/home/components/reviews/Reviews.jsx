@@ -1,9 +1,9 @@
+import { useState } from "react"
 import PropTypes from "prop-types"
 import { NavLink } from "react-router-dom"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import ReviewCard from "./ReviewCard"
 import { handleSlide } from "../../../../utils"
-import { useState } from "react"
 import { Heading } from "../../../../components"
 
 const Reviews = ({ reviews }) => {
@@ -14,7 +14,7 @@ const Reviews = ({ reviews }) => {
 		<section className='show-on-scroll mt-40 mb-20 sm:mt-52 sm:mb-24'>
 			<Heading title='What out past clients say' />
 			<div
-				id='scroll-container-2'
+				id='reviews-scroll-container'
 				className='max-w-screen overflow-x-scroll flex items-center justify-start mt-8 px-6 sm:px-10 md:px-16'
 			>
 				{reviews.map((review) => (
@@ -24,7 +24,6 @@ const Reviews = ({ reviews }) => {
 			<div className='relative w-full px-6 top-[-400px] lg:-top-72 flex justify-between sm:px-10 md:px-16'>
 				<button
 					type='button'
-					to='/book'
 					className={
 						leftClicks == 2
 							? "invisible "
@@ -37,7 +36,6 @@ const Reviews = ({ reviews }) => {
 				</button>
 				<button
 					type='button'
-					to='/book'
 					className={
 						rightClicks == 2
 							? "invisible "

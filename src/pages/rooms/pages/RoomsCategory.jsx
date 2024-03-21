@@ -6,7 +6,6 @@ import { NavigationContext } from "../../../App"
 
 const RoomsCategory = () => {
 	const { amenity } = useContext(NavigationContext)
-
 	useEffect(() => animateOnScroll())
 
 	return (

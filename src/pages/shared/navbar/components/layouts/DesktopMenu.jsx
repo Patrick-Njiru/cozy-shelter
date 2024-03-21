@@ -1,12 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { BiCaretDown, BiCaretUp } from "react-icons/bi"
 import PagesModal from "../PagesModal"
-import {
-	handleCartToggle,
-	handleHideModal,
-	handleModalDisplay,
-	handleShowModal,
-} from "../../../../../utils"
+import { handleModalDisplay, handleToggle } from "../../../../../utils"
 import booked from "../../../../../assets/booked-icon.svg"
 
 const DesktopMenu = () => {
@@ -25,9 +20,9 @@ const DesktopMenu = () => {
 				<div
 					id='pages'
 					className='transition-all duration-200 hover:text-red-500'
-					onClick={() => handleModalDisplay()}
-					onMouseOver={() => handleShowModal()}
-					onMouseLeave={() => handleHideModal()}
+					onClick={() => handleModalDisplay("toggle")}
+					onMouseOver={() => handleModalDisplay("show")}
+					onMouseLeave={() => handleModalDisplay("hide")}
 				>
 					Pages
 					<button type='button'>
@@ -38,7 +33,7 @@ const DesktopMenu = () => {
 				</div>
 				<button
 					className='transition-all duration-200 group relative hover:text-gray-600'
-					onClick={() => handleCartToggle()}
+					onClick={() => handleToggle("cart")}
 				>
 					<img src={booked} alt='cart' className='hover:opacity-70' />
 					<sub className='absolute -start-1 w-5 h-5 pt-2.5 rounded-full bg-red-500 text-white font-bold text-center group-hover:bg-red-300'>
@@ -47,7 +42,7 @@ const DesktopMenu = () => {
 				</button>
 				<NavLink
 					to='/rooms/room'
-					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full relative top-0 hover:bg-red-600  hover:-top-1'
+					className='book-btn inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full relative top-0 hover:bg-red-600 hover:-top-1'
 				>
 					Book now
 				</NavLink>

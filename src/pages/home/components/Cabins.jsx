@@ -23,7 +23,7 @@ const Cabins = ({ cabins }) => {
 				</NavLink>
 			</div>
 			<div
-				id='scroll-container'
+				id='cabins-scroll-container'
 				className='show-on-scroll transition-all duration-1000 ease-in-out max-w-screen overflow-x-scroll flex items-center justify-start pt-8 px-6 sm:px-10 md:px-16'
 			>
 				{cabins.map((cabin) => (
@@ -33,7 +33,6 @@ const Cabins = ({ cabins }) => {
 			<div className='show-on-scroll relative px-5 w-full flex justify-between top-[-370px] sm:px-9 md:px-12'>
 				<button
 					type='button'
-					id='cabin-scroll-left'
 					className={
 						leftClicks == 6
 							? "invisible "
@@ -46,7 +45,6 @@ const Cabins = ({ cabins }) => {
 				</button>
 				<button
 					type='button'
-					id='cabin-scroll-right'
 					className={
 						rightClicks == 6
 							? "invisible "

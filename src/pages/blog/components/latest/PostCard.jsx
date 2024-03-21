@@ -8,15 +8,19 @@ const PostCard = ({ img, details, postKey, from }) => {
 
 	return (
 		<div
-			className='show-on-scroll transition-all duration-500 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]'
+			className={
+				from != "blogs"
+					? "show-on-scroll transition-all duration-400 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]"
+					: "transition-all duration-400 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]"
+			}
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
-			onClick={() => from == 'latest-posts'? '' : handleNavigation(postKey, "blogPost")}
+			onClick={() => (from == "latest-posts" ? "" : handleNavigation(postKey, "blogPost"))}
 		>
 			<div className='relative w-full'>
 				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />
 				<div
-					className='transition-all duration-500 delay-0 ease-in-out absolute start-0 end-0 top-0 bottom-0 rounded-t-xl p-6'
+					className='transition-all duration-400 delay-0 ease-in-out absolute start-0 end-0 top-0 bottom-0 rounded-t-xl p-6'
 					style={{
 						background: `url(${img}) no-repeat`,
 						backgroundPosition: "bottom center",
