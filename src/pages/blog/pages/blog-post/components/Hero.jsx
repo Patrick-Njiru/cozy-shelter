@@ -16,10 +16,7 @@ const Hero = () => {
 		>
 			<div className='show-on-scroll space-y-8 lg:w-[850px]'>
 				<div className='show-on-scroll flex items-center space-x-8'>
-					<NavLink
-						to='/blog/blog-post-categories/resources'
-						className='inline transition-all duration-500 ease-in-out bg-white text-black px-5 py-3 font-semibold w-fit rounded-full relative top-0  hover:-top-1 sm:text-lg'
-					>
+					<NavLink className='inline transition-all duration-500 ease-in-out bg-white text-black px-5 py-3 font-semibold w-fit rounded-full relative top-0  hover:-top-1 sm:text-lg'>
 						{category}
 					</NavLink>
 					<p className='text-lg font-semibold'>{date}</p>
