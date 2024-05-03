@@ -32,7 +32,6 @@ const Locations = ({ locations }) => {
 				/>
 			</div>
 			<NavLink
-				to='/locations'
 				className='show-on-scroll block mx-auto mt-20 transition-all duration-500 ease-in-out bg-red-500 text-white px-7 py-4 text-lg font-semibold w-fit rounded-full relative top-0 border shadow-md hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 			>
 				More Locations
