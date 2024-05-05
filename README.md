@@ -2,7 +2,7 @@
 
 ### Description
 
-An Airbnb Website called Cozy Shelter. My latest project with an amazing UI and offering a great user experience. It has 8 pages and some smooth animations within them. The website is mobile responsive.
+An Airbnb Website called Cozy Shelter. online marketplace for short-term lodging and vacation rentals. My latest project with an amazing UI and offering a great user experience. It has 8 pages, is responsive, offers smooth animations for a better user experience.
 
 ### Table of Contents
 
