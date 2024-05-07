@@ -24,7 +24,6 @@ const CabinCard = ({ id, img, title, description, price, rooms, page }) => {
 				<div className='relative w-full h-fit'>
 					<img src={img} alt={title} className='block w-full h-auto opacity-0' />
 					<div
-						id=''
 						className='transition-all duration-500 delay-0 ease-in-out rounded-t-xl absolute start-0 end-0 top-0 bottom-0'
 						style={{
 							background: `url(${img}) no-repeat`,
@@ -35,7 +34,6 @@ const CabinCard = ({ id, img, title, description, price, rooms, page }) => {
 				</div>
 			) : (
 				<div
-					id=''
 					className='transition-all duration-500 delay-0 ease-in-out h-60 rounded-t-xl'
 					style={{
 						background: `url(${img}) no-repeat`,
@@ -74,6 +72,7 @@ const CabinCard = ({ id, img, title, description, price, rooms, page }) => {
 }
 
 CabinCard.propTypes = {
+	id: PropTypes.number.isRequired,
 	title: PropTypes.string.isRequired,
 	img: PropTypes.any.isRequired,
 	description: PropTypes.string,
