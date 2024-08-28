@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const OurUniqueness = ({ uniqueness }) => {
 	return (
@@ -45,12 +45,12 @@ const OurUniqueness = ({ uniqueness }) => {
 						quisquam quia, culpa provident quo, maiores aspernatur dolore delectus sit.
 						Sequi quo tempore ut inventore nobis commodi delectus!
 					</p>
-					<NavLink
+					<Link
 						to='/about'
 						className='show-on-scroll block transition-all duration-500 ease-in-out bg-white text-lg font-medium w-fit rounded-full relative top-0 border px-7 py-4 hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 					>
 						About us
-					</NavLink>
+					</Link>
 				</div>
 			</div>
 		</section>

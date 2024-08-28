@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Heading } from "../../../components"
 
 const Activities = ({ activities }) => {
@@ -30,12 +30,12 @@ const Activities = ({ activities }) => {
 					</div>
 				))}
 			</div>
-			<NavLink
+			<Link
 				to='/activities'
 				className='show-on-scroll block mt-16 mx-auto transition-all duration-500 ease-in-out bg-white  text-lg font-medium w-fit rounded-full relative top-0 border py-4 px-7 hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 			>
 				More activities
-			</NavLink>
+			</Link>
 		</section>
 	)
 }

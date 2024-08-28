@@ -1,6 +1,6 @@
 import { useState } from "react"
 import PropTypes from "prop-types"
-import { NavLink } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import ReviewCard from "./ReviewCard"
 import { handleSlide } from "../../../../utils"
@@ -9,6 +9,7 @@ import { Heading } from "../../../../components"
 const Reviews = ({ reviews }) => {
 	const [leftClicks, setLeftClicks] = useState(2)
 	const [rightClicks, setRightClicks] = useState(0)
+	const { roomId } = useParams()
 
 	return (
 		<section className='show-on-scroll mt-40 mb-20 sm:mt-52 sm:mb-24'>
@@ -48,18 +49,18 @@ const Reviews = ({ reviews }) => {
 				</button>
 			</div>
 			<div className='show-on-scroll flex flex-wrap justify-center space-x-4 mt-10 px-6 sm:px-10 sm:space-x-6 sm:space-y-0 md:px-16'>
-				<NavLink
-					to='/book'
+				<Link
+					to={`/rooms/${roomId}`}
 					className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-7 py-4  mb-6  text-lg font-bold w-fit rounded-full relative top-0 hover:bg-red-600 hover:-top-1 sm:px-10 sm:py-6 sm:mb-0'
 				>
 					Book now
-				</NavLink>
-				<NavLink
+				</Link>
+				<Link
 					to='/rooms'
 					className='inline transition-all duration-500 ease-in-out bg-inherit text-black px-7 py-4 mb-6 text-lg w-fit rounded-full relative top-0 border hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6 sm:mb-0'
 				>
 					Explore Cabins
-				</NavLink>
+				</Link>
 			</div>
 		</section>
 	)

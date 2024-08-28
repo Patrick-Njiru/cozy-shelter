@@ -20,17 +20,17 @@ import roomGallery4 from "../assets/rooms/room-single/room-gallery-4.webp"
 import tv from "../assets/rooms/room-single/tv-icon.svg"
 import wifi from "../assets/rooms/room-single/wifi-icon.svg"
 
-const amenities = {
-	Wifi: wifi,
-	Heater: heater,
-	Fireplace: fireplace,
-	"Hot tub": hotTub,
-	TV: tv,
-	Parking: parking,
-	"Full Kitchen": kitchen,
-	"Game room": gaming,
-	Refrigerator: refrigerator,
-}
+const amenities = [
+	{ id: 1, title: "Wifi", img: wifi },
+	{ id: 2, title: "Heater", img: heater },
+	{ id: 3, title: "Fireplace", img: fireplace },
+	{ id: 4, title: "Hot Tub", img: hotTub },
+	{ id: 5, title: "TV", img: tv },
+	{ id: 6, title: "Parking", img: parking },
+	{ id: 7, title: "Full Kitchen", img: kitchen },
+	{ id: 8, title: "Game Room", img: gaming },
+	{ id: 9, title: "Refrigerator", img: refrigerator },
+]
 
 const roomsData = {
 	cabins: [
@@ -43,16 +43,7 @@ const roomsData = {
 				guests: "2 Guests",
 				bedrooms: "1 Bedroom",
 			},
-			amenities: {
-				Heater: heater,
-				Fireplace: fireplace,
-				"Hot tub": hotTub,
-				TV: tv,
-				Parking: parking,
-				"Full Kitchen": kitchen,
-				"Game room": gaming,
-				Refrigerator: refrigerator,
-			},
+			amenities: [...amenities.slice(1)],
 		},
 		{
 			id: 2,
@@ -63,16 +54,7 @@ const roomsData = {
 				guests: "4 Guests",
 				bedrooms: "2 Bedrooms",
 			},
-			amenities: {
-				Heater: heater,
-				Fireplace: fireplace,
-				"Hot tub": hotTub,
-				TV: tv,
-				Parking: parking,
-				"Full Kitchen": kitchen,
-				"Game room": gaming,
-				Refrigerator: refrigerator,
-			},
+			amenities: [...amenities.slice(1)],
 		},
 		{
 			id: 3,
@@ -105,16 +87,7 @@ const roomsData = {
 				guests: "1 Guest",
 				bedrooms: "1 Bedroom",
 			},
-			amenities: {
-				Heater: heater,
-				Fireplace: fireplace,
-				"Hot tub": hotTub,
-				TV: tv,
-				Parking: parking,
-				"Full Kitchen": kitchen,
-				"Game room": gaming,
-				Refrigerator: refrigerator,
-			},
+			amenities: [...amenities.slice(1, [amenities.length - 1])],
 		},
 		{
 			id: 6,
@@ -131,5 +104,5 @@ const roomsData = {
 	gallery: [roomGallery1, roomGallery2, roomGallery3, roomGallery4],
 }
 
-export { roomsHero, roomSingleHero }
+export { roomsHero, roomSingleHero, amenities }
 export default roomsData

@@ -1,10 +1,9 @@
-import { useContext } from "react"
-import { NavLink } from "react-router-dom"
+import PropTypes from "prop-types"
+import { Link, useParams } from "react-router-dom"
 import { whiteLogo } from "../../../../../data"
-import { NavigationContext } from "../../../../../App"
 
-const BookRoom = () => {
-	const { price } = useContext(NavigationContext).cabin
+const BookRoom = ({ price }) => {
+	const { roomId } = useParams()
 
 	return (
 		<div
@@ -59,15 +58,17 @@ const BookRoom = () => {
 				<p className='w-1/5 text-center'>OR</p>
 				<p className='w-2/5 h-0.5 bg-gray-300'></p>
 			</div>
-			<NavLink
-				to='/rooms/room'
+			<Link
+				to={`rooms/${roomId}`}
 				className='show-on-scroll block w-full transition-all duration-500 ease-in-out text-center bg-black text-white px-7 py-4 text-lg font-semibold rounded-full relative top-0 border shadow-md hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 			>
 				<img src={whiteLogo} alt='logo' className='inline me-3' />
 				Book on Airbnb
-			</NavLink>
+			</Link>
 		</div>
 	)
 }
+
+BookRoom.propTypes = { price: PropTypes.number.isRequired }
 
 export default BookRoom

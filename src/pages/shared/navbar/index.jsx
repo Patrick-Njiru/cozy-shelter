@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import DesktopMenu from "./components/layouts/DesktopMenu"
 import MobileMenu from "./components/layouts/MobileMenu"
 import { handleToggle } from "../../../utils"
@@ -10,7 +10,7 @@ const Navbar = () => {
 			<nav className='bg-white border shadow rounded-full w-11/12 mx-auto py-5 px-5 xl:ps-8'>
 				<div className='flex justify-between items-center'>
 					{/* Logo */}
-					<NavLink
+					<Link
 						to='/'
 						className='transition-all duration-500 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'
 					>
@@ -19,7 +19,7 @@ const Navbar = () => {
 							<span className='text-black'>Cozy</span>
 							<span className='text-red-600'>Shelter</span>
 						</h1>
-					</NavLink>
+					</Link>
 					{/* Desktop Menu */}
 					<DesktopMenu />
 

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { BiLocationPlus } from "react-icons/bi"
 import { Heading } from "../../../components"
 import { locationsImg } from "../../../data/about"
@@ -31,11 +31,12 @@ const Locations = ({ locations }) => {
 					className='show-on-scroll lg:w-3/5 xl:w-[65%]'
 				/>
 			</div>
-			<NavLink
+			<Link
+				to='locations'
 				className='show-on-scroll block mx-auto mt-20 transition-all duration-500 ease-in-out bg-red-500 text-white px-7 py-4 text-lg font-semibold w-fit rounded-full relative top-0 border shadow-md hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 			>
 				More Locations
-			</NavLink>
+			</Link>
 		</section>
 	)
 }

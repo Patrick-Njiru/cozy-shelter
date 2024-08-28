@@ -1,6 +1,6 @@
 import { useState } from "react"
 import PropTypes from "prop-types"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import { handleSlide } from "../../../utils"
 import { CabinCard } from "../../../components"
@@ -15,12 +15,12 @@ const Cabins = ({ cabins }) => {
 				<h1 className='font-black text- text-2xl sm:text-3xl md:text-4xl'>
 					Explore our cabins
 				</h1>
-				<NavLink
-					to='/rooms'
+				<Link
+					to='rooms'
 					className='inline transition-all duration-500 ease-in-out bg-white text-gray-600 px-7 py-4 text-lg font-semibold w-fit rounded-full relative top-0 border shadow-md hover:bg-red-600 hover:text-white hover:-top-1 sm:px-10 sm:py-6'
 				>
 					Browse All
-				</NavLink>
+				</Link>
 			</div>
 			<div
 				id='cabins-scroll-container'

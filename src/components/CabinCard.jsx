@@ -1,16 +1,15 @@
-import { useContext, useState } from "react"
+import { useState } from "react"
 import PropTypes from "prop-types"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { BiBed } from "react-icons/bi"
 import { BsPerson } from "react-icons/bs"
-import { NavigationContext } from "../App"
 
 const CabinCard = ({ id, img, title, description, price, rooms, page }) => {
 	const [isHovered, setisHovered] = useState(false)
-	const { handleNavigation } = useContext(NavigationContext)
 
 	return (
-		<div
+		<Link
+			to={`/rooms/${id}`}
 			className={
 				page !== "home"
 					? "show-on-scroll transition-all duration-500 ease-in-out relative group top-0 border shadow-lg rounded-2xl cursor-pointer my-6 w-full hover:-top-4 md:w-[48%] lg:w-[31.5%]"
@@ -18,7 +17,6 @@ const CabinCard = ({ id, img, title, description, price, rooms, page }) => {
 			}
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
-			onClick={() => handleNavigation(id, "room")}
 		>
 			{page !== "home" ? (
 				<div className='relative w-full h-fit'>
@@ -59,15 +57,12 @@ const CabinCard = ({ id, img, title, description, price, rooms, page }) => {
 						<span className='text-2xl font-bold'>${price}</span>
 						<span className='text-gray-600 font-light text-lg'>/night</span>
 					</p>
-					<NavLink
-						to='/rooms/room'
-						className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full hover:bg-red-600  hover:-top-1'
-					>
+					<button className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full hover:bg-red-600  hover:-top-1'>
 						Book now
-					</NavLink>
+					</button>
 				</div>
 			</div>
-		</div>
+		</Link>
 	)
 }
 
@@ -81,6 +76,9 @@ CabinCard.propTypes = {
 	page: PropTypes.string,
 }
 
-CabinCard.defaultProps = { description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." }
+CabinCard.defaultProps = {
+	description:
+		"Dius autre irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulia pariatur",
+}
 
 export default CabinCard

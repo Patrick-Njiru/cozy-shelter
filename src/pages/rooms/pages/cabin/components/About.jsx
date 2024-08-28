@@ -1,17 +1,9 @@
-import { useContext } from "react"
+import PropTypes from "prop-types"
 import { BiBath, BiBed } from "react-icons/bi"
 import { BsPerson } from "react-icons/bs"
-import { NavigationContext } from "../../../../../App"
+import { Link } from "react-router-dom"
 
-const About = () => {
-	const {
-		cabin: {
-			rooms: { guests, bedrooms },
-			amenities,
-		},
-		handleNavigation
-	} = useContext(NavigationContext)
-
+const About = ({ guests, bedrooms, amenities }) => {
 	return (
 		<div id='room-about' className='leading-loose space-y-6 w-full lg:w-3/5'>
 			<div className='show-on-scroll flex items-center flex-wrap space-x-4 mb-6'>
@@ -60,19 +52,25 @@ const About = () => {
 				Room Amenities
 			</h1>
 			<div className='show-on-scroll flex flex-wrap min-w-[300px]'>
-				{Object.entries(amenities).map((entry) => (
-					<div
-						key={entry[0]}
+				{amenities.map((amenity) => (
+					<Link
+						to={`/amenities/${amenity.id || 1}/rooms-with-amenity`}
+						key={amenity.id}
 						className='flex space-x-6 w-1/2 md:w-1/3 my-6 text-lg text-gray-600 cursor-pointer'
-						onClick={() => handleNavigation(entry[0], "roomsCategory")}
 					>
-						<img src={entry[1]} alt={entry[0]} />
-						<p>{entry[0]}</p>
-					</div>
+						<img src={amenity.img} alt={amenity.title} />
+						<p>{amenity.title}</p>
+					</Link>
 				))}
 			</div>
 		</div>
 	)
+}
+
+About.propTypes = {
+	guests: PropTypes.string.isRequired,
+	bedrooms: PropTypes.string.isRequired,
+	amenities: PropTypes.array.isRequired,
 }
 
 export default About

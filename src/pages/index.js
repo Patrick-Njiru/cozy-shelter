@@ -1,25 +1,13 @@
 import About from "./about"
 import Blog from "./blog"
-import BlogPost from "./blog/pages/blog-post"
+import Post from "./blog/pages/post/index.jsx"
 import Contact from "./contact"
 import Error404 from "./Errror404"
 import Footer from "./shared/footer"
 import Home from "./home"
 import Navbar from "./shared/navbar"
 import Rooms from "./rooms/Rooms"
-import RoomsCategory from "./rooms/pages/RoomsCategory"
-import RoomSingle from "./rooms/pages/room-single"
+import Amenities from "./rooms/pages/Amenities"
+import Cabin from "./rooms/pages/cabin"
 
-export {
-	About,
-	Blog,
-	BlogPost,
-	Contact,
-	Error404,
-	Footer,
-	Home,
-	Navbar,
-	Rooms,
-	RoomsCategory,
-	RoomSingle,
-}
+export { About, Blog, Post, Contact, Error404, Footer, Home, Navbar, Rooms, Amenities, Cabin }

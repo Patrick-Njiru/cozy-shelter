@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import PropTypes from "prop-types"
 
 import { redBg } from "../data/home"
@@ -42,18 +42,18 @@ const Subscribe = ({ purpose }) => {
 							veritatis hic sit dolore similique ullam harum.
 						</p>
 						<div className='flex flex-col space-y-6 justify-center items-center sm:flex-row sm:space-x-4 sm:space-y-0'>
-							<NavLink
+							<Link
 								to='/rooms'
 								className='inline transition-all duration-500 ease-in-out bg-white text-red-600 px-7 py-4 text-lg font-semibold w-fit rounded-full relative top-0 hover:text-black hover:-top-1 sm:px-10 sm:py-6'
 							>
 								Explore rooms
-							</NavLink>
-							<NavLink
+							</Link>
+							<Link
 								to='/about'
 								className='inline transition-all duration-500 ease-in-out bg-inherit text-white px-7 py-4 text-lg font-semibold w-fit rounded-full relative top-0 border hover:bg-white hover:text-black hover:-top-1 sm:px-10 sm:py-6'
 							>
 								About us
-							</NavLink>
+							</Link>
 						</div>
 					</div>
 				)}

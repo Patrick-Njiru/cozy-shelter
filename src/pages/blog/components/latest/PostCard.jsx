@@ -1,13 +1,13 @@
 import PropTypes from "prop-types"
-import { useContext, useState } from "react"
-import { NavigationContext } from "../../../../App"
+import { useState } from "react"
+import { Link } from "react-router-dom"
 
-const PostCard = ({ img, details, postKey, from }) => {
+const PostCard = ({ id, img, details, from }) => {
 	const [isHovered, setisHovered] = useState(false)
-	const { handleNavigation } = useContext(NavigationContext)
 
 	return (
-		<div
+		<Link
+			to={`/blog/${id}`}
 			className={
 				from != "blogs"
 					? "show-on-scroll transition-all duration-400 ease-in-out group border shadow-lg rounded-xl cursor-pointer mt-4 mb-8 md:w-[48%]"
@@ -15,7 +15,6 @@ const PostCard = ({ img, details, postKey, from }) => {
 			}
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
-			onClick={() => (from == "latest-posts" ? "" : handleNavigation(postKey, "blogPost"))}
 		>
 			<div className='relative w-full'>
 				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />
@@ -36,17 +35,20 @@ const PostCard = ({ img, details, postKey, from }) => {
 			</div>
 			<div className='space-y-5 px-8 py-12 sm:h-[380px] lg:h-auto'>
 				<p className='text-lg text-gray-600'>{details.date}</p>
-				<h1 className='font-bold text-2xl group-hover:text-red-500'> {details.title}</h1>
-				<p className='text-lg text-gray-600'>{details.description}</p>
+				<h1 className='font-bold text-2xl group-hover:text-red-500'>{details.title}</h1>
+				<p className='text-lg text-gray-600'>
+					Dius autre irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+					fugiat nulia pariatur
+				</p>
 			</div>
-		</div>
+		</Link>
 	)
 }
 
 PostCard.propTypes = {
+	id: PropTypes.number.isRequired,
 	img: PropTypes.any.isRequired,
 	details: PropTypes.object.isRequired,
-	postKey: PropTypes.string.isRequired,
 	from: PropTypes.string,
 }
 

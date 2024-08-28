@@ -1,17 +1,16 @@
-import { useContext, useState } from "react"
+import { useState } from "react"
 import PropTypes from "prop-types"
-import { NavigationContext } from "../../../../App"
+import { Link } from "react-router-dom"
 
-const TrendingBlogCard = ({ img, details, postKey }) => {
+const TrendingBlogCard = ({ id, img, details }) => {
 	const [isHovered, setIsHovered] = useState(false)
-	const { handleNavigation } = useContext(NavigationContext)
 
 	return (
-		<div
+		<Link
+			to={`/blog/${id}`}
 			className='flex flex-col space-y-6 group justify-between md:space-x-5 cursor-pointer w-full md:items-center md:space-y-0 md:flex-row'
 			onMouseOver={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			onClick={() => handleNavigation(postKey, 'blogPost')}
 		>
 			<div className='relative md:w-1/2 lg:w-[49%]'>
 				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />
@@ -31,14 +30,14 @@ const TrendingBlogCard = ({ img, details, postKey }) => {
 					{details.category}
 				</button>
 			</div>
-		</div>
+		</Link>
 	)
 }
 
 TrendingBlogCard.propTypes = {
+	id: PropTypes.number.isRequired,
 	img: PropTypes.any.isRequired,
 	details: PropTypes.object.isRequired,
-	postKey: PropTypes.string.isRequired,
 }
 
 export default TrendingBlogCard

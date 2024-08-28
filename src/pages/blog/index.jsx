@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { Hero, Latest, Trending } from "./components"
-import blogsData from "../../data/blog"
+import blogsData from "../../data/blogs"
 import { Subscribe } from "../../components"
 import { animateOnScroll } from "../../utils"
 
@@ -8,7 +8,7 @@ const Blogs = () => {
 	useEffect(() => animateOnScroll())
 
 	return (
-		<div>
+		<main>
 			{/* Hero */}
 			<Hero />
 			{/* Top Blogs and Resources */}
@@ -17,7 +17,7 @@ const Blogs = () => {
 			<Subscribe />
 			{/* Latest Posts */}
 			<Latest latestPosts={blogsData.latestPosts} />
-		</div>
+		</main>
 	)
 }
 

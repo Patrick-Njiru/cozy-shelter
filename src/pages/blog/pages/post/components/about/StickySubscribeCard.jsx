@@ -1,8 +1,8 @@
-import { emailIcon } from "../../../../../../data/blog"
+import { emailIcon } from "../../../../../../data/blogs"
 
 const StickySubscribeCard = () => {
 	return (
-		<div className='show-on-scroll hidden border top-4 bottom-0 space-y-6 p-6 py-10 rounded-2xl h-fit shadow-lg md:block md:w-[430px] lg:sticky lg:w-[30%]'>
+		<article className='show-on-scroll hidden border top-4 bottom-0 space-y-6 p-6 py-10 rounded-2xl h-fit shadow-lg md:block md:w-[430px] lg:sticky lg:w-[30%]'>
 			<img src={emailIcon} alt='email' />
 			<h3 className='font-bold text-xl'>Subscribe to our newsletter</h3>
 			<p>At risus viverra adipiscing at in tellus integer feugiat nisl pretiua</p>
@@ -17,7 +17,7 @@ const StickySubscribeCard = () => {
 			>
 				Subscribe
 			</button>
-		</div>
+		</article>
 	)
 }
 

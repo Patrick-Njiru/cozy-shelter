@@ -1,15 +1,17 @@
-import { NavLink } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube } from "react-icons/bi"
 import footerImages from "../../../data/footer"
 import InstagramImage from "./InstagramImage"
 import { logo } from "../../../data"
 
 const Footer = () => {
+	const { roomId, postId, amenityId } = useParams()
+
 	return (
 		<footer className='show-on-scroll border-t py-24 px-6 sm:px-10 md:px-16'>
 			<div className='flex flex-col space-y-12 md:space-y-0 md:justify-between md:flex-row md:flex-wrap'>
 				<div className='mb-8 lg:my-0 lg:w-[30%]'>
-					<NavLink
+					<Link
 						to='/'
 						className='transition-all duration-500 ease-in-out group flex space-x-3 hover:scale-95 hover:opacity-70'
 					>
@@ -22,7 +24,7 @@ const Footer = () => {
 							<span>Cozy</span>
 							<span className='text-red-800'>Shelter</span>
 						</h1>
-					</NavLink>
+					</Link>
 					<p className='text-gray-600 mt-6 mb-10'>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
 						repudiandae dolorem.
@@ -38,80 +40,80 @@ const Footer = () => {
 					<div className='space-y-6'>
 						<h4 className='font-bold text-lg sm:text-xl md:text-2xl'>Pages</h4>
 						<div className='flex flex-col space-y-3 text-gray-600 text-lg'>
-							<NavLink
+							<Link
 								to='/'
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Home
-							</NavLink>
-							<NavLink
-								to='/about'
+							</Link>
+							<Link
+								to='about'
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								About
-							</NavLink>
-							<NavLink
-								to='/blog'
+							</Link>
+							<Link
+								to='blog'
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Blog
-							</NavLink>
-							<NavLink
-								to='/blog/blog-post'
+							</Link>
+							<Link
+								to={`/blog/${postId || 1}`}
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Blog Post
-							</NavLink>
-							<NavLink
-								to='/contact'
+							</Link>
+							<Link
+								to='contact'
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Contact
-							</NavLink>
-							<NavLink
-								to='/rooms'
+							</Link>
+							<Link
+								to='rooms'
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Rooms
-							</NavLink>
-							<NavLink
-								to='/rooms/room'
+							</Link>
+							<Link
+								to={`/rooms/${roomId || 1}`}
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Room Single
-							</NavLink>
-							<NavLink
-								to='/rooms/rooms-category'
+							</Link>
+							<Link
+								to={`/amenities/${amenityId || 1}/rooms-with-amenity`}
 								className='transition-all duration-200 w-fit hover:text-red-500'
 							>
 								Rooms Category
-							</NavLink>
+							</Link>
 						</div>
 					</div>
 					<div className='space-y-6 w-1/2'>
 						<h4 className='font-bold text-lg sm:text-xl md:text-2xl'>Useful Links</h4>
 						<div className='flex flex-col space-y-3 text-gray-600 text-lg'>
-							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
+							<Link className='transition-all duration-200 w-fit hover:text-red-500'>
 								Hospitality
-							</NavLink>
-							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
+							</Link>
+							<Link className='transition-all duration-200 w-fit hover:text-red-500'>
 								Invite Friends
-							</NavLink>
-							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
+							</Link>
+							<Link className='transition-all duration-200 w-fit hover:text-red-500'>
 								Business Travel
-							</NavLink>
-							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
+							</Link>
+							<Link className='transition-all duration-200 w-fit hover:text-red-500'>
 								FAQs
-							</NavLink>
-							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
+							</Link>
+							<Link className='transition-all duration-200 w-fit hover:text-red-500'>
 								Trust and Safety
-							</NavLink>
-							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
+							</Link>
+							<Link className='transition-all duration-200 w-fit hover:text-red-500'>
 								Terms and Conditions
-							</NavLink>
-							<NavLink className='transition-all duration-200 w-fit hover:text-red-500'>
+							</Link>
+							<Link className='transition-all duration-200 w-fit hover:text-red-500'>
 								Privacy Policy
-							</NavLink>
+							</Link>
 						</div>
 					</div>
 				</div>

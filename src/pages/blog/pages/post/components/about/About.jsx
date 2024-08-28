@@ -1,4 +1,4 @@
-import { blogPostImg } from "../../../../../../data/blog"
+import { blogPostImg } from "../../../../../../data/blogs"
 import StickySubscribeCard from "./StickySubscribeCard"
 
 const About = () => {

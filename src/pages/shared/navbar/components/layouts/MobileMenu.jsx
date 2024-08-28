@@ -1,9 +1,11 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useParams } from "react-router-dom"
 import { BiCaretDown, BiCaretUp } from "react-icons/bi"
 import PagesModal from "../PagesModal"
 import { handleModalDisplay } from "../../../../../utils"
 
 const MobileMenu = () => {
+	const { roomId } = useParams()
+
 	return (
 		<div
 			id='mobile-menu'
@@ -13,21 +15,18 @@ const MobileMenu = () => {
 				<NavLink to='/' className='my-2 transition-all duration-200 hover:text-red-500'>
 					Home
 				</NavLink>
-				<NavLink
-					to='/about'
-					className='my-2 transition-all duration-200 hover:text-red-500'
-				>
+				<NavLink to='about' className='my-2 transition-all duration-200 hover:text-red-500'>
 					About
 				</NavLink>
-				<NavLink to='/blog' className='my-2 transition-all duration-200 hover:text-red-500'>
+				<NavLink to='blog' className='my-2 transition-all duration-200 hover:text-red-500'>
 					Blog
 				</NavLink>
 				<div
 					id='pages-mobile'
 					className='mt-2  transition-all duration-200 hover:text-red-500'
-					onClick={() => handleModalDisplay('toggle')}
-					onMouseOver={() => handleModalDisplay('show')}
-					onMouseLeave={() => handleModalDisplay('hide')}
+					onClick={() => handleModalDisplay("toggle")}
+					onMouseOver={() => handleModalDisplay("show")}
+					onMouseLeave={() => handleModalDisplay("hide")}
 				>
 					Pages
 					<button type='button'>
@@ -38,7 +37,7 @@ const MobileMenu = () => {
 				</div>
 
 				<NavLink
-					to='/rooms/room'
+					to={`rooms/${roomId}`}
 					className='book-btn transition-all duration-500 ease-in-out mt-4 bg-red-500 text-white px-5 py-3 font-bold text-base w-fit rounded-full hover:bg-red-600 hover:mt-3 hover:mb-1 sm:text-lg'
 				>
 					Book now

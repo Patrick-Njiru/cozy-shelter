@@ -1,20 +1,22 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useParams } from "react-router-dom"
 import { BiCaretDown, BiCaretUp } from "react-icons/bi"
 import PagesModal from "../PagesModal"
 import { handleModalDisplay, handleToggle } from "../../../../../utils"
 import booked from "../../../../../assets/booked-icon.svg"
 
 const DesktopMenu = () => {
+	const { roomId } = useParams()
+
 	return (
 		<div className='hidden xl:block'>
 			<div className='flex items-center space-x-6 text-xl me-4'>
 				<NavLink to='/' className='transition-all duration-200 hover:text-red-500'>
 					Home
 				</NavLink>
-				<NavLink to='/about' className='transition-all duration-200 hover:text-red-500'>
+				<NavLink to='about' className='transition-all duration-200 hover:text-red-500'>
 					About
 				</NavLink>
-				<NavLink to='/blog' className='transition-all duration-200 hover:text-red-500'>
+				<NavLink to='blog' className='transition-all duration-200 hover:text-red-500'>
 					Blog
 				</NavLink>
 				<div
@@ -41,7 +43,7 @@ const DesktopMenu = () => {
 					</sub>
 				</button>
 				<NavLink
-					to='/rooms/room'
+					to={`rooms/${roomId}`}
 					className='book-btn inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full relative top-0 hover:bg-red-600 hover:-top-1'
 				>
 					Book now

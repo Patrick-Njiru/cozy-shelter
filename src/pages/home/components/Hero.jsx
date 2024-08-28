@@ -1,10 +1,10 @@
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { homeHero } from "../../../data/home"
 
 const Hero = () => {
 	return (
 		<section
-			className='show-on-scroll min-h-screen h-fit relative -top-28 py-64 px-6 text-white text-center sm:py-96 sm:px-10 md:px-16'
+			className='show-on-scroll min-h-screen h-fit relative -top-52 py-64 px-6 text-white text-center sm:py-96 sm:px-10 md:px-16'
 			style={{
 				background: `rgba(0,0,0,0.6) url(${homeHero}) no-repeat`,
 				backgroundSize: "cover",
@@ -22,18 +22,18 @@ const Hero = () => {
 					sint possimus officiis eveniet.
 				</p>
 				<div className='show-on-scroll flex flex-col items-center space-y-6 justify-center sm:flex-row sm:space-x-4 sm:space-y-0'>
-					<NavLink
+					<Link
 						to='/rooms'
 						className='inline transition-all duration-500 ease-in-out bg-red-500 text-white px-7 py-4 font-bold w-fit rounded-full relative top-0 hover:bg-red-600  hover:-top-1 sm:text-lg sm:px-10 sm:py-6'
 					>
 						Explore rooms
-					</NavLink>
-					<NavLink
+					</Link>
+					<Link
 						to='/about'
 						className='inline transition-all duration-500 ease-in-out bg-white text-gray-600 px-7 py-4 font-semibold w-fit rounded-full relative top-0 hover:bg-red-600 hover:text-white hover:-top-1 sm:text-lg sm:px-10 sm:py-6'
 					>
 						About us
-					</NavLink>
+					</Link>
 				</div>
 			</div>
 		</section>
