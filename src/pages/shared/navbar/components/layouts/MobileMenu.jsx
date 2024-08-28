@@ -37,7 +37,7 @@ const MobileMenu = () => {
 				</div>
 
 				<NavLink
-					to={`rooms/${roomId}`}
+					to={`rooms/${roomId || 1}`}
 					className='book-btn transition-all duration-500 ease-in-out mt-4 bg-red-500 text-white px-5 py-3 font-bold text-base w-fit rounded-full hover:bg-red-600 hover:mt-3 hover:mb-1 sm:text-lg'
 				>
 					Book now

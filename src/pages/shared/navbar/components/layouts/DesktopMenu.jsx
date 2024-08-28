@@ -43,7 +43,7 @@ const DesktopMenu = () => {
 					</sub>
 				</button>
 				<NavLink
-					to={`rooms/${roomId}`}
+					to={`rooms/${roomId || 1}`}
 					className='book-btn inline transition-all duration-500 ease-in-out bg-red-500 text-white px-5 py-3 font-medium w-fit rounded-full relative top-0 hover:bg-red-600 hover:-top-1'
 				>
 					Book now
