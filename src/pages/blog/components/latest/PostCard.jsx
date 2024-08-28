@@ -16,16 +16,15 @@ const PostCard = ({ id, img, details, from }) => {
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
 		>
-			<div className='relative w-full'>
-				<img src={img} alt={details.title} className=' opacity-0 w-full rounded-2xl' />
-				<div
-					className='transition-all duration-400 delay-0 ease-in-out absolute start-0 end-0 top-0 bottom-0 rounded-t-xl p-6'
-					style={{
-						background: `url(${img}) no-repeat`,
-						backgroundPosition: "bottom center",
-						backgroundSize: `${isHovered ? "110% 110%" : "100% 100%"}`,
-					}}
-				>
+			<div className='relative w-full rounded-t-2xl overflow-hidden'>
+				<img
+					src={img}
+					alt={details.title}
+					className={`
+						object-cover transition-all duration-500 ease-in-out ${isHovered ? "scale-110" : ""}
+					`}
+				/>
+				<div className='transition-all duration-400 delay-0 ease-in-out absolute start-0 end-0 top-0 bottom-0 rounded-t-xl p-6'>
 					<div className='flex justify-end'>
 						<h4 className='text-lg bg-white rounded-full p-5 py-3 w-fit font-bold h-1/5'>
 							{details.category}

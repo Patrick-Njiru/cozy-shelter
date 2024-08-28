@@ -18,28 +18,16 @@ const CabinCard = ({ id, img, title, description, price, rooms, page }) => {
 			onMouseOver={() => setisHovered(true)}
 			onMouseLeave={() => setisHovered(false)}
 		>
-			{page !== "home" ? (
-				<div className='relative w-full h-fit'>
-					<img src={img} alt={title} className='block w-full h-auto opacity-0' />
-					<div
-						className='transition-all duration-500 delay-0 ease-in-out rounded-t-xl absolute start-0 end-0 top-0 bottom-0'
-						style={{
-							background: `url(${img}) no-repeat`,
-							backgroundPosition: "bottom center",
-							backgroundSize: `${isHovered ? "110% 110%" : "100% 100%"}`,
-						}}
-					></div>
-				</div>
-			) : (
-				<div
-					className='transition-all duration-500 delay-0 ease-in-out h-60 rounded-t-xl'
-					style={{
-						background: `url(${img}) no-repeat`,
-						backgroundPosition: "bottom center",
-						backgroundSize: `${isHovered ? "110% 110%" : "100% 100%"}`,
-					}}
-				></div>
-			)}
+			<div className='relative overflow-hidden rounded-t-xl'>
+				<img
+					src={img}
+					alt={title}
+					className={`
+							block object-cover transition-all duration-500 ease-in-out
+							${isHovered ? "scale-110" : ""}
+						`}
+				/>
+			</div>
 			<div className='space-y-5 p-6'>
 				<h1 className='font-bold text-2xl group-hover:text-red-500'> {title}</h1>
 				<p className='text-gray-400'>{description}</p>

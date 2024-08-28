@@ -18,7 +18,9 @@ const OtherPosts = () => {
 			</div>
 			<div className='flex flex-wrap mt-16 justify-between items-center'>
 				{blogsData.latestPosts
-					.filter((blog) => blog.id != postId)
+					.filter((blog) =>
+						postId == 1 ? blog.id != postId && blog.id != 5 : blog.id != postId
+					)
 					.slice(0, 2)
 					.map((blog) => (
 						<PostCard key={blog.id} {...blog} from='latest-posts' />
