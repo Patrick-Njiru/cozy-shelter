@@ -7,7 +7,7 @@ import Footer from "./shared/footer"
 import Home from "./home"
 import Navbar from "./shared/navbar"
 import Rooms from "./rooms/Rooms"
-import Amenities from "./rooms/pages/Amenities"
+import AmenityRooms from "./rooms/pages/AmenityRooms"
 import Cabin from "./rooms/pages/cabin"
 
-export { About, Blog, Post, Contact, Error404, Footer, Home, Navbar, Rooms, Amenities, Cabin }
+export { About, Blog, Post, Contact, Error404, Footer, Home, Navbar, Rooms, AmenityRooms, Cabin }

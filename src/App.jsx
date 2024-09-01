@@ -9,7 +9,7 @@ import {
 	Error404,
 	Post,
 	Rooms,
-	Amenities,
+	AmenityRooms,
 	Cabin,
 	Contact,
 } from "./pages"
@@ -28,7 +28,7 @@ const App = () => {
 				<Route path='contact' element={<Contact />} />
 				<Route path='rooms' element={<Rooms />} />
 				<Route path='rooms/:roomId' element={<Cabin />} />
-				<Route path='amenities/:amenityId/rooms-with-amenity' element={<Amenities />} />
+				<Route path='amenities/:amenityId/rooms-with-amenity' element={<AmenityRooms />} />
 				<Route path='*' element={<Error404 />} />
 			</Routes>
 			<Footer />

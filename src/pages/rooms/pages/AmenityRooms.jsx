@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom"
 import { roomsData } from "../../../data"
 import { amenities } from "../../../data/rooms"
 
-const Amenities = () => {
+const AmenityRooms = () => {
 	useEffect(() => animateOnScroll())
 
 	const { amenityId } = useParams()
@@ -33,4 +33,4 @@ const Amenities = () => {
 	)
 }
 
-export default Amenities
+export default AmenityRooms
